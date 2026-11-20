@@ -3,7 +3,7 @@
 # Russian UI catalog and Linux packaging for tangency-labs/solidcraft
 # Upstream: https://github.com/tangency-labs/solidcraft
 # Base (origin merge-base): 0301073f3e45d19618ccd9bb986418184282245a
-# Snapshot: 2026-11-20 11:25 PST
+# Snapshot: 2026-11-20 12:09 PST
 # This patch is a draft localization contribution by SuperSfera LLC.
 #
 diff --git a/assets/locales/pending/app-bar-overflow.json b/assets/locales/pending/app-bar-overflow.json
@@ -2072,7 +2072,7 @@ diff --git a/assets/locales/ru.json b/assets/locales/ru.json
 +  "import_report.not_shown_one": "1 грань не удалось отрисовать, она скрыта.",
 +  "import_report.not_shown_other": "Граней, которые не удалось отрисовать и которые скрыты: {count}.",
 +  "import_report.nothing_lost": "Всё содержимое файла перенесено.",
-+  "import_report.ok": "OK",
++  "import_report.ok": "ОК",
 +  "import_report.open_one": "У 1 детали есть зазоры между гранями, она импортирована как открытое тело.",
 +  "import_report.open_other": "Деталей с зазорами между гранями, импортированных как открытые тела: {count}.",
 +  "import_report.opened": "{name} открыт с помощью {plugin}",
@@ -4594,14 +4594,16 @@ diff --git a/assets/locales/ru.json b/assets/locales/ru.json
    "ui.viewport_status_clear": "Выключить {name}",
    "ui.viewport_status_clear_hint": "Выключить {name} · Esc",
    "ui.viewport_status_edges": "Рёбер: {count}",
-@@ -5061,6 +7337,7 @@
+@@ -5061,7 +7337,8 @@
    "ui.workspace_design_description": "Эскиз, моделирование, сборка и проверка",
    "ui.workspace_design_tabs": "Модель · Поверхность · Сборка · Вставка · Проверка · Управление · Вид",
    "ui.workspace_drawing_description": "2D-чертежи с видами, размерами и основными надписями",
+-  "ui.workspace_footer": "Все рабочие среды работают с одним дизайном, историей и выбором; меняются только вкладки ленты. Переключатель заблокирован, пока редактируется эскиз или операция.",
 +  "ui.workspace_drawing_tabs": "Компоновка · Аннотации · Детали и таблицы · Проверка",
-   "ui.workspace_footer": "Все рабочие среды работают с одним дизайном, историей и выбором; меняются только вкладки ленты. Переключатель заблокирован, пока редактируется эскиз или операция.",
++  "ui.workspace_footer": "Все рабочие среды работают с одним дизайном, историей и выболом; меняются только вкладки ленты. Переключатель заблокирован, пока редактируется эскиз или операция.",
    "ui.workspace_layout": "Компоновка рабочей области",
    "ui.workspace_manufacture_description": "Слайсинг, траектории инструмента и наладка",
+   "ui.workspace_planned": "Запланировано",
 @@ -5122,6 +7399,14 @@
    "values must be numbers or expressions": "значения должны быть числами или выражениями",
    "view.auto_ortho_faces": "Перспектива при вращении, ортогональный вид на гранях",
@@ -4865,7 +4867,8 @@ diff --git a/crates/ui-text/locales/ru.json b/crates/ui-text/locales/ru.json
 diff --git a/assets/platforms/linux/io.tangencylabs.solidcraft.desktop b/assets/platforms/linux/io.tangencylabs.solidcraft.desktop
 --- a/assets/platforms/linux/io.tangencylabs.solidcraft.desktop
 +++ b/assets/platforms/linux/io.tangencylabs.solidcraft.desktop
-@@ -1,8 +1,12 @@
+@@ -1,8 +1,13 @@
++# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
 +# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
  [Desktop Entry]
  Type=Application
@@ -4878,7 +4881,7 @@ diff --git a/assets/platforms/linux/io.tangencylabs.solidcraft.desktop b/assets/
  Exec=solidcraft %f
  TryExec=solidcraft
  Icon=io.tangencylabs.solidcraft
-@@ -11,6 +15,7 @@
+@@ -11,6 +16,7 @@
  StartupWMClass=io.tangencylabs.solidcraft
  Categories=Graphics;3DGraphics;Engineering;
  Keywords=cad;3d;parametric;sketch;step;stl;modelling;modeling;
@@ -4890,13 +4893,14 @@ diff --git a/assets/platforms/linux/io.tangencylabs.solidcraft.desktop b/assets/
 diff --git a/assets/platforms/linux/io.tangencylabs.solidcraft.metainfo.xml.in b/assets/platforms/linux/io.tangencylabs.solidcraft.metainfo.xml.in
 --- a/assets/platforms/linux/io.tangencylabs.solidcraft.metainfo.xml.in
 +++ b/assets/platforms/linux/io.tangencylabs.solidcraft.metainfo.xml.in
-@@ -1,4 +1,5 @@
+@@ -1,4 +1,6 @@
  <?xml version="1.0" encoding="UTF-8"?>
++<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
 +<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
  <!-- AppStream metadata (software centres, Flathub). Template: package.sh substitutes @VERSION@
       and @DATE@ from Cargo.toml and the build date. -->
  <component type="desktop-application">
-@@ -7,6 +8,7 @@
+@@ -7,6 +9,7 @@
    <project_license>MIT OR Apache-2.0</project_license>
    <name>SolidCraft</name>
    <summary>Independent parametric 3D CAD</summary>
@@ -4904,7 +4908,7 @@ diff --git a/assets/platforms/linux/io.tangencylabs.solidcraft.metainfo.xml.in b
    <developer id="io.github.bherbruck">
      <name>SolidCraft contributors</name>
    </developer>
-@@ -16,12 +18,22 @@
+@@ -16,12 +19,22 @@
        plane, constrain and dimension the sketch, turn profiles into solids on a feature
        timeline, and change a parameter to watch the timeline rebuild.
      </p>
@@ -4927,7 +4931,7 @@ diff --git a/assets/platforms/linux/io.tangencylabs.solidcraft.metainfo.xml.in b
      </ul>
    </description>
    <launchable type="desktop-id">io.tangencylabs.solidcraft.desktop</launchable>
-@@ -36,12 +48,16 @@
+@@ -36,12 +49,16 @@
    </categories>
    <keywords>
      <keyword>cad</keyword>
@@ -4948,8 +4952,9 @@ diff --git a/assets/platforms/linux/io.tangencylabs.solidcraft.metainfo.xml.in b
 diff --git a/assets/platforms/linux/io.tangencylabs.solidcraft.mime.xml b/assets/platforms/linux/io.tangencylabs.solidcraft.mime.xml
 --- a/assets/platforms/linux/io.tangencylabs.solidcraft.mime.xml
 +++ b/assets/platforms/linux/io.tangencylabs.solidcraft.mime.xml
-@@ -1,9 +1,11 @@
+@@ -1,9 +1,12 @@
  <?xml version="1.0" encoding="UTF-8"?>
++<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
 +<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
  <!-- shared-mime-info definitions for types the system database may not have.
       Installed to /usr/share/mime/packages/ (update-mime-database runs on install). -->
