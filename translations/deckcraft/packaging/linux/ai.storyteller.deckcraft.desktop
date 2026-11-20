@@ -1,0 +1,19 @@
+# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
+[Desktop Entry]
+Type=Application
+Name=DeckCraft
+Name[ru]=DeckCraft
+GenericName=Presentation
+GenericName[ru]=Презентации
+Comment=Create and present slide decks
+Comment[ru]=Создание и показ презентаций
+Exec=deckcraft %F
+TryExec=deckcraft
+Icon=ai.storyteller.deckcraft
+Terminal=false
+StartupNotify=true
+StartupWMClass=ai.storyteller.deckcraft
+Categories=Office;Presentation;
+MimeType=application/x-deckcraft;application/vnd.openxmlformats-officedocument.presentationml.presentation;application/vnd.openxmlformats-officedocument.presentationml.template;application/vnd.openxmlformats-officedocument.presentationml.slideshow;application/vnd.ms-powerpoint;
+Keywords=presentation;slides;slide show;deck;pptx;keynote;powerpoint;
+Keywords[ru]=презентация;слайды;слайд-шоу;показ слайдов;pptx;keynote;powerpoint;
