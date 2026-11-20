@@ -1,5 +1,6 @@
 # Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
 # Русский (ru) interface catalog for WordCraft.
+# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
 # Columns, separated by a TAB:  context <TAB> English source text <TAB> translation
 #   context  usually empty. `@plural`, `@id` and `@msg` mean something to the apps; any other
 #            word is a label that tells apart two meanings of the same English.
@@ -61,7 +62,7 @@
 	Above Chart	Над диаграммой
 	Above the item	Над объектом
 	Absolute value cases	Уравнение со случаями
-	Accent	Диакритические знаки
+	Accent	Диакритические\nзнаки
 	Accent Gradient	Градиент акцента
 	Accent with Reflection	Акцент с отражением
 	Accent {n}	Акцент {n}
@@ -942,7 +943,7 @@
 	Hide Ink	Скрыть рукописный ввод
 	Hide Quick Access Toolbar	Скрыть панель быстрого доступа
 	Hide White Space	Скрыть пустое место между страницами
-	Hide\nInk	Скрыть\nрукопись
+	Hide\nInk	Скрыть
 	Hierarchy	Иерархия
 	Highlight	Выделение цветом
 	Highlight Merge Fields	Выделить поля слияния
@@ -1981,7 +1982,7 @@
 	Shrink Font 1 Point	Уменьшить шрифт на 1 пт
 	Shrink text	Уменьшить текст
 	Side to Side	Рядом
-	Side\nto Side	Бок\nо бок
+	Side\nto Side	Рядом
 	Sides of a right triangle	Стороны прямоугольного треугольника
 	Signature Line	Строка подписи
 	Sine and cosine series of f(x)	Ряд Фурье для f(x)
@@ -2141,7 +2142,7 @@
 	Table of Contents Options	Параметры оглавления
 	Table of Contents Styles	Стили оглавления
 	Table of Figures	Список иллюстраций
-	Table of\nContents	Оглав-\nление
+	Table of\nContents	Оглавление
 	Table Properties	Свойства таблицы
 	Table Properties…	Свойства таблицы…
 	Table Row Height	Высота строки таблицы
@@ -2814,3 +2815,5 @@ numerals	System	Системные
 	{paper}   {width} × {height}	{paper}   {width} × {height}
 	➕ New comment	➕ Новый комментарий
 	📂  Browse…	📂  Обзор…
+# Author catalog rows kept unchanged (present upstream, missing from our revision)
+	AutoSave	Автосохранение

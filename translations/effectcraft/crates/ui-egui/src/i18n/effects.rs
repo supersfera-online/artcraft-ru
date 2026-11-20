@@ -2239,6 +2239,7 @@ const SWEDISH_CATEGORIES: &[(&str, &str)] = &[
 /// the Russian word order (`Размытие VR`, `Преобразование CDL OCIO`).
 
 
+// Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
 const RUSSIAN: &[Row] = &[
     ("ec.3d.channelextract", "3D Channel Extract", "Извлечение канала 3D"),
     ("ec.3d.cryptomatte", "Cryptomatte", "Cryptomatte"),
@@ -2295,7 +2296,7 @@ const RUSSIAN: &[Row] = &[
     ("ec.color.autocolor", "Auto Color", "Автоцвет"),
     ("ec.color.autocontrast", "Auto Contrast", "Автоконтраст"),
     ("ec.color.autolevels", "Auto Levels", "Автоуровни"),
-    ("ec.color.blackwhite", "Black & White", "Черно-белое"),
+    ("ec.color.blackwhite", "Black & White", "Чёрно-белое"),
     ("ec.color.brightnesscontrast", "Brightness & Contrast", "Яркость и контраст"),
     ("ec.color.broadcast", "Broadcast Colors", "Телевизионные цвета"),
     ("ec.color.cccolorneutralizer", "Color Neutralizer", "Нейтрализатор цвета"),
@@ -2395,7 +2396,7 @@ const RUSSIAN: &[Row] = &[
     ("ec.generate.ellipse", "Ellipse", "Эллипс"),
     ("ec.generate.eyedropperfill", "Eyedropper Fill", "Заливка пипеткой"),
     ("ec.generate.fill", "Fill", "Заливка"),
-    ("ec.generate.fourcolor", "4-Color Gradient", "Четырехцветный градиент"),
+    ("ec.generate.fourcolor", "4-Color Gradient", "Четырёхцветный градиент"),
     ("ec.generate.fractal", "Fractal", "Фрактал"),
     ("ec.generate.gradientramp", "Gradient Ramp", "Градиентный переход"),
     ("ec.generate.grid", "Grid", "Сетка"),
@@ -2466,7 +2467,7 @@ const RUSSIAN: &[Row] = &[
     ("ec.sim.ccmrmercury", "Liquid Particles", "Жидкие частицы"),
     ("ec.sim.ccparticlesystems2", "Particle Emitter 2D", "Излучатель частиц 2D"),
     ("ec.sim.ccparticleworld", "Particle Emitter 3D", "Излучатель частиц 3D"),
-    ("ec.sim.ccpixelpolly", "Pixel Shatter", "Разлет пикселей"),
+    ("ec.sim.ccpixelpolly", "Pixel Shatter", "Разлёт пикселей"),
     ("ec.sim.ccrainfall", "Rainfall", "Дождь"),
     ("ec.sim.ccscatterize", "Pixel Scatter", "Рассеяние пикселей"),
     ("ec.sim.ccsnowfall", "Snowfall", "Снег"),
@@ -2478,12 +2479,12 @@ const RUSSIAN: &[Row] = &[
     ("ec.stylize.brushstrokes", "Brush Strokes", "Мазки кисти"),
     ("ec.stylize.cartoon", "Cartoon", "Мультфильм"),
     ("ec.stylize.ccblockload", "Block Reveal", "Проявление блоками"),
-    ("ec.stylize.ccburnfilm", "Film Burn", "Выгорание пленки"),
+    ("ec.stylize.ccburnfilm", "Film Burn", "Выгорание плёнки"),
     ("ec.stylize.ccglass", "Glass Relief", "Стеклянный рельеф"),
     ("ec.stylize.cchextile", "Hexagonal Tiles", "Шестиугольная плитка"),
     ("ec.stylize.cckaleida", "Kaleidoscope", "Калейдоскоп"),
     ("ec.stylize.ccmrsmoothie", "Palette Map", "Карта палитры"),
-    ("ec.stylize.ccplastic", "Plastic Shading", "Пластиковая затененность"),
+    ("ec.stylize.ccplastic", "Plastic Shading", "Пластиковая затенённость"),
     ("ec.stylize.ccrepetile", "Edge Tile Repeat", "Повтор плитки по краю"),
     ("ec.stylize.ccthreshold", "Channel Threshold", "Порог канала"),
     ("ec.stylize.ccthresholdrgb", "RGB Threshold", "Порог RGB"),
@@ -2550,6 +2551,7 @@ const RUSSIAN: &[Row] = &[
     ("ec.vr.spheretoplane", "VR Sphere to Plane", "Сфера в плоскость VR"),
 ];
 
+// Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
 const RUSSIAN_CATEGORIES: &[(&str, &str)] = &[
     ("3D Channel", "Канал 3D"),
     ("Audio", "Звук"),
