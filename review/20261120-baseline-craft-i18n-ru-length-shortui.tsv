@@ -1,0 +1,11 @@
+# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
+file	line	context	source	translation	en_len	ru_len	ratio	detail
+craft-launcher.tsv	63		Custom folders use AppImage on Linux.	В Linux для установки в выбранную папку используется AppImage.	37	62	1.68	short UI label, ru > 60 chars
+craft-launcher.tsv	239	@id	update.notify	Уведомлять, когда у установленного приложения есть обновление	13	61	4.69	short UI label, ru > 60 chars
+pdfcraft.tsv	332		Ask to make PdfCraft the default PDF app	Спрашивать о назначении PdfCraft приложением для PDF по умолчанию	40	65	1.62	short UI label, ru > 60 chars
+pdfcraft.tsv	1295		Fill & Sign: add other saved initials	Заполнить и подписать: добавить ещё одни сохранённые инициалы	37	61	1.65	short UI label, ru > 60 chars
+pdfcraft.tsv	3782		Use Current Properties as New Defaults	Использовать текущие свойства как новые свойства по умолчанию	38	61	1.61	short UI label, ru > 60 chars
+photocraft.tsv	1120		Drag to pan  ·  hold Space with any tool	Перетащите для панорамирования  ·  удерживайте Space с любым инструментом	40	73	1.82	short UI label, ru > 60 chars
+photocraft.tsv	3464		There is no crop size or ratio to save	Нет размера или соотношения сторон кадрирования для сохранения	38	62	1.63	short UI label, ru > 60 chars
+vectorcraft.tsv	581		Click to select, double-click to edit	Щёлкните, чтобы выделить, дважды щёлкните, чтобы редактировать	37	62	1.68	short UI label, ru > 60 chars
+vectorcraft.tsv	3774		Use Document Raster Effects Resolution	Использовать разрешение из параметров растровых эффектов документа	38	66	1.74	short UI label, ru > 60 chars

@@ -1,0 +1,6 @@
+# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
+file	line	context	source	translation	en_ellipsis	ru_ellipsis	en_dots	ru_dots	detail
+craft-launcher.tsv	27	@id	app.uninstall	Удалить…	0	1	0	0	ellipsis / '...' count differs
+pdfcraft.tsv	1282	@id	file.word_count	Количество слов…	0	1	0	0	ellipsis / '...' count differs
+photocraft.tsv	1095		Don't also tick Mirror Image in Print Settings…: the two flips cancel out.	Не включайте также зеркальное отражение в параметрах печати: два отражения отменяют друг друга.	1	0	0	0	ellipsis / '...' count differs
+photocraft.tsv	1171	@id	edit.stroke	Обвести…	0	1	0	0	ellipsis / '...' count differs
