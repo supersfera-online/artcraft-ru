@@ -3,7 +3,7 @@
 # Russian UI catalog and Linux packaging for storytold/effectcraft
 # Upstream: https://github.com/storytold/effectcraft
 # Base (origin merge-base): c561e7352f6047d335db75a32cda45553ed34cf0
-# Snapshot: 2026-11-20 11:25 PST
+# Snapshot: 2026-11-20 12:09 PST
 # This patch is a draft localization contribution by SuperSfera LLC.
 #
 diff --git a/crates/ui-egui/src/i18n/effects.rs b/crates/ui-egui/src/i18n/effects.rs
@@ -33,7 +33,7 @@ diff --git a/crates/ui-egui/src/i18n/effects.rs b/crates/ui-egui/src/i18n/effect
          _ => None,
      }
  }
-@@ -2227,6 +2230,350 @@
+@@ -2227,6 +2230,352 @@
      ("Utility", "Verktyg"),
  ];
  
@@ -46,6 +46,7 @@ diff --git a/crates/ui-egui/src/i18n/effects.rs b/crates/ui-egui/src/i18n/effect
 +/// the Russian word order (`Размытие VR`, `Преобразование CDL OCIO`).
 +
 +
++// Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
 +const RUSSIAN: &[Row] = &[
 +    ("ec.3d.channelextract", "3D Channel Extract", "Извлечение канала 3D"),
 +    ("ec.3d.cryptomatte", "Cryptomatte", "Cryptomatte"),
@@ -102,7 +103,7 @@ diff --git a/crates/ui-egui/src/i18n/effects.rs b/crates/ui-egui/src/i18n/effect
 +    ("ec.color.autocolor", "Auto Color", "Автоцвет"),
 +    ("ec.color.autocontrast", "Auto Contrast", "Автоконтраст"),
 +    ("ec.color.autolevels", "Auto Levels", "Автоуровни"),
-+    ("ec.color.blackwhite", "Black & White", "Черно-белое"),
++    ("ec.color.blackwhite", "Black & White", "Чёрно-белое"),
 +    ("ec.color.brightnesscontrast", "Brightness & Contrast", "Яркость и контраст"),
 +    ("ec.color.broadcast", "Broadcast Colors", "Телевизионные цвета"),
 +    ("ec.color.cccolorneutralizer", "Color Neutralizer", "Нейтрализатор цвета"),
@@ -202,7 +203,7 @@ diff --git a/crates/ui-egui/src/i18n/effects.rs b/crates/ui-egui/src/i18n/effect
 +    ("ec.generate.ellipse", "Ellipse", "Эллипс"),
 +    ("ec.generate.eyedropperfill", "Eyedropper Fill", "Заливка пипеткой"),
 +    ("ec.generate.fill", "Fill", "Заливка"),
-+    ("ec.generate.fourcolor", "4-Color Gradient", "Четырехцветный градиент"),
++    ("ec.generate.fourcolor", "4-Color Gradient", "Четырёхцветный градиент"),
 +    ("ec.generate.fractal", "Fractal", "Фрактал"),
 +    ("ec.generate.gradientramp", "Gradient Ramp", "Градиентный переход"),
 +    ("ec.generate.grid", "Grid", "Сетка"),
@@ -273,7 +274,7 @@ diff --git a/crates/ui-egui/src/i18n/effects.rs b/crates/ui-egui/src/i18n/effect
 +    ("ec.sim.ccmrmercury", "Liquid Particles", "Жидкие частицы"),
 +    ("ec.sim.ccparticlesystems2", "Particle Emitter 2D", "Излучатель частиц 2D"),
 +    ("ec.sim.ccparticleworld", "Particle Emitter 3D", "Излучатель частиц 3D"),
-+    ("ec.sim.ccpixelpolly", "Pixel Shatter", "Разлет пикселей"),
++    ("ec.sim.ccpixelpolly", "Pixel Shatter", "Разлёт пикселей"),
 +    ("ec.sim.ccrainfall", "Rainfall", "Дождь"),
 +    ("ec.sim.ccscatterize", "Pixel Scatter", "Рассеяние пикселей"),
 +    ("ec.sim.ccsnowfall", "Snowfall", "Снег"),
@@ -285,12 +286,12 @@ diff --git a/crates/ui-egui/src/i18n/effects.rs b/crates/ui-egui/src/i18n/effect
 +    ("ec.stylize.brushstrokes", "Brush Strokes", "Мазки кисти"),
 +    ("ec.stylize.cartoon", "Cartoon", "Мультфильм"),
 +    ("ec.stylize.ccblockload", "Block Reveal", "Проявление блоками"),
-+    ("ec.stylize.ccburnfilm", "Film Burn", "Выгорание пленки"),
++    ("ec.stylize.ccburnfilm", "Film Burn", "Выгорание плёнки"),
 +    ("ec.stylize.ccglass", "Glass Relief", "Стеклянный рельеф"),
 +    ("ec.stylize.cchextile", "Hexagonal Tiles", "Шестиугольная плитка"),
 +    ("ec.stylize.cckaleida", "Kaleidoscope", "Калейдоскоп"),
 +    ("ec.stylize.ccmrsmoothie", "Palette Map", "Карта палитры"),
-+    ("ec.stylize.ccplastic", "Plastic Shading", "Пластиковая затененность"),
++    ("ec.stylize.ccplastic", "Plastic Shading", "Пластиковая затенённость"),
 +    ("ec.stylize.ccrepetile", "Edge Tile Repeat", "Повтор плитки по краю"),
 +    ("ec.stylize.ccthreshold", "Channel Threshold", "Порог канала"),
 +    ("ec.stylize.ccthresholdrgb", "RGB Threshold", "Порог RGB"),
@@ -357,6 +358,7 @@ diff --git a/crates/ui-egui/src/i18n/effects.rs b/crates/ui-egui/src/i18n/effect
 +    ("ec.vr.spheretoplane", "VR Sphere to Plane", "Сфера в плоскость VR"),
 +];
 +
++// Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
 +const RUSSIAN_CATEGORIES: &[(&str, &str)] = &[
 +    ("3D Channel", "Канал 3D"),
 +    ("Audio", "Звук"),
@@ -384,7 +386,7 @@ diff --git a/crates/ui-egui/src/i18n/effects.rs b/crates/ui-egui/src/i18n/effect
  #[cfg(test)]
  mod tests {
      use super::*;
-@@ -2313,7 +2660,7 @@
+@@ -2313,7 +2662,7 @@
      const COMPLETE: &[(&str, &[Row])] = &[("zh-hans", SIMPLIFIED_CHINESE), ("zh-hant", TRADITIONAL_CHINESE)];
  
      /// The languages whose tables are being filled in: guarded row by row.
@@ -393,7 +395,7 @@ diff --git a/crates/ui-egui/src/i18n/effects.rs b/crates/ui-egui/src/i18n/effect
  
      /// A partial language may lag Simplified Chinese but may not invent ids or disagree about
      /// which effect an id names: a translator fills these tables row by row.
-@@ -2348,6 +2695,7 @@
+@@ -2348,6 +2697,7 @@
              ("ka", GEORGIAN_CATEGORIES),
              ("sv", SWEDISH_CATEGORIES),
              ("fr", FRENCH_CATEGORIES),
@@ -445,7 +447,7 @@ diff --git a/crates/ui-egui/src/i18n/ui.rs b/crates/ui-egui/src/i18n/ui.rs
          // Georgian also reads its own rows for text the other catalogs don't have yet.
          "ka" => return Some(KA.get_or_init(|| GEORGIAN.iter().chain(GEORGIAN_PANELS).copied().collect())),
          "sv" => (&SV, SWEDISH),
-@@ -10401,6 +10405,1217 @@
+@@ -10401,6 +10405,1218 @@
      ("Close font search", "Fermer la recherche de polices"),
  ];
  
@@ -455,6 +457,7 @@ diff --git a/crates/ui-egui/src/i18n/ui.rs b/crates/ui-egui/src/i18n/ui.rs
 +/// department glossary. Names of products and technical tokens stay in the original
 +/// Latin spelling. The rows were written from the English meaning; they do not come
 +/// from another application's interface.
++// Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
 +const RUSSIAN: &[(&str, &str)] = &[
 +    ("Views:", "Виды:"),
 +    ("Appearance Settings…", "Параметры оформления…"),
@@ -512,9 +515,9 @@ diff --git a/crates/ui-egui/src/i18n/ui.rs b/crates/ui-egui/src/i18n/ui.rs
 +    ("Caching frames", "Кэширование кадров"),
 +    ("Cancel", "Отмена"),
 +    ("Import Adobe After Effects Project", "Импорт проекта Adobe After Effects"),
-+    ("Import Anyway", "Импортировать все равно"),
++    ("Import Anyway", "Импортировать всё равно"),
 +    ("{}: {} left out or changed", "{}: {} пропущено или изменено"),
-+    ("… and {} more", "… и еще {}"),
++    ("… and {} more", "… и ещё {}"),
 +    ("Casts Shadows", "Отбрасывает тени"),
 +    ("Change Renderer…", "Сменить визуализатор…"),
 +    ("Channel", "Канал"),
@@ -524,13 +527,13 @@ diff --git a/crates/ui-egui/src/i18n/ui.rs b/crates/ui-egui/src/i18n/ui.rs
 +    ("Classic 3D", "Классический 3D"),
 +    ("Clear", "Очистить"),
 +    ("Clear list", "Очистить список"),
-+    ("Click a key to see its commands.", "Нажмите клавишу, чтобы увидеть ее команды."),
++    ("Click a key to see its commands.", "Нажмите клавишу, чтобы увидеть её команды."),
 +    ("Click adds a point (½ height = no change)", "Щелчок добавляет точку (½ высоты = без изменений)"),
-+    ("Click adds a point; drag one off to remove", "Щелчок добавляет точку; перетащите ее за пределы, чтобы удалить"),
-+    ("Click to make this viewer active", "Щелкните, чтобы сделать этот просмотр активным"),
-+    ("Click to reveal the expression in the timeline", "Щелкните, чтобы показать выражение на шкале времени"),
-+    ("Click to show the active composition here", "Щелкните, чтобы показать здесь активную композицию"),
-+    ("Click, then click in the Composition panel", "Щелкните, затем щелкните на панели «Композиция»"),
++    ("Click adds a point; drag one off to remove", "Щелчок добавляет точку; перетащите её за пределы, чтобы удалить"),
++    ("Click to make this viewer active", "Щёлкните, чтобы сделать этот просмотр активным"),
++    ("Click to reveal the expression in the timeline", "Щёлкните, чтобы показать выражение на шкале времени"),
++    ("Click to show the active composition here", "Щёлкните, чтобы показать здесь активную композицию"),
++    ("Click, then click in the Composition panel", "Щёлкните, затем щёлкните на панели «Композиция»"),
 +    ("Clone Options", "Параметры клонирования"),
 +    ("Clone Source Overlay:", "Наложение источника клонирования:"),
 +    ("Close", "Закрыть"),
@@ -555,8 +558,8 @@ diff --git a/crates/ui-egui/src/i18n/ui.rs b/crates/ui-egui/src/i18n/ui.rs
 +    ("Continuous (Lock Outgoing to Incoming)", "Непрерывный (исходящий равен входящему)"),
 +    ("Cue Point", "Точка метки"),
 +    ("Current Render", "Текущая визуализация"),
-+    ("Dark", "Темное"),
-+    ("Dark Theme", "Темная тема"),
++    ("Dark", "Тёмное"),
++    ("Dark Theme", "Тёмная тема"),
 +    ("Darker", "Темнее"),
 +    ("Default Output:", "Вывод по умолчанию:"),
 +    ("Default: {}", "По умолчанию: {}"),
@@ -570,9 +573,9 @@ diff --git a/crates/ui-egui/src/i18n/ui.rs b/crates/ui-egui/src/i18n/ui.rs
 +    ("Distribute Layers:", "Распределить слои:"),
 +    ("Don't Recover", "Не восстанавливать"),
 +    ("Don't Save", "Не сохранять"),
-+    ("Double-click a layer to open it in the Layer panel", "Дважды щелкните слой, чтобы открыть его на панели «Слой»"),
-+    ("Double-click footage in the Project panel to open it here", "Дважды щелкните материал на панели «Проект», чтобы открыть его здесь"),
-+    ("Double-click to edit the comment", "Дважды щелкните, чтобы изменить комментарий"),
++    ("Double-click a layer to open it in the Layer panel", "Дважды щёлкните слой, чтобы открыть его на панели «Слой»"),
++    ("Double-click footage in the Project panel to open it here", "Дважды щёлкните материал на панели «Проект», чтобы открыть его здесь"),
++    ("Double-click to edit the comment", "Дважды щёлкните, чтобы изменить комментарий"),
 +    ("Download", "Скачать"),
 +    ("Drag to change", "Перетащите, чтобы изменить"),
 +    ("Drag to create a guide", "Перетащите, чтобы создать направляющую"),
@@ -601,7 +604,7 @@ diff --git a/crates/ui-egui/src/i18n/ui.rs b/crates/ui-egui/src/i18n/ui.rs
 +    ("Expression Language Menu", "Меню языка выражений"),
 +    ("Expression pick whip: drag onto a property", "Указатель выражения: перетащите на свойство"),
 +    ("Expression:", "Выражение:"),
-+    ("Eyedropper: click, then click in the Composition panel", "Пипетка: щелкните, затем щелкните на панели «Композиция»"),
++    ("Eyedropper: click, then click in the Composition panel", "Пипетка: щёлкните, затем щёлкните на панели «Композиция»"),
 +    ("Falloff", "Спад"),
 +    ("Falloff Distance", "Расстояние спада"),
 +    ("Favorites", "Избранное"),
@@ -617,7 +620,7 @@ diff --git a/crates/ui-egui/src/i18n/ui.rs b/crates/ui-egui/src/i18n/ui.rs
 +    ("Frame Aspect Ratio: {}", "Соотношение сторон кадра: {}"),
 +    ("Frame Blending: {}", "Смешение кадров: {}"),
 +    ("Frame Rate:", "Частота кадров:"),
-+    ("Frame Render Time  {}ms", "Время расчета кадра  {}мс"),
++    ("Frame Render Time  {}ms", "Время расчёта кадра  {}мс"),
 +    ("Frame Target:", "Цель кадра:"),
 +    ("Freeze", "Заморозить"),
 +    ("Grab bag", "Разное"),
@@ -677,7 +680,7 @@ diff --git a/crates/ui-egui/src/i18n/ui.rs b/crates/ui-egui/src/i18n/ui.rs
 +    ("Method Used: {}    Average Error: {} pixels", "Метод: {}    Средняя ошибка: {} пикс."),
 +    ("Models folder: {}", "Папка моделей: {}"),
 +    ("Modifiers:", "Модификаторы:"),
-+    ("More", "Еще"),
++    ("More", "Ещё"),
 +    ("More ArtCraft apps", "Другие программы ArtCraft"),
 +    ("More tutorials", "Другие учебники"),
 +    ("Motion Blur", "Размытие в движении"),
@@ -715,7 +718,7 @@ diff --git a/crates/ui-egui/src/i18n/ui.rs b/crates/ui-egui/src/i18n/ui.rs
 +    ("None", "Нет"),
 +    ("Not applied: tick it in the list to add it.", "Не применено: отметьте в списке, чтобы добавить."),
 +    ("Not assigned", "Не назначено"),
-+    ("Note: Shadows are only cast from layers with Cast Shadows enabled.", "Примечание: тени отбрасывают только слои с включенным параметром «Отбрасывает тени»."),
++    ("Note: Shadows are only cast from layers with Cast Shadows enabled.", "Примечание: тени отбрасывают только слои с включённым параметром «Отбрасывает тени»."),
 +    ("Notify", "Уведомлять"),
 +    ("OK", "ОК"),
 +    ("Offset:", "Смещение:"),
@@ -726,11 +729,11 @@ diff --git a/crates/ui-egui/src/i18n/ui.rs b/crates/ui-egui/src/i18n/ui.rs
 +    ("used once", "использовано один раз"),
 +    ("used {} times", "использовано {} раз"),
 +    ("Compositions that use this item", "Композиции, в которых используется этот элемент"),
-+    ("Open Last Saved Project", "Открыть последний сохраненный проект"),
++    ("Open Last Saved Project", "Открыть последний сохранённый проект"),
 +    ("Open New Composition", "Открыть новую композицию"),
 +    ("Open Output", "Открыть результат"),
 +    ("Open a composition to build Essential Graphics", "Откройте композицию, чтобы собрать основную графику"),
-+    ("Open a composition to see its scopes", "Откройте композицию, чтобы увидеть ее видеоскопы"),
++    ("Open a composition to see its scopes", "Откройте композицию, чтобы увидеть её видеоскопы"),
 +    ("Open a composition to track motion.", "Откройте композицию, чтобы отследить движение."),
 +    ("Opus Tuning: {}", "Настройка Opus: {}"),
 +    ("Original Duration:", "Исходная длительность:"),
@@ -754,7 +757,7 @@ diff --git a/crates/ui-egui/src/i18n/ui.rs b/crates/ui-egui/src/i18n/ui.rs
 +    ("Project: {}", "Проект: {}"),
 +    ("Projects", "Проекты"),
 +    ("Property pick whip: drag onto a property", "Указатель свойства: перетащите на свойство"),
-+    ("Protected Region", "Защищенный участок"),
++    ("Protected Region", "Защищённый участок"),
 +    ("Proxy Use: {}", "Использование прокси: {}"),
 +    ("Push All to Comp", "Передать все в композицию"),
 +    ("RGB", "RGB"),
@@ -771,7 +774,7 @@ diff --git a/crates/ui-egui/src/i18n/ui.rs b/crates/ui-egui/src/i18n/ui.rs
 +    ("Reset Labels", "Сбросить метки"),
 +    ("Reset Preset", "Сбросить заготовку"),
 +    ("Reset to Default", "Сбросить к значениям по умолчанию"),
-+    ("Reset to Saved Layout", "Вернуть сохраненную компоновку"),
++    ("Reset to Saved Layout", "Вернуть сохранённую компоновку"),
 +    ("Resolution/Down Sample Factor Popup", "Всплывающее окно разрешения и прореживания"),
 +    ("Restore Panel Size", "Восстановить размер панели"),
 +    ("Reverse the order", "Обратить порядок"),
@@ -788,7 +791,7 @@ diff --git a/crates/ui-egui/src/i18n/ui.rs b/crates/ui-egui/src/i18n/ui.rs
 +    ("Script… (⌘/Ctrl+Enter runs)", "Скрипт… (⌘/Ctrl+Enter запускает)"),
 +    ("Search commands or shortcuts", "Поиск команд или сочетаний"),
 +    ("Select", "Выделить"),
-+    ("Select a command to change its shortcut.", "Выберите команду, чтобы изменить ее сочетание."),
++    ("Select a command to change its shortcut.", "Выберите команду, чтобы изменить её сочетание."),
 +    ("Select a layer to see its effects", "Выберите слой, чтобы увидеть его эффекты"),
 +    ("Select a layer to see its properties", "Выберите слой, чтобы увидеть его свойства"),
 +    ("({}) Selected Objects", "Выбранных объектов: ({})"),
@@ -796,7 +799,7 @@ diff --git a/crates/ui-egui/src/i18n/ui.rs b/crates/ui-egui/src/i18n/ui.rs
 +    ("Select an item in the Project panel", "Выберите элемент на панели «Проект»"),
 +    ("Select animated properties to show them in the Graph Editor", "Выберите анимированные свойства, чтобы показать их в редакторе графиков"),
 +    ("Set Ground Plane and Origin", "Задать плоскость земли и начало координат"),
-+    ("Set Paint Colors to Black and White (D)", "Цвета рисования: черный и белый (D)"),
++    ("Set Paint Colors to Black and White (D)", "Цвета рисования: чёрный и белый (D)"),
 +    ("Settings", "Настройки"),
 +    ("Settings Name:", "Имя настроек:"),
 +    ("Shadow Darkness", "Плотность тени"),
@@ -840,7 +843,7 @@ diff --git a/crates/ui-egui/src/i18n/ui.rs b/crates/ui-egui/src/i18n/ui.rs
 +    ("Template: {}\n{}", "Шаблон: {}\n{}"),
 +    ("Temporal Interpolation:", "Временная интерполяция:"),
 +    ("The Media Browser is not available here (use File ▸ Import)", "Обозреватель медиа здесь недоступен (используйте «Файл ▸ Импорт»)"),
-+    ("The OpenEXR layer shown in red, green, blue and alpha", "Слой OpenEXR, показанный в красном, зеленом, синем и альфа-каналах"),
++    ("The OpenEXR layer shown in red, green, blue and alpha", "Слой OpenEXR, показанный в красном, зелёном, синем и альфа-каналах"),
 +    ("The render queue is empty.", "Очередь визуализации пуста."),
 +    ("This ScriptUI panel has closed", "Эта панель ScriptUI закрыта"),
 +    ("This change will create a new solid for this layer.", "Это изменение создаст новый сплошной цвет для этого слоя."),
@@ -854,7 +857,7 @@ diff --git a/crates/ui-egui/src/i18n/ui.rs b/crates/ui-egui/src/i18n/ui.rs
 +    ("Track Name:", "Имя дорожки:"),
 +    ("Transform", "Трансформирование"),
 +    ("Transparency grid", "Сетка прозрачности"),
-+    ("Tutorial complete", "Учебник завершен"),
++    ("Tutorial complete", "Учебник завершён"),
 +    ("Two-Node Camera", "Камера с двумя узлами"),
 +    ("Type", "Тип"),
 +    ("Type a command or effect…", "Введите команду или эффект…"),
@@ -881,8 +884,8 @@ diff --git a/crates/ui-egui/src/i18n/ui.rs b/crates/ui-egui/src/i18n/ui.rs
 +    ("{} contributors · {} commits", "{} участников · {} коммитов"),
 +    ("{} x {}, {}MB per 8bpc frame", "{} × {}, {}МБ на кадр 8 bpc"),
 +    ("{} — coming soon", "{} — скоро"),
-+    ("{} — double-click to open, {}-click to reveal", "{} — дважды щелкните, чтобы открыть, {}-щелчок — чтобы показать"),
-+    ("⌘/Ctrl-drag a pin to record its motion", "⌘/Ctrl и перетаскивание булавки записывает ее движение"),
++    ("{} — double-click to open, {}-click to reveal", "{} — дважды щёлкните, чтобы открыть, {}-щелчок — чтобы показать"),
++    ("⌘/Ctrl-drag a pin to record its motion", "⌘/Ctrl и перетаскивание булавки записывает её движение"),
 +    ("▣ {}", "▣ {}"),
 +    ("⚠ {} is used by:", "⚠ {} используется в:"),
 +    ("3D Reference Axes", "Оси привязки 3D"),
@@ -918,7 +921,7 @@ diff --git a/crates/ui-egui/src/i18n/ui.rs b/crates/ui-egui/src/i18n/ui.rs
 +    ("Enable Per-character 3D", "Включить 3D для каждого символа"),
 +    ("Fast Draft", "Быстрое черновое"),
 +    ("Fast Previews (Draft 3D, Faster Effects)", "Быстрый просмотр (черновой 3D, более быстрые эффекты)"),
-+    ("Green", "Зеленый"),
++    ("Green", "Зелёный"),
 +    ("Import Image Sequence", "Импорт последовательности изображений"),
 +    ("Import PDF / Illustrator File", "Импорт файла PDF / Illustrator"),
 +    ("Import Photoshop File", "Импорт файла Photoshop"),
@@ -939,7 +942,7 @@ diff --git a/crates/ui-egui/src/i18n/ui.rs b/crates/ui-egui/src/i18n/ui.rs
 +    ("New Project", "Новый проект"),
 +    ("Open Project…", "Открыть проект…"),
 +    ("Templates", "Шаблоны"),
-+    ("EffectCraft home page", "Домашняя страница EffectCraft"),
++    ("EffectCraft home page", "Главная страница EffectCraft"),
 +    ("EffectCraft on GitHub", "EffectCraft на GitHub"),
 +    ("Motion graphics and visual effects · version {}", "Моушн-графика и визуальные эффекты · версия {}"),
 +    ("New Composition", "Новая композиция"),
@@ -979,7 +982,7 @@ diff --git a/crates/ui-egui/src/i18n/ui.rs b/crates/ui-egui/src/i18n/ui.rs
 +    ("Preserve Constant Vertex and Feather Point Count when Editing Masks", "Сохранять число вершин и точек растушёвки при правке масок"),
 +    ("Synchronize Time of All Related Items", "Синхронизировать время всех связанных элементов"),
 +    ("Expression Pick Whip Writes Compact English", "Указатель выражения записывает сжатый английский"),
-+    ("Create Split Layers Above Original Layer", "Создавать разделенные слои над исходным"),
++    ("Create Split Layers Above Original Layer", "Создавать разделённые слои над исходным"),
 +    ("Use System Color Picker", "Системный выбор цвета"),
 +    ("Startup & Repair", "Запуск и восстановление"),
 +    ("Show Home Screen When Launching", "Показывать главный экран при запуске"),
@@ -1091,7 +1094,7 @@ diff --git a/crates/ui-egui/src/i18n/ui.rs b/crates/ui-egui/src/i18n/ui.rs
 +    ("Disk Cache Folder", "Папка кэша на диске"),
 +    ("Media Cache", "Кэш медиа"),
 +    ("Database and Cache Folder", "Папка базы и кэша"),
-+    ("Conformed Audio Folder", "Папка приведенного звука"),
++    ("Conformed Audio Folder", "Папка приведённого звука"),
 +    ("Network Footage", "Сетевой материал"),
 +    ("Localize Network Footage", "Сохранять сетевой материал локально"),
 +    ("Maximum Local Copies Size", "Максимальный размер локальных копий"),
@@ -1106,7 +1109,7 @@ diff --git a/crates/ui-egui/src/i18n/ui.rs b/crates/ui-egui/src/i18n/ui.rs
 +    ("Memory & CPU", "Память и ЦП"),
 +    ("RAM Reserved for Other Applications", "ОЗУ, зарезервированная для других программ"),
 +    ("EffectCraft may use: {} of {}", "EffectCraft может использовать: {} из {}"),
-+    ("EffectCraft may use: {} (installed RAM unknown)", "EffectCraft может использовать: {} (объем установленной ОЗУ неизвестен)"),
++    ("EffectCraft may use: {} (installed RAM unknown)", "EffectCraft может использовать: {} (объём установленной ОЗУ неизвестен)"),
 +    ("Reduce Cache Size When System Is Low on Memory", "Уменьшать кэш при нехватке памяти в системе"),
 +    ("GPU Frames Rendered at Once", "Кадров GPU за один раз"),
 +    ("Video", "Видео"),
@@ -1147,8 +1150,8 @@ diff --git a/crates/ui-egui/src/i18n/ui.rs b/crates/ui-egui/src/i18n/ui.rs
 +    ("A built-in preset has this name", "Встроенная заготовка уже носит это имя"),
 +    ("Cannot import dropped files: {}", "Не удалось импортировать перетащенные файлы: {}"),
 +    ("Cannot open dropped project {}: {}", "Не удалось открыть перетащенный проект {}: {}"),
-+    ("Click in the Composition panel to sample text {}", "Щелкните на панели «Композиция», чтобы взять образец текста {}"),
-+    ("Click to sample text {}", "Щелкните, чтобы взять образец текста {}"),
++    ("Click in the Composition panel to sample text {}", "Щёлкните на панели «Композиция», чтобы взять образец текста {}"),
++    ("Click to sample text {}", "Щёлкните, чтобы взять образец текста {}"),
 +    ("Comment of {}: {}", "Комментарий к {}: {}"),
 +    ("Delete Preset", "Удалить заготовку"),
 +    ("Drop file to import", "Перетащите файл для импорта"),
@@ -1156,9 +1159,9 @@ diff --git a/crates/ui-egui/src/i18n/ui.rs b/crates/ui-egui/src/i18n/ui.rs
 +    ("Effects", "Эффекты"),
 +    ("Label of {}: {}", "Метка {}: {}"),
 +    ("GPU Acceleration (no GPU: software)", "Аппаратное ускорение (нет GPU: программа)"),
-+    ("Only one project can be opened per drop; skipped {} more", "За один сброс можно открыть только один проект; пропущено еще {}"),
++    ("Only one project can be opened per drop; skipped {} more", "За один сброс можно открыть только один проект; пропущено ещё {}"),
 +    ("Open in Essential Graphics", "Открыть в основной графике"),
-+    ("Original color: click to go back to it", "Исходный цвет: щелкните, чтобы вернуться к нему"),
++    ("Original color: click to go back to it", "Исходный цвет: щёлкните, чтобы вернуться к нему"),
 +    ("Project color depth: {}", "Глубина цвета проекта: {}"),
 +    ("Replaces your preset with this name", "Заменит вашу заготовку с этим именем"),
 +    ("Resize floating panel", "Изменить размер плавающей панели"),
@@ -1179,7 +1182,7 @@ diff --git a/crates/ui-egui/src/i18n/ui.rs b/crates/ui-egui/src/i18n/ui.rs
 +    ("Close font search", "Закрыть поиск шрифтов"),
 +    ("Search project", "Поиск по проекту"),
 +    ("Update check is not supported in the web browser.", "Проверка обновлений в браузере не поддерживается."),
-+    ("Click to sample color", "Щелкните, чтобы взять образец цвета"),
++    ("Click to sample color", "Щёлкните, чтобы взять образец цвета"),
 +    ("Advanced", "Дополнительно"),
 +    ("Rescan Fonts", "Пересканировать шрифты"),
 +    ("Track Matte pick whip: drag onto a layer", "Указатель трек-маски: перетащите на слой"),
@@ -1193,7 +1196,7 @@ diff --git a/crates/ui-egui/src/i18n/ui.rs b/crates/ui-egui/src/i18n/ui.rs
 +    ("Rotation Tool", "Инструмент «Поворот»"),
 +    ("Pan Behind (Anchor Point) Tool", "Инструмент «Панорама за опорой»"),
 +    ("Rectangle Tool", "Инструмент «Прямоугольник»"),
-+    ("Rounded Rectangle Tool", "Инструмент «Скругленный прямоугольник»"),
++    ("Rounded Rectangle Tool", "Инструмент «Скруглённый прямоугольник»"),
 +    ("Ellipse Tool", "Инструмент «Эллипс»"),
 +    ("Polygon Tool", "Инструмент «Многоугольник»"),
 +    ("Star Tool", "Инструмент «Звезда»"),
@@ -1246,7 +1249,7 @@ diff --git a/crates/ui-egui/src/i18n/ui.rs b/crates/ui-egui/src/i18n/ui.rs
 +    ("Square Pixels", "Квадратные пиксели"),
 +    ("Basic", "Основные"),
 +    ("3D Renderer", "Визуализатор 3D"),
-+    ("Black", "Черный"),
++    ("Black", "Чёрный"),
 +    ("White", "Белый"),
 +    ("Composition Settings", "Параметры композиции"),
 +    ("Force alphabetical order", "Принудительно по алфавиту"),
@@ -1394,7 +1397,7 @@ diff --git a/crates/ui-egui/src/i18n/ui.rs b/crates/ui-egui/src/i18n/ui.rs
 +    ("ScriptUI Panel", "Панель ScriptUI"),
 +    ("Video Scopes", "Видеоскопы"),
 +    ("Media Browser", "Обозреватель медиа"),
-+    ("Content-Aware Fill", "Заливка с учетом содержимого"),
++    ("Content-Aware Fill", "Заливка с учётом содержимого"),
 +    ("Create Nulls From Paths", "Создание нулевых объектов из контуров"),
 +    ("VR Comp Editor", "Редактор VR-композиций"),
 +    ("Media Duration", "Длительность медиа"),
@@ -1517,7 +1520,7 @@ diff --git a/crates/ui-egui/src/i18n/ui.rs b/crates/ui-egui/src/i18n/ui.rs
 +    ("Create Text and Camera", "Создать текст и камеру"),
 +    ("Create Solid and Camera", "Создать сплошной цвет и камеру"),
 +    ("Create Null and Camera", "Создать нулевой объект и камеру"),
-+    ("Create Shadow Catcher, Camera and Light", "Создать приемник теней, камеру и свет"),
++    ("Create Shadow Catcher, Camera and Light", "Создать приёмник теней, камеру и свет"),
 +    ("Unable to solve camera", "Не удалось решить камеру"),
 +    ("Waiting to solve", "Ожидание решения"),
 +    ("track point", "точка трекинга"),
@@ -1537,8 +1540,8 @@ diff --git a/crates/ui-egui/src/i18n/ui.rs b/crates/ui-egui/src/i18n/ui.rs
 +    ("Text Animation Presets", "Текстовые заготовки анимации"),
 +    ("EffectCraft on getartcraft.com", "EffectCraft на getartcraft.com"),
 +    ("Small Screen", "Малый экран"),
-+    ("Tool Creates Shape", "Инструмент создает фигуру"),
-+    ("Tool Creates Mask", "Инструмент создает маску"),
++    ("Tool Creates Shape", "Инструмент создаёт фигуру"),
++    ("Tool Creates Mask", "Инструмент создаёт маску"),
 +    ("Blend Mode", "Режим наложения"),
 +    ("Show mesh", "Показать сетку"),
 +    ("Record Options...", "Параметры записи..."),
@@ -1564,7 +1567,7 @@ diff --git a/crates/ui-egui/src/i18n/ui.rs b/crates/ui-egui/src/i18n/ui.rs
 +    ("Workspace", "Рабочая среда"),
 +    ("Rename to", "Переименовать в"),
 +    ("Open", "Открыть"),
-+    ("Custom Resolution", "Свое разрешение"),
++    ("Custom Resolution", "Своё разрешение"),
 +    ("Panel Background Color", "Цвет фона панели"),
 +    ("New Workspace", "Новая рабочая среда"),
 +    ("Edit Workspaces", "Правка рабочих сред"),
@@ -1651,12 +1654,12 @@ diff --git a/crates/ui-egui/src/i18n/ui.rs b/crates/ui-egui/src/i18n/ui.rs
 +    ("Available", "Доступные"),
 +    ("Missing", "Отсутствующие"),
 +    ("Filter by footage status", "Фильтр по состоянию материала"),
-+    ("Changing a shortcut creates a custom preset; the default stays as it is.", "Изменение сочетания создает свою заготовку; исходная остается без изменений."),
-+    ("Click above the bar to add an opacity stop, below it to add a color stop.", "Щелкните над полосой, чтобы добавить ограничитель непрозрачности, под ней — ограничитель цвета."),
++    ("Changing a shortcut creates a custom preset; the default stays as it is.", "Изменение сочетания создаёт свою заготовку; исходная остаётся без изменений."),
++    ("Click above the bar to add an opacity stop, below it to add a color stop.", "Щёлкните над полосой, чтобы добавить ограничитель непрозрачности, под ней — ограничитель цвета."),
 +    ("No VR environments yet. Create one with Composition ▸ VR ▸ Create VR Environment…", "Сред VR пока нет. Создайте среду командой «Композиция ▸ VR ▸ Создать среду VR…»"),
 +    ("Trained models are available in the desktop app; the browser uses the classic engine.", "Обученные модели доступны в программе для компьютера; в браузере используется классический движок."),
-+    ("Click the ring to add a colour; Alt-click a stop (or drag it off) to remove it", "Щелкните кольцо, чтобы добавить цвет; Alt-щелчок по ограничителю (или перетаскивание за пределы) удаляет его"),
-+    ("Start from a ready-made project. Opening a template makes an untitled copy.", "Начните с готового проекта. Открытие шаблона создает копию без названия."),
++    ("Click the ring to add a colour; Alt-click a stop (or drag it off) to remove it", "Щёлкните кольцо, чтобы добавить цвет; Alt-щелчок по ограничителю (или перетаскивание за пределы) удаляет его"),
++    ("Start from a ready-made project. Opening a template makes an untitled copy.", "Начните с готового проекта. Открытие шаблона создаёт копию без названия."),
 +    ("Auto-Select Graph Type (speed graph for spatial properties, else value graph)", "Автовыбор типа графика (график скорости для пространственных свойств, иначе график значений)"),
 +];
 +
@@ -1667,7 +1670,8 @@ diff --git a/crates/ui-egui/src/i18n/ui.rs b/crates/ui-egui/src/i18n/ui.rs
 diff --git a/packaging/linux/ai.storyteller.effectcraft.desktop b/packaging/linux/ai.storyteller.effectcraft.desktop
 --- a/packaging/linux/ai.storyteller.effectcraft.desktop
 +++ b/packaging/linux/ai.storyteller.effectcraft.desktop
-@@ -1,8 +1,12 @@
+@@ -1,8 +1,13 @@
++# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
 +# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
  [Desktop Entry]
  Type=Application
@@ -1680,7 +1684,7 @@ diff --git a/packaging/linux/ai.storyteller.effectcraft.desktop b/packaging/linu
  Exec=effectcraft %F
  TryExec=effectcraft
  Icon=ai.storyteller.effectcraft
-@@ -11,3 +15,4 @@
+@@ -11,3 +16,4 @@
  StartupWMClass=ai.storyteller.effectcraft
  Categories=AudioVideo;Video;Graphics;2DGraphics;
  Keywords=motion;graphics;animation;compositor;effects;keyframe;vfx;
@@ -1689,13 +1693,14 @@ diff --git a/packaging/linux/ai.storyteller.effectcraft.desktop b/packaging/linu
 diff --git a/packaging/linux/ai.storyteller.effectcraft.metainfo.xml.in b/packaging/linux/ai.storyteller.effectcraft.metainfo.xml.in
 --- a/packaging/linux/ai.storyteller.effectcraft.metainfo.xml.in
 +++ b/packaging/linux/ai.storyteller.effectcraft.metainfo.xml.in
-@@ -1,4 +1,5 @@
+@@ -1,4 +1,6 @@
  <?xml version="1.0" encoding="UTF-8"?>
++<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
 +<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
  <!-- AppStream metadata (software centres, Flathub). Template: package.sh and the Flatpak
       manifest substitute @VERSION@ and @DATE@ from Cargo.toml and the build date. -->
  <component type="desktop-application">
-@@ -7,6 +8,7 @@
+@@ -7,6 +9,7 @@
    <project_license>MIT OR Apache-2.0</project_license>
    <name>EffectCraft</name>
    <summary>Motion graphics and visual effects compositor</summary>
@@ -1703,7 +1708,7 @@ diff --git a/packaging/linux/ai.storyteller.effectcraft.metainfo.xml.in b/packag
    <developer id="ai.storyteller">
      <name>Learning Machines LLC</name>
    </developer>
-@@ -16,6 +18,12 @@
+@@ -16,6 +19,12 @@
        keyframes and a graph editor, masks and shapes, text animators, expressions, 3D cameras and
        lights, over 300 effects and a render queue, with GPU compositing.
      </p>
@@ -1716,7 +1721,7 @@ diff --git a/packaging/linux/ai.storyteller.effectcraft.metainfo.xml.in b/packag
    </description>
    <launchable type="desktop-id">ai.storyteller.effectcraft.desktop</launchable>
    <icon type="stock">ai.storyteller.effectcraft</icon>
-@@ -31,13 +39,18 @@
+@@ -31,13 +40,18 @@
    </categories>
    <keywords>
      <keyword>photo</keyword>

@@ -1,4 +1,5 @@
 // Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
+// Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
 /// Returns the Russian translation for a source-language UI string.
 pub(super) fn translate(source: &str) -> Option<&'static str> {
     Some(match source {
@@ -71,14 +72,14 @@ pub(super) fn translate(source: &str) -> Option<&'static str> {
         "Clear" => "Очистить",
         "Clear Recent" => "Очистить список недавних",
         "Clear…" => "Очистить…",
-        "Click" => "Щёлчок",
+        "Click" => "Щелчок",
         "Click a take (or the selection) to promote it to the main playlist" => {
             "Нажмите дубль (или выделение), чтобы сделать его основным плейлистом"
         }
         "Click keys to step-enter notes into the selected MIDI clip at the insertion point." => {
             "Нажимайте клавиши, чтобы пошагово вводить ноты в выбранный MIDI-клип в точке вставки."
         }
-        "Click: open instrument · right-click: change" => "Щёлчок: открыть инструмент · правая кнопка: сменить",
+        "Click: open instrument · right-click: change" => "Щелчок: открыть инструмент · правая кнопка: сменить",
         "Clip effects gain (dB)" => "Усиление эффектов клипа (дБ)",
         "Clip end pad ms" => "Отступ в конце клипа, мс",
         "Clip start pad ms" => "Отступ в начале клипа, мс",
@@ -330,7 +331,7 @@ pub(super) fn translate(source: &str) -> Option<&'static str> {
         "no instrument" => "нет инструмента",
         "Search inputs…" => "Искать входы…",
         "Search outputs…" => "Искать выходы…",
-        "Zoom preset (click to recall, Cmd-click to store)" => "Пресет масштаба (щёлчок — вызвать, Cmd-щёлчок — сохранить)",
+        "Zoom preset (click to recall, Cmd-click to store)" => "Пресет масштаба (щелчок — вызвать, Cmd-щелчок — сохранить)",
         "Commands Keyboard Focus (single-key editing)" => "Фокус клавиатуры на командах (правка одной клавишей)",
         "16-bit" => "16 бит",
         "24-bit" => "24 бит",
@@ -422,7 +423,7 @@ fn menu_translate(source: &str) -> Option<&'static str> {
         "Clear All Clip Indicators" => "Сбросить все индикаторы клипов",
         "Clear Special" => "Очистить особое",
         "Clear Trim Automation" => "Очистить автоматизацию подстройки",
-        "Click/Countoff..." => "Щёлчок/отсчёт...",
+        "Click/Countoff..." => "Щелчок/отсчёт...",
         "Clip" => "Клип",
         "Clip Effects" => "Эффекты клипа",
         "Clip Effects Status" => "Состояние эффектов клипа",
@@ -839,7 +840,7 @@ fn menu_translate(source: &str) -> Option<&'static str> {
         "Score title" => "Название партитуры",
         "Send level" => "Уровень посыла",
         "Surround pan: drag the puck · double-click: front centre · Alt-drag: divergence" => {
-            "Панорама окружения: перетащите точку · двойной щёлчок: центр фронта · Alt-перетаскивание: дивергенция"
+            "Панорама окружения: перетащите точку · двойной щелчок: центр фронта · Alt-перетаскивание: дивергенция"
         }
         "Tempo (BPM)" => "Темп (BPM)",
         "Ticks" => "Тики",
@@ -1503,7 +1504,7 @@ fn menu_translate(source: &str) -> Option<&'static str> {
         "SigGen" => "ГенСигн",
         "Size" => "Размер",
         "Snare Decay" => "Спад рабочего",
-        "Snare Snappy" => "Щёлчок рабочего",
+        "Snare Snappy" => "Щелчок рабочего",
         "Snare Tune" => "Строй рабочего",
         "Spread" => "Ширина",
         "Strip" => "Линейка",
@@ -1741,9 +1742,9 @@ fn menu_translate(source: &str) -> Option<&'static str> {
         "Display Waveforms in Low Resolution While Loading" => "Показывать формы волны в низком разрешении во время загрузки",
         "Docked MIDI Editor" => "Закреплённый MIDI-редактор",
         "Do Not Convert Sample Rate on Import" => "Не преобразовывать частоту дискретизации при импорте",
-        "Double-Clicking a MIDI Clip Opens" => "Двойной щёлчок по MIDI-клипу открывает",
-        "Double-Clicking an Audio Clip Opens" => "Двойной щёлчок по аудиоклипу открывает",
-        "Double-Click Selects Automation Breakpoints" => "Двойной щёлчок выделяет точки автоматизации",
+        "Double-Clicking a MIDI Clip Opens" => "Двойной щелчок по MIDI-клипу открывает",
+        "Double-Clicking an Audio Clip Opens" => "Двойной щелчок по аудиоклипу открывает",
+        "Double-Click Selects Automation Breakpoints" => "Двойной щелчок выделяет точки автоматизации",
         "Downmix to Surrounds" => "Даунмикс в окружение",
         "DSP Management" => "Управление DSP",
         "Dynamic Transport Follows Selection During Playback" => "Динамический транспорт следует за выделением во время воспроизведения",
@@ -1771,13 +1772,13 @@ fn menu_translate(source: &str) -> Option<&'static str> {
         "SHUFFLE" => "ПЕРЕСТАНОВКА",
         "SLIP" => "СКОЛЬЖЕНИЕ",
         "SPOT" => "ПРИВЯЗКА",
-        "Shuffle is locked ({cmd}-click to unlock)" => "Перестановка заблокирована ({cmd}-щёлчок, чтобы разблокировать)",
-        "Shuffle mode ({fkey}); {cmd}-click locks it out" => "Режим перестановки ({fkey}); {cmd}-щёлчок блокирует его",
+        "Shuffle is locked ({cmd}-click to unlock)" => "Перестановка заблокирована ({cmd}-щелчок, чтобы разблокировать)",
+        "Shuffle mode ({fkey}); {cmd}-click locks it out" => "Режим перестановки ({fkey}); {cmd}-щелчок блокирует его",
         "Grid mode ({fkey}; again for Relative); Shift-click: Snap to Grid in the other modes" => {
-            "Режим сетки ({fkey}; ещё раз — относительная); Shift-щёлчок: привязка к сетке в других режимах"
+            "Режим сетки ({fkey}; ещё раз — относительная); Shift-щелчок: привязка к сетке в других режимах"
         }
-        "Slip mode ({fkey}); Shift-click adds Snap to Grid" => "Режим скольжения ({fkey}); Shift-щёлчок включает привязку к сетке",
-        "Spot mode ({fkey}); Shift-click adds Snap to Grid" => "Режим привязки ({fkey}); Shift-щёлчок включает привязку к сетке",
+        "Slip mode ({fkey}); Shift-click adds Snap to Grid" => "Режим скольжения ({fkey}); Shift-щелчок включает привязку к сетке",
+        "Spot mode ({fkey}); Shift-click adds Snap to Grid" => "Режим привязки ({fkey}); Shift-щелчок включает привязку к сетке",
         "New Tracks… ({})" => "Новые дорожки… ({})",
         "EQ and Dynamics Cycling Starts at Insert" => "Перебор EQ и динамики начинается со вставки",
         "Expander/Gate Only" => "Только экспандер/гейт",
@@ -2049,7 +2050,7 @@ fn menu_translate(source: &str) -> Option<&'static str> {
         "{n} ch" => "{n} кан.",
         "{b}-bit" => "{b} бит",
         "Send {which} to {name}: {db} dB\nClick for the send fader · drag vertically to adjust · Shift-drag for fine control · Alt-click for 0 dB · right-click for options" => {
-            "Посыл {which} на {name}: {db} дБ\nЩёлчок — фейдер посыла · перетащите вертикально для настройки · Shift-перетаскивание — тонкая настройка · Alt-щёлчок — 0 дБ · правая кнопка — параметры"
+            "Посыл {which} на {name}: {db} дБ\nЩелчок — фейдер посыла · перетащите вертикально для настройки · Shift-перетаскивание — тонкая настройка · Alt-щелчок — 0 дБ · правая кнопка — параметры"
         }
         "1 {what}" => "1 {what}",
         "{n} {what}s" => "{n} {what}s",
