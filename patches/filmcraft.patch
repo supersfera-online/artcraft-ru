@@ -1,0 +1,95 @@
+# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
+#
+# Russian Linux packaging (.desktop / AppStream / MIME) for storytold/filmcraft
+# Upstream: https://github.com/storytold/filmcraft
+# Base (origin merge-base): 960a661001767a887dc4402c51e24f0436176705
+# Snapshot: 2026-11-20 11:25 PST
+# This patch is a draft localization contribution by SuperSfera LLC.
+#
+diff --git a/packaging/linux/ai.storyteller.filmcraft.desktop b/packaging/linux/ai.storyteller.filmcraft.desktop
+--- a/packaging/linux/ai.storyteller.filmcraft.desktop
++++ b/packaging/linux/ai.storyteller.filmcraft.desktop
+@@ -1,8 +1,12 @@
++# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
+ [Desktop Entry]
+ Type=Application
+ Name=FilmCraft
++Name[ru]=FilmCraft
+ GenericName=Video Editor
++GenericName[ru]=Видеоредактор
+ Comment=Edit video, color and sound
++Comment[ru]=Монтаж видео, работа с цветом и звуком
+ Exec=filmcraft %F
+ TryExec=filmcraft
+ Icon=ai.storyteller.filmcraft
+@@ -12,3 +16,4 @@
+ Categories=AudioVideo;Video;AudioVideoEditing;
+ MimeType=application/x-filmcraft;video/mp4;video/x-m4v;video/quicktime;video/x-matroska;video/webm;video/vnd.avi;video/x-msvideo;application/mxf;video/mp2t;video/mpeg;video/3gpp;
+ Keywords=video;editor;film;timeline;color;grading;nle;
++Keywords[ru]=видео;видеоредактор;монтаж;фильм;таймлайн;цвет;цветокоррекция;грейдинг;nle;
+
+diff --git a/packaging/linux/ai.storyteller.filmcraft.metainfo.xml.in b/packaging/linux/ai.storyteller.filmcraft.metainfo.xml.in
+--- a/packaging/linux/ai.storyteller.filmcraft.metainfo.xml.in
++++ b/packaging/linux/ai.storyteller.filmcraft.metainfo.xml.in
+@@ -1,4 +1,5 @@
+ <?xml version="1.0" encoding="UTF-8"?>
++<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
+ <!-- AppStream metadata (software centres, Flathub). Template: package.sh and the Flatpak
+      manifest substitute @VERSION@ and @DATE@ from Cargo.toml and the build date. -->
+ <component type="desktop-application">
+@@ -7,6 +8,7 @@
+   <project_license>MIT OR Apache-2.0</project_license>
+   <name>FilmCraft</name>
+   <summary>Edit video, color and sound</summary>
++  <summary xml:lang="ru">Монтаж видео, работа с цветом и звуком</summary>
+   <developer id="ai.storyteller">
+     <name>Learning Machines LLC</name>
+   </developer>
+@@ -14,6 +16,9 @@
+     <p>
+       FilmCraft is a video editor. Edit video, color and sound
+     </p>
++    <p xml:lang="ru">
++      FilmCraft — видеоредактор. Монтаж видео, работа с цветом и звуком
++    </p>
+   </description>
+   <launchable type="desktop-id">ai.storyteller.filmcraft.desktop</launchable>
+   <icon type="stock">ai.storyteller.filmcraft</icon>
+@@ -29,14 +34,20 @@
+   </categories>
+   <keywords>
+     <keyword>video</keyword>
++    <keyword xml:lang="ru">видео</keyword>
+     <keyword>video editor</keyword>
++    <keyword xml:lang="ru">видеоредактор</keyword>
+     <keyword>timeline</keyword>
++    <keyword xml:lang="ru">таймлайн</keyword>
+     <keyword>color grading</keyword>
++    <keyword xml:lang="ru">цветокоррекция</keyword>
+     <keyword>nle</keyword>
++    <keyword xml:lang="ru">nle</keyword>
+   </keywords>
+   <screenshots>
+     <screenshot type="default">
+       <caption>Color workspace: a documentary cut with Color Grading, scopes, captions and loudness meters</caption>
++      <caption xml:lang="ru">Рабочая среда «Цвет»: монтаж документального фильма с грейдингом, видеоскопами, субтитрами и измерителями громкости</caption>
+       <image>https://raw.githubusercontent.com/storytold/filmcraft/main/docs/images/filmcraft-hero.png</image>
+     </screenshot>
+   </screenshots>
+
+diff --git a/packaging/linux/ai.storyteller.filmcraft.mime.xml b/packaging/linux/ai.storyteller.filmcraft.mime.xml
+--- a/packaging/linux/ai.storyteller.filmcraft.mime.xml
++++ b/packaging/linux/ai.storyteller.filmcraft.mime.xml
+@@ -1,10 +1,12 @@
+ <?xml version="1.0" encoding="UTF-8"?>
++<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
+ <!-- shared-mime-info definitions for types the system database doesn't have.
+      Installed to /usr/share/mime/packages/ (update-mime-database runs on install).
+      The type name matches the macOS UTI's public.mime-type in packaging/macos/Info.plist.in. -->
+ <mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+   <mime-type type="application/x-filmcraft">
+     <comment>FilmCraft project</comment>
++    <comment xml:lang="ru">Проект FilmCraft</comment>
+     <sub-class-of type="application/json"/>
+     <icon name="ai.storyteller.filmcraft"/>
+     <glob pattern="*.fcproj"/>
