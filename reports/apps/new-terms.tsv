@@ -1,0 +1,25 @@
+# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
+en	ru	где_встречается	пометка
+Preset	пресет	soundcraft	смысл DAW (сохранённые настройки плагина/дорожки); в глоссарии Preset = «Набор» (дизайн). Нужна сверка.
+Track	дорожка	soundcraft	аудио/MIDI-дорожка сессии
+Clip	клип	soundcraft	аудио- или MIDI-клип на таймлайне (не глагол «обрезать»)
+Session	сессия	soundcraft	проект DAW (как в Pro Tools)
+Playlist	плейлист	soundcraft	плейлист дорожки / дубли
+Bus	шина	soundcraft	аудиошина
+Send	посыл	soundcraft	посыл на шину (не «отправить»)
+Insert	вставка	soundcraft	слот эффекта на канале
+Velocity	велосити	soundcraft	динамики MIDI-ноты
+Bounce	свести	soundcraft	команда сведения/экспорта микса
+Automation	автоматизация	soundcraft	запись изменений параметров
+Nudge	сдвиг	soundcraft	шаг сдвига клипов/нот
+Meter	размер	soundcraft	музыкальный размер (не индикатор уровня; для индикаторов в каталоге — «индикатор»)
+Tempo	темп	soundcraft	темп сессии
+Bar	такт	soundcraft	такт
+Beat	доля	soundcraft	доля такта
+Pan	панорама	soundcraft	регулятор панорамы; в filmcraft «Панорамирование»
+Take	дубль	soundcraft	запись-дубль
+Memory location	ячейка памяти	soundcraft	сохранённая позиция/маркер
+Quantize	квантизация	soundcraft	выравнивание по сетке
+Fade	фейд / нарастание / затухание	soundcraft	нарастание = fade in, затухание = fade out; перекрёстное затухание как в filmcraft
+Elastic Audio	эластичное аудио	soundcraft	варп/эластичное время
+Bed	Bed	soundcraft	слой Bed в иммерсивном миксе (Atmos); оставлено как Bed
