@@ -1,4 +1,5 @@
 # Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
+<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
 <!--
 Источник: https://github.com/tangency-labs/fieldcraft/blob/main/README.md
 Репозиторий: https://github.com/tangency-labs/fieldcraft
