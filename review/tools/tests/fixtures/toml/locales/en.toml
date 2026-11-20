@@ -1,0 +1,9 @@
+# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
+[meta]
+name = "English"
+
+[ui]
+"Save" = "Save"
+"Export {n} layers" = { one = "Export {n} layer", other = "Export {n} layers" }
+"Delete {n} items" = { one = "Delete {n} item", other = "Delete {n} items" }
+"Missing" = "Missing"

@@ -1,0 +1,12 @@
+# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
+[meta]
+name = "Русский"
+
+[ui]
+"Save" = "Сохранить"
+"Export {n} layers" = { one = "Экспортировать {n} слой", few = "Экспортировать {n} слоя", many = "Экспортировать {n} слоёв", other = "Экспортировать {n} слоя" }
+"Delete {n} items" = { one = "Удалить {n} элемент", other = "Удалить элементы" }
+"Stale" = "Старое"
+
+[commands]
+"align.left" = "Выровнять по левому краю"
