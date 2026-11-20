@@ -5,7 +5,7 @@
 
 - Репозиторий: https://github.com/storytold/cadcraft [проверено: git clone --depth 1]
 - Коммит источника (main): `1d92bb275c756fcb1f068fea1ec478d50c3cbb14` от 2026-11-20 09:11 PT [проверено: git log]
-- Локальный клон: `packaging/src/cadcraft/`, ветка `l10n-ru-packaging` (1 коммит(а), автор `отдел локализации <local@localhost>`, без remote-ветки) [проверено]
+- Локальный клон: `packaging/src/cadcraft/`, ветка `l10n-ru-packaging` (1 коммит(а), автор `отдел локализации <users.noreply.github.com>`, без remote-ветки) [проверено]
 - Изменения: 3 files changed, 18 insertions(+) [проверено: git diff --shortstat]
 
 ## Файлы (итоговый вид в `files/`)
@@ -20,7 +20,7 @@
 - Авторы не используют itstool/gettext для metainfo (шаблон .in подставляет только @VERSION@/@DATE@ через sed) — встроенный xml:lang уместен [проверено: package.sh, git grep itstool/msgfmt].
 
 ## Валидация (ветка l10n-ru-packaging; @VERSION@/@DATE@ подставлены как в package.sh)
-Инструменты: desktop-file-validate (системный), appstreamcli 1.0.5 `validate --no-net --pedantic` (распакован без sudo из .deb в tools-local), python xml.dom.minidom + lxml для mime. xmllint в рабочей копии нет.
+Инструменты: desktop-file-validate (системный), appstreamcli 1.0.5 `validate --no-net --pedantic` (распакован без sudo из .deb в tools-local), python xml.dom.minidom + lxml для mime. xmllint на box нет.
     desktop-file-validate ai.storyteller.cadcraft.desktop rc=0 /tmp/l10nval.sIr3/ai.storyteller.cadcraft.desktop: hint: value item "VectorGraphics" in key "Categories" in group "Desktop Entry" can be extended with another category among the following categories: Graphics;2DGraphics
     appstreamcli ai.storyteller.cadcraft.metainfo.xml.in rc=0 
     xmlparse ai.storyteller.cadcraft.metainfo.xml.in OK
@@ -47,3 +47,19 @@
 ## Патч
 `cadcraft.patch` (git format-patch main..l10n-ru-packaging), копия в `../patches/cadcraft.patch`.
 Команда: `git -C packaging/src/cadcraft diff main..l10n-ru-packaging --stat`
+
+## Авторство перевода (20.11.2026, дополнение)
+
+Правила из `RULES-AUTHORSHIP.md` применены к уже сделанному черновику. История не переписывалась. [проверено]
+
+- Ветка по-прежнему `l10n-ru-packaging`. Новый коммит на кончике: `838d3bb supersfera-online <users.noreply.github.com>`.
+- Во все наши переводные `.desktop` / metainfo / mime (где есть русский) добавлен комментарий `Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0`: в `.desktop` — первой строкой, до `[Desktop Entry]`; в XML — сразу после `<?xml ...?>`, авторский комментарий про AppStream оставлен следующим, без изменений. Лицензионные файлы авторов и JSON не трогались.
+- `desktop-file-validate` и `appstreamcli validate --no-net --pedantic` снова прошли с rc=0 (те же подсказки авторов, что и раньше). [проверено]
+- Патч и `files/` обновлены с кончика ветки. Наружу ничего не отправлялось.
+
+Коммиты на ветке `main..HEAD` (старые имена авторов не переписывались):
+
+```
+838d3bb supersfera-online <users.noreply.github.com> l10n(ru): add translation copyright comments
+bdda251 отдел локализации <users.noreply.github.com> packaging: черновой русский перевод .desktop, AppStream и mime (ru)
+```
