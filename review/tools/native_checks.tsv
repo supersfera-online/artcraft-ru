@@ -1,0 +1,32 @@
+# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
+# Штатные проверки перевода в репозиториях. Колонки (TAB): репозиторий<TAB>auto<TAB>команда<TAB>источник/статус
+# auto=yes — run_all.sh --native запускает сам (проверено: только читает файлы репозитория; сборка в ~/.cache/l10n-review/target).
+# auto=no  — только печатается: большая сборка и/или не проверено, пишет ли команда в репозиторий. Запуск: run_all.sh --native=<репозиторий>.
+# {CRAFT_I18N_DIR} подставляется путём к локальному клону craft-i18n (dept/l10n/craft-i18n).
+craft-i18n	yes	cargo test --workspace --locked	проверено: README «Develop»; запуск 20.11.2026 — 52 теста ok, git status чистый
+craft-i18n	yes	cargo test --locked coverage_report -- --nocapture	проверено: README «Develop» (строки на каталог против самого большого языка)
+solidcraft	yes	cargo --locked xtask i18n --no-registry	проверено: docs/localization.md, xtask/src/i18n.rs (пишет только с --add-missing); запуск 20.11.2026 ok, ~1 мин
+solidcraft	no	cargo --locked xtask i18n	проверено: docs/localization.md; собирает solidcraft-cli (долго, не запускалось); НИКОГДА не добавлять --add-missing (пишет en.json)
+photocraft	no	CRAFT_I18N_DIR={CRAFT_I18N_DIR} cargo --locked xtask i18n-report	проверено: xtask/src/main.rs (i18n-report, берёт craft-i18n из CRAFT_I18N_DIR); не запускалось
+photocraft	no	cargo test --locked -p photocraft-ui-egui --lib i18n	проверено: docs/development.md; не запускалось
+pdfcraft	no	CRAFT_I18N_DIR={CRAFT_I18N_DIR} cargo --locked xtask i18n-report	проверено: xtask/src/main.rs, docs/localization.md; не запускалось
+wordcraft	no	CRAFT_I18N_DIR={CRAFT_I18N_DIR} cargo --locked xtask i18n-report	проверено: xtask/src/main.rs, docs/localization-parity.md; не запускалось
+wordcraft	no	cargo test --locked -p wordcraft-ui-egui --lib i18n::tests	проверено: docs; не запускалось
+vectorcraft	no	cargo --locked xtask i18n-report	проверено: xtask/src/main.rs; не запускалось
+vectorcraft	no	cargo test --locked -p vectorcraft-ui-egui --lib i18n::tests	проверено: docs/development.md; не запускалось
+filmcraft	no	cargo --locked xtask i18n-report	проверено: xtask/src/main.rs; не запускалось
+cadcraft	no	cargo --locked xtask i18n	проверено: xtask/src/main.rs (cmd_i18n → cargo test … i18n::tests::translation_gaps); не запускалось
+cadcraft	no	cargo test --locked -p cadcraft-ui-egui i18n	проверено: docs/localization.md; не запускалось
+craft-anything	no	cargo --locked xtask i18n-coverage	проверено: xtask/src/main.rs, crates/ui-egui/src/i18n/awaiting.txt; не запускалось
+designcraft	no	cargo --locked xtask i18n-report	проверено: xtask/src/main.rs; не запускалось
+gridcraft	no	cargo --locked xtask i18n-report	проверено: xtask/src/main.rs, AGENTS.md; не запускалось
+figcraft	no	cargo --locked xtask i18n-report	проверено: xtask/src/main.rs; не запускалось
+figcraft	no	cargo test --locked -p figcraft-ui-egui i18n	проверено: docs/translating.md (missing и unused keys); не запускалось
+lightcraft	no	cargo test --locked -p lightcraft-ui-egui i18n	проверено: docs/localization-*.md; не запускалось
+effectcraft	no	cargo test --locked -p effectcraft-ui-egui --lib missing_translations_report -- --nocapture	проверено: docs/localization-parity.md; не запускалось
+texturecraft	no	CRAFT_I18N_DIR={CRAFT_I18N_DIR} cargo test --locked -p texturecraft-ui-egui translation_coverage_report -- --nocapture	проверено: docs/internationalization.md; CRAFT_I18N_DIR — догадка по i18n_build.rs; не запускалось
+anicraft	no	CRAFT_I18N_DIR={CRAFT_I18N_DIR} cargo test --locked --bin anicraft i18n	проверено: docs/ui-guidelines.md; CRAFT_I18N_DIR — по docs/localisation.md; не запускалось
+craft-launcher	no	cargo test --locked -p artcraft-launcher-ui-egui i18n	догадка: имя пакета из crates/ui-egui/Cargo.toml, тесты в src/i18n/tests.rs; отдельной команды в docs не найдено; не запускалось
+materialcraft	no	cargo test --locked -p materialcraft-ui-egui i18n	догадка: тесты ключей в crates/ui-egui/src/i18n.rs (дубликаты ar::TABLE); не запускалось
+soundcraft	no	cargo test --locked -p soundcraft-ui-egui localization	догадка: тесты в crates/ui-egui/src/localization.rs; не запускалось
+deckcraft	no	-	проверено: docs/localization-parity.md — каталога и переключателя языка нет; проверять нечего
