@@ -1,0 +1,275 @@
+# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
+file	line	context	source	translation	class_guess
+cadcraft.tsv	134		Custom	Custom	possibly_untranslated
+cadcraft.tsv	179		DWG	DWG	acronym_or_code
+cadcraft.tsv	180		DXF	DXF	acronym_or_code
+cadcraft.tsv	251		Find All	Find All	possibly_untranslated
+cadcraft.tsv	252		Find what:	Find what:	possibly_untranslated
+cadcraft.tsv	319		Interface language	Interface language	possibly_untranslated
+cadcraft.tsv	325		Justify	Justify	possibly_untranslated
+cadcraft.tsv	376		Match case	Match case	possibly_untranslated
+cadcraft.tsv	428		Nothing found	Nothing found	possibly_untranslated
+cadcraft.tsv	451		Overlay	Overlay	possibly_untranslated
+cadcraft.tsv	495		Preview	Preview	possibly_untranslated
+cadcraft.tsv	541		Replace	Replace	possibly_untranslated
+cadcraft.tsv	542		Replace All	Replace All	possibly_untranslated
+cadcraft.tsv	544		Replace with:	Replace with:	possibly_untranslated
+cadcraft.tsv	545		Replacement text	Replacement text	possibly_untranslated
+cadcraft.tsv	550		Results	Results	possibly_untranslated
+cadcraft.tsv	566		Searches the current space.	Searches the current space.	possibly_untranslated
+cadcraft.tsv	644		Shape	Shape	possibly_untranslated
+cadcraft.tsv	813		Tables	Tables	possibly_untranslated
+cadcraft.tsv	823		Text to find	Text to find	possibly_untranslated
+cadcraft.tsv	867		Whole words	Whole words	possibly_untranslated
+cadcraft.tsv	876		Your changes will be lost if you don't save them.	Your changes will be lost if you don't save them.	possibly_untranslated
+cadcraft.tsv	883		{contributors} · {commits}	{contributors} · {commits}	possibly_untranslated
+cadcraft.tsv	886		{name}: {distance} < {angle}°	{name}: {distance} < {angle}°	possibly_untranslated
+common.tsv	62		Alt	Alt	possibly_untranslated
+common.tsv	89		ArtCraft	ArtCraft	product_name
+common.tsv	111		Backspace	Backspace	possibly_untranslated
+common.tsv	207		Cmd	Cmd	possibly_untranslated
+common.tsv	209		CMYK:	CMYK:	possibly_untranslated
+common.tsv	258		Copyright	Copyright	possibly_untranslated
+common.tsv	276		Ctrl	Ctrl	possibly_untranslated
+common.tsv	339		Discord	Discord	possibly_untranslated
+common.tsv	402		Enter	Enter	possibly_untranslated
+common.tsv	497		GitHub	GitHub	possibly_untranslated
+common.tsv	613		Lab	Lab	possibly_untranslated
+common.tsv	636		Legal	Legal	possibly_untranslated
+common.tsv	641		Letter	Letter	possibly_untranslated
+common.tsv	740		Motion	Motion	possibly_untranslated
+common.tsv	809		OpenType	OpenType	possibly_untranslated
+common.tsv	982		RGB	RGB	acronym_or_code
+common.tsv	984		RGB:	RGB:	possibly_untranslated
+common.tsv	1055		Shift	Shift	possibly_untranslated
+common.tsv	1114		sRGB IEC61966-2.1	sRGB IEC61966-2.1	possibly_untranslated
+common.tsv	1135		Studio	Studio	possibly_untranslated
+common.tsv	1158		Tabloid	Tabloid	possibly_untranslated
+common.tsv	1254		Web	Web	possibly_untranslated
+common.tsv	1266		Windows	Windows	possibly_untranslated
+common.tsv	1271		X	X	acronym_or_code
+common.tsv	1272		Y	Y	acronym_or_code
+craft-launcher.tsv	37		ArtCraft Launcher	ArtCraft Launcher	possibly_untranslated
+craft-launcher.tsv	38		ArtCraft Launcher {version}	ArtCraft Launcher {version}	possibly_untranslated
+craft-launcher.tsv	62		Craft App Suite	Craft App Suite	possibly_untranslated
+craft-launcher.tsv	131		Launcher	Launcher	possibly_untranslated
+craft-launcher.tsv	275		{name} {version}	{name} {version}	possibly_untranslated
+filmcraft.tsv	52		Baseline	Baseline	possibly_untranslated
+filmcraft.tsv	55		Binary assets added	Binary assets added	possibly_untranslated
+filmcraft.tsv	61		Brush Strokes	Brush Strokes	possibly_untranslated
+filmcraft.tsv	89		Custom	Custom	possibly_untranslated
+filmcraft.tsv	105		Dock Panel	Dock Panel	possibly_untranslated
+filmcraft.tsv	107		Edge Thickness	Edge Thickness	possibly_untranslated
+filmcraft.tsv	112		Edit…	Edit…	possibly_untranslated
+filmcraft.tsv	114		Emboss	Emboss	possibly_untranslated
+filmcraft.tsv	129		Focus	Focus	possibly_untranslated
+filmcraft.tsv	141		Glow Brightness	Glow Brightness	possibly_untranslated
+filmcraft.tsv	154		Hard	Hard	possibly_untranslated
+filmcraft.tsv	157		Home	Home	possibly_untranslated
+filmcraft.tsv	168		Join us on Discord	Join us on Discord	possibly_untranslated
+filmcraft.tsv	169		Labels	Labels	possibly_untranslated
+filmcraft.tsv	176		Line delta	Line delta	possibly_untranslated
+filmcraft.tsv	218		Preview	Preview	possibly_untranslated
+filmcraft.tsv	229		Ratio	Ratio	possibly_untranslated
+filmcraft.tsv	231		Recover	Recover	possibly_untranslated
+filmcraft.tsv	287		Skew	Skew	possibly_untranslated
+filmcraft.tsv	290		Soft	Soft	possibly_untranslated
+filmcraft.tsv	293		Split	Split	possibly_untranslated
+filmcraft.tsv	294		Standard	Standard	possibly_untranslated
+filmcraft.tsv	295		Strength	Strength	possibly_untranslated
+filmcraft.tsv	296		Stroke Color	Stroke Color	possibly_untranslated
+filmcraft.tsv	301		Thickness	Thickness	possibly_untranslated
+filmcraft.tsv	307		Title	Title	possibly_untranslated
+pdfcraft.tsv	57		`{command}` {when}	`{command}` {when}	possibly_untranslated
+pdfcraft.tsv	74		A link or special file, which isn't followed	A link or special file, which isn't followed	possibly_untranslated
+pdfcraft.tsv	250		Alignment	Alignment	possibly_untranslated
+pdfcraft.tsv	344		Atelier	Atelier	possibly_untranslated
+pdfcraft.tsv	630		CMYK	CMYK	acronym_or_code
+pdfcraft.tsv	760		Couldn't be read: {reason}	Couldn't be read: {reason}	possibly_untranslated
+pdfcraft.tsv	852	key	Ctrl	Ctrl	possibly_untranslated
+pdfcraft.tsv	908	key	Delete	Delete	possibly_untranslated
+pdfcraft.tsv	993		DN: 	DN: 	possibly_untranslated
+pdfcraft.tsv	1126		Editorial	Editorial	possibly_untranslated
+pdfcraft.tsv	1146	key	End	End	possibly_untranslated
+pdfcraft.tsv	1171	key	Esc	Esc	possibly_untranslated
+pdfcraft.tsv	1190		Executive	Executive	possibly_untranslated
+pdfcraft.tsv	1379		Folder	Folder	possibly_untranslated
+pdfcraft.tsv	1465		Heritage	Heritage	possibly_untranslated
+pdfcraft.tsv	1498	key	Home	Home	possibly_untranslated
+pdfcraft.tsv	1612		JavaScript	JavaScript	possibly_untranslated
+pdfcraft.tsv	1656		Larger than 512 MiB	Larger than 512 MiB	possibly_untranslated
+pdfcraft.tsv	1677		Less	Less	possibly_untranslated
+pdfcraft.tsv	1712		Listing the folder…	Listing the folder…	possibly_untranslated
+pdfcraft.tsv	1718		Load to edit	Load to edit	possibly_untranslated
+pdfcraft.tsv	1719		Loading {name}…	Loading {name}…	possibly_untranslated
+pdfcraft.tsv	1747		Lowering this forgets the oldest files. At 0 there is no list.	Lowering this forgets the oldest files. At 0 there is no list.	possibly_untranslated
+pdfcraft.tsv	1793		Matches: {matches}. Files with matches: {files}. PDFs read to the end: {searched} of {found}.	Matches: {matches}. Files with matches: {files}. PDFs read to the end: {searched} of {found}.	possibly_untranslated
+pdfcraft.tsv	1820		Microsoft Word (.docx)	Microsoft Word (.docx)	possibly_untranslated
+pdfcraft.tsv	2042		Not searched: {n}	Not searched: {n}	possibly_untranslated
+pdfcraft.tsv	2079		OK	OK	acronym_or_code
+pdfcraft.tsv	2248		Pages that couldn't be read: {n}	Pages that couldn't be read: {n}	possibly_untranslated
+pdfcraft.tsv	2299		PDF/A…	PDF/A…	possibly_untranslated
+pdfcraft.tsv	2300		PDF/X…	PDF/X…	possibly_untranslated
+pdfcraft.tsv	2341		Pixels	Pixels	possibly_untranslated
+pdfcraft.tsv	2360		PostScript / EPS	PostScript / EPS	possibly_untranslated
+pdfcraft.tsv	2469		Reading file {n} of {total}: {name}	Reading file {n} of {total}: {name}	possibly_untranslated
+pdfcraft.tsv	2488		Recent files to keep	Recent files to keep	possibly_untranslated
+pdfcraft.tsv	2692		Rich Text Format (.rtf)	Rich Text Format (.rtf)	possibly_untranslated
+pdfcraft.tsv	2862		Search a folder	Search a folder	possibly_untranslated
+pdfcraft.tsv	2863		Search a folder…	Search a folder…	possibly_untranslated
+pdfcraft.tsv	2873		Searching a folder needs the desktop app	Searching a folder needs the desktop app	possibly_untranslated
+pdfcraft.tsv	2878		Secured	Secured	possibly_untranslated
+pdfcraft.tsv	2986	key	Shift	Shift	possibly_untranslated
+pdfcraft.tsv	2993		Shortcut	Shortcut	possibly_untranslated
+pdfcraft.tsv	3022		Show the current page number over the document	Show the current page number over the document	possibly_untranslated
+pdfcraft.tsv	3038		Sienna	Sienna	possibly_untranslated
+pdfcraft.tsv	3172		Stopped at {limit} matches.	Stopped at {limit} matches.	possibly_untranslated
+pdfcraft.tsv	3173		Stopped before the end.	Stopped before the end.	possibly_untranslated
+pdfcraft.tsv	3174		Stopped: too many files took too long to read.	Stopped: too many files took too long to read.	possibly_untranslated
+pdfcraft.tsv	3194		Subscript	Subscript	possibly_untranslated
+pdfcraft.tsv	3203		Superscript	Superscript	possibly_untranslated
+pdfcraft.tsv	3445		The rest are left out of this list.	The rest are left out of this list.	possibly_untranslated
+pdfcraft.tsv	3467		The search stopped unexpectedly.	The search stopped unexpectedly.	possibly_untranslated
+pdfcraft.tsv	3615		This folder is too large or too deep to search all of it.	This folder is too large or too deep to search all of it.	possibly_untranslated
+pdfcraft.tsv	3631		This large file is being read from disk to save memory, so it can't be edited, filled in or signed yet.	This large file is being read from disk to save memory, so it can't be edited, filled in or signed yet.	possibly_untranslated
+pdfcraft.tsv	3670		To print this large file, load all of it first with Load to edit.	To print this large file, load all of it first with Load to edit.	possibly_untranslated
+pdfcraft.tsv	3683		Took too long to read	Took too long to read	possibly_untranslated
+pdfcraft.tsv	3773		USB	USB	acronym_or_code
+pdfcraft.tsv	3924		ZIP	ZIP	acronym_or_code
+pdfcraft.tsv	3936		{0}: {1}	{0}: {1}	symbols
+pdfcraft.tsv	3954		{field}: {e}	{field}: {e}	possibly_untranslated
+pdfcraft.tsv	3971		{month} {y}	{month} {y}	possibly_untranslated
+pdfcraft.tsv	4030		{n} {kind}	{n} {kind}	possibly_untranslated
+pdfcraft.tsv	4033		{rule} - {status}	{rule} - {status}	possibly_untranslated
+pdfcraft.tsv	4049		{why} ({n})	{why} ({n})	possibly_untranslated
+photocraft.tsv	21		100%	100%	number_unit
+photocraft.tsv	23		105%	105%	number_unit
+photocraft.tsv	25		110%	110%	number_unit
+photocraft.tsv	26		115%	115%	number_unit
+photocraft.tsv	28		120%	120%	number_unit
+photocraft.tsv	29		125%	125%	number_unit
+photocraft.tsv	31		150%	150%	number_unit
+photocraft.tsv	33		175%	175%	number_unit
+photocraft.tsv	34		180°	180°	number_unit
+photocraft.tsv	37		200%	200%	number_unit
+photocraft.tsv	40		250%	250%	number_unit
+photocraft.tsv	48		300%	300%	number_unit
+photocraft.tsv	54		3D	3D	acronym_or_code
+photocraft.tsv	56		3D…	3D…	possibly_untranslated
+photocraft.tsv	66		75%	75%	number_unit
+photocraft.tsv	69		80%	80%	number_unit
+photocraft.tsv	70		85%	85%	number_unit
+photocraft.tsv	71		90%	90%	number_unit
+photocraft.tsv	74		95%	95%	number_unit
+photocraft.tsv	90		ACES	ACES	acronym_or_code
+photocraft.tsv	143		Adobe	Adobe	possibly_untranslated
+photocraft.tsv	145		Adobe RGB (1998)	Adobe RGB (1998)	possibly_untranslated
+photocraft.tsv	150		Adwaita	Adwaita	possibly_untranslated
+photocraft.tsv	206		Android 1080p	Android 1080p	possibly_untranslated
+photocraft.tsv	221		Apple RGB	Apple RGB	possibly_untranslated
+photocraft.tsv	417		Breeze	Breeze	possibly_untranslated
+photocraft.tsv	541		CIE RGB	CIE RGB	acronym_or_code
+photocraft.tsv	681		ColorMatch RGB	ColorMatch RGB	possibly_untranslated
+photocraft.tsv	682		ColorSync	ColorSync	possibly_untranslated
+photocraft.tsv	685		Command	Command	possibly_untranslated
+photocraft.tsv	909		D1/DV NTSC (0.91)	D1/DV NTSC (0.91)	possibly_untranslated
+photocraft.tsv	911		D1/DV PAL (1.09)	D1/DV PAL (1.09)	possibly_untranslated
+photocraft.tsv	1043		DirectX 12	DirectX 12	possibly_untranslated
+photocraft.tsv	1060		Display P3	Display P3	possibly_untranslated
+photocraft.tsv	1147		DVCPRO HD 1080/HDV 1080 (1.5)	DVCPRO HD 1080/HDV 1080 (1.5)	possibly_untranslated
+photocraft.tsv	1228		EXIF	EXIF	acronym_or_code
+photocraft.tsv	1269		EXR	EXR	acronym_or_code
+photocraft.tsv	1499		GPS	GPS	acronym_or_code
+photocraft.tsv	1500		GPU	GPU	acronym_or_code
+photocraft.tsv	1593		HDTV (Rec. 709)	HDTV (Rec. 709)	possibly_untranslated
+photocraft.tsv	1594		HDV 1080/DVCPRO HD 720 (1.33)	HDV 1080/DVCPRO HD 720 (1.33)	possibly_untranslated
+photocraft.tsv	1661		HSB/HSL	HSB/HSL	acronym_or_code
+photocraft.tsv	1800		ISO	ISO	acronym_or_code
+photocraft.tsv	2009		Lorem Ipsum	Lorem Ipsum	possibly_untranslated
+photocraft.tsv	2022		LZW	LZW	acronym_or_code
+photocraft.tsv	2024		Mac LCD	Mac LCD	possibly_untranslated
+photocraft.tsv	2025		Mac OS	Mac OS	possibly_untranslated
+photocraft.tsv	2053		Malvar–He–Cutler	Malvar–He–Cutler	possibly_untranslated
+photocraft.tsv	2118		Metal	Metal	possibly_untranslated
+photocraft.tsv	2323		NTSC (1953)	NTSC (1953)	possibly_untranslated
+photocraft.tsv	2340		OK	OK	acronym_or_code
+photocraft.tsv	2375		OpenGL	OpenGL	possibly_untranslated
+photocraft.tsv	2432		PAL/SECAM	PAL/SECAM	acronym_or_code
+photocraft.tsv	2495		PhotoCraft	PhotoCraft	product_name
+photocraft.tsv	2604		Preview size	Preview size	possibly_untranslated
+photocraft.tsv	2613		Print preview image	Print preview image	possibly_untranslated
+photocraft.tsv	2622		Pro	Pro	possibly_untranslated
+photocraft.tsv	2633		Pro Medium	Pro Medium	possibly_untranslated
+photocraft.tsv	2645		ProPhoto	ProPhoto	possibly_untranslated
+photocraft.tsv	2646		ProPhoto RGB	ProPhoto RGB	possibly_untranslated
+photocraft.tsv	2656		PSD	PSD	acronym_or_code
+photocraft.tsv	2679		R G B	R G B	acronym_or_code
+photocraft.tsv	2680		R g b	R g b	possibly_untranslated
+photocraft.tsv	2968		Saved Multichannel	Saved Multichannel	possibly_untranslated
+photocraft.tsv	3230		SMPTE C	SMPTE C	acronym_or_code
+photocraft.tsv	3248		Solarized	Solarized	possibly_untranslated
+photocraft.tsv	3309		sRGB	sRGB	possibly_untranslated
+photocraft.tsv	3360		Studio Light	Studio Light	possibly_untranslated
+photocraft.tsv	3451		The GPU compositor is still being prepared	The GPU compositor is still being prepared	possibly_untranslated
+photocraft.tsv	3591		Unix	Unix	possibly_untranslated
+photocraft.tsv	3686		Vulkan	Vulkan	possibly_untranslated
+photocraft.tsv	3730		Wide Gamut RGB	Wide Gamut RGB	possibly_untranslated
+photocraft.tsv	3734		Windows LCD	Windows LCD	possibly_untranslated
+photocraft.tsv	3758		X11	X11	acronym_or_code
+photocraft.tsv	3759		XOR	XOR	acronym_or_code
+photocraft.tsv	3768		ZIP	ZIP	acronym_or_code
+photocraft.tsv	3785		{message} ({note})	{message} ({note})	possibly_untranslated
+photocraft.tsv	3787		{name} (Photoshop)	{name} (Photoshop)	possibly_untranslated
+photocraft.tsv	3788		{name} ({width} × {height})	{name} ({width} × {height})	possibly_untranslated
+photocraft.tsv	3816		{verb} {mask} {layer}	{verb} {mask} {layer}	possibly_untranslated
+photocraft.tsv	3821		{zoom}%	{zoom}%	possibly_untranslated
+vectorcraft.tsv	93		:	:	very_short
+vectorcraft.tsv	271		Alt:	Alt:	possibly_untranslated
+vectorcraft.tsv	338		Arrow	Arrow	possibly_untranslated
+vectorcraft.tsv	482		Burasagari	Burasagari	possibly_untranslated
+vectorcraft.tsv	608		CMYK	CMYK	acronym_or_code
+vectorcraft.tsv	693		Control	Control	possibly_untranslated
+vectorcraft.tsv	1123		English	English	possibly_untranslated
+vectorcraft.tsv	1135		Esc	Esc	possibly_untranslated
+vectorcraft.tsv	1227		Feather	Feather	possibly_untranslated
+vectorcraft.tsv	1652		JavaScript:	JavaScript:	possibly_untranslated
+vectorcraft.tsv	1815		Mac	Mac	possibly_untranslated
+vectorcraft.tsv	1920		Mojikumi	Mojikumi	possibly_untranslated
+vectorcraft.tsv	2368		Oval	Oval	possibly_untranslated
+vectorcraft.tsv	2434		PDF	PDF	acronym_or_code
+vectorcraft.tsv	2511		PostScript:	PostScript:	possibly_untranslated
+vectorcraft.tsv	2513		PPI	PPI	acronym_or_code
+vectorcraft.tsv	3119		Serif / Mincho	Serif / Mincho	possibly_untranslated
+vectorcraft.tsv	3150		Shaper	Shaper	possibly_untranslated
+vectorcraft.tsv	3287		Source Sans 3	Source Sans 3	possibly_untranslated
+vectorcraft.tsv	3429		Tate-chu-yoko	Tate-chu-yoko	possibly_untranslated
+vectorcraft.tsv	3706		Unicode	Unicode	possibly_untranslated
+vectorcraft.tsv	3707		Unicode (UTF-16)	Unicode (UTF-16)	possibly_untranslated
+vectorcraft.tsv	3708		Unicode (UTF-8)	Unicode (UTF-8)	possibly_untranslated
+vectorcraft.tsv	3768		URL:	URL:	possibly_untranslated
+vectorcraft.tsv	3873		Web 1920×1080	Web 1920×1080	possibly_untranslated
+vectorcraft.tsv	3901		X11 (XWayland)	X11 (XWayland)	possibly_untranslated
+vectorcraft.tsv	3903		X:	X:	very_short
+vectorcraft.tsv	3904		XML ID	XML ID	acronym_or_code
+vectorcraft.tsv	3906		Y:	Y:	very_short
+vectorcraft.tsv	3948		{kind}, {model}	{kind}, {model}	possibly_untranslated
+vectorcraft.tsv	3955	@msg	{label}…	{label}…	possibly_untranslated
+vectorcraft.tsv	3981	@msg	{path}: {e}	{path}: {e}	possibly_untranslated
+vectorcraft.tsv	3987	@msg	{status} ({e})	{status} ({e})	possibly_untranslated
+wordcraft.tsv	55		A, B, C, …	A, B, C, …	possibly_untranslated
+wordcraft.tsv	56		a, b, c, …	a, b, c, …	possibly_untranslated
+wordcraft.tsv	642		DOI	DOI	acronym_or_code
+wordcraft.tsv	883		getartcraft.com/apps/wordcraft	getartcraft.com/apps/wordcraft	possibly_untranslated
+wordcraft.tsv	936		Hex:	Hex:	possibly_untranslated
+wordcraft.tsv	975		I, II, III, …	I, II, III, …	possibly_untranslated
+wordcraft.tsv	976		i, ii, iii, …	i, ii, iii, …	possibly_untranslated
+wordcraft.tsv	1272		Markdown (*.md)	Markdown (*.md)	possibly_untranslated
+wordcraft.tsv	1924		Shift+Tab	Shift+Tab	possibly_untranslated
+wordcraft.tsv	2019		SmartArt	SmartArt	possibly_untranslated
+wordcraft.tsv	2127		Tab	Tab	possibly_untranslated
+wordcraft.tsv	2349		URL	URL	acronym_or_code
+wordcraft.tsv	2415		WordArt	WordArt	possibly_untranslated
+wordcraft.tsv	2417		WordCraft	WordCraft	product_name
+wordcraft.tsv	2436		Zotero	Zotero	possibly_untranslated
+wordcraft.tsv	2448		{kind}, {columns} × {rows}, {size} ({paper})	{kind}, {columns} × {rows}, {size} ({paper})	possibly_untranslated
+wordcraft.tsv	2453		{language}: {file}	{language}: {file}	possibly_untranslated
