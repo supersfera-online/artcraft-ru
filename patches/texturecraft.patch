@@ -1,0 +1,179 @@
+# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
+#
+# Russian Linux packaging (.desktop / AppStream / MIME) for storytold/texturecraft
+# Upstream: https://github.com/storytold/texturecraft
+# Base (origin merge-base): 9be964a00eb4781dd40909a39322e5807d752359
+# Snapshot: 2026-11-20 11:25 PST
+# This patch is a draft localization contribution by SuperSfera LLC.
+#
+diff --git a/packaging/linux/ai.storyteller.texturecraft.desktop b/packaging/linux/ai.storyteller.texturecraft.desktop
+--- a/packaging/linux/ai.storyteller.texturecraft.desktop
++++ b/packaging/linux/ai.storyteller.texturecraft.desktop
+@@ -1,8 +1,12 @@
++# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
+ [Desktop Entry]
+ Type=Application
+ Name=TextureCraft
++Name[ru]=TextureCraft
+ GenericName=3D Texture Painter
++GenericName[ru]=Рисование 3D-текстур
+ Comment=Paint PBR textures directly on 3D meshes
++Comment[ru]=Рисование PBR-текстур прямо на 3D-моделях
+ Exec=texturecraft %F
+ TryExec=texturecraft
+ Icon=ai.storyteller.texturecraft
+@@ -11,4 +15,5 @@
+ StartupWMClass=texturecraft
+ Categories=Graphics;3DGraphics;
+ Keywords=texture;paint;pbr;material;3d;mesh;bake;gltf;fbx;usd;
++Keywords[ru]=текстура;рисование;pbr;материал;3d;сетка;меш;запекание;gltf;fbx;usd;
+ MimeType=application/x-texturecraft;model/gltf-binary;model/gltf+json;model/x-fbx;model/vnd.collada+xml;model/x-usd;model/vnd.usda;model/vnd.usdz+zip;model/x-alembic;model/obj;model/x-ply;model/stl;
+
+diff --git a/packaging/linux/ai.storyteller.texturecraft.metainfo.xml.in b/packaging/linux/ai.storyteller.texturecraft.metainfo.xml.in
+--- a/packaging/linux/ai.storyteller.texturecraft.metainfo.xml.in
++++ b/packaging/linux/ai.storyteller.texturecraft.metainfo.xml.in
+@@ -1,4 +1,5 @@
+ <?xml version="1.0" encoding="UTF-8"?>
++<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
+ <!-- AppStream metadata (software centres, Flathub). Template: package.sh and the Flatpak
+      manifest substitute @VERSION@ and @DATE@ from Cargo.toml and the build date. -->
+ <component type="desktop-application">
+@@ -7,6 +8,7 @@
+   <project_license>MIT OR Apache-2.0</project_license>
+   <name>TextureCraft</name>
+   <summary>Paint PBR textures directly on 3D meshes</summary>
++  <summary xml:lang="ru">Рисование PBR-текстур прямо на 3D-моделях</summary>
+   <developer id="ai.storyteller">
+     <name>Learning Machines LLC</name>
+   </developer>
+@@ -16,11 +18,21 @@
+       expect: familiar menus, shortcuts, panels and tools, with texture sets,
+       layers, masks, fills and effects painted straight onto the model.
+     </p>
++    <p xml:lang="ru">
++      TextureCraft — открытая нативная программа для рисования 3D-текстур, устроенная так,
++      как привыкли художники по текстурам: знакомые меню, сочетания клавиш, панели и
++      инструменты, а наборы текстур, слои, маски, заливки и эффекты наносятся прямо на
++      модель.
++    </p>
+     <ul>
+       <li>Open glTF/GLB, FBX, COLLADA, USD (USDA/USDC/USDZ), Alembic, OBJ, PLY and STL meshes and save projects as .tcraft</li>
++      <li xml:lang="ru">Открытие сеток glTF/GLB, FBX, COLLADA, USD (USDA/USDC/USDZ), Alembic, OBJ, PLY и STL и сохранение проектов в .tcraft</li>
+       <li>Paint base colour, roughness, metallic, normal and height together with PBR brushes</li>
++      <li xml:lang="ru">Рисование базового цвета, шероховатости, металличности, нормалей и высоты одновременно с помощью PBR-кистей</li>
+       <li>Bake mesh maps and export texture sets as PNG, EXR, TGA, JPEG or TIFF</li>
++      <li xml:lang="ru">Запекание карт сетки и экспорт наборов текстур в PNG, EXR, TGA, JPEG или TIFF</li>
+       <li>Every action is a command, scriptable from a CLI and a JSON control channel</li>
++      <li xml:lang="ru">Каждое действие — это команда, которую можно вызывать из CLI и через управляющий канал JSON</li>
+     </ul>
+   </description>
+   <launchable type="desktop-id">ai.storyteller.texturecraft.desktop</launchable>
+@@ -36,9 +48,13 @@
+   </categories>
+   <keywords>
+     <keyword>texture painting</keyword>
++    <keyword xml:lang="ru">рисование текстур</keyword>
+     <keyword>pbr</keyword>
++    <keyword xml:lang="ru">pbr</keyword>
+     <keyword>3d</keyword>
++    <keyword xml:lang="ru">3d</keyword>
+     <keyword>mesh</keyword>
++    <keyword xml:lang="ru">сетка</keyword>
+   </keywords>
+   <branding>
+     <color type="primary" scheme_preference="light">#f0c39c</color>
+
+diff --git a/packaging/linux/ai.storyteller.texturecraft.mime.xml b/packaging/linux/ai.storyteller.texturecraft.mime.xml
+--- a/packaging/linux/ai.storyteller.texturecraft.mime.xml
++++ b/packaging/linux/ai.storyteller.texturecraft.mime.xml
+@@ -1,16 +1,19 @@
+ <?xml version="1.0" encoding="UTF-8"?>
++<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
+ <!-- shared-mime-info definitions for TextureCraft's project format and the mesh formats it opens,
+      for systems whose database is missing them (shared-mime-info merges duplicate definitions).
+      Installed to /usr/share/mime/packages/ (update-mime-database runs on install). -->
+ <mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+   <mime-type type="application/x-texturecraft">
+     <comment>TextureCraft project</comment>
++    <comment xml:lang="ru">Проект TextureCraft</comment>
+     <sub-class-of type="application/zip"/>
+     <icon name="ai.storyteller.texturecraft"/>
+     <glob pattern="*.tcraft" weight="60"/>
+   </mime-type>
+   <mime-type type="model/gltf-binary">
+     <comment>glTF binary model</comment>
++    <comment xml:lang="ru">Двоичная модель glTF</comment>
+     <magic priority="50">
+       <match type="string" value="glTF" offset="0"/>
+     </magic>
+@@ -18,11 +21,13 @@
+   </mime-type>
+   <mime-type type="model/gltf+json">
+     <comment>glTF model</comment>
++    <comment xml:lang="ru">Модель glTF</comment>
+     <sub-class-of type="application/json"/>
+     <glob pattern="*.gltf"/>
+   </mime-type>
+   <mime-type type="model/x-fbx">
+     <comment>FBX model</comment>
++    <comment xml:lang="ru">Модель FBX</comment>
+     <magic priority="50">
+       <match type="string" value="Kaydara FBX Binary" offset="0"/>
+     </magic>
+@@ -30,11 +35,13 @@
+   </mime-type>
+   <mime-type type="model/vnd.collada+xml">
+     <comment>COLLADA model</comment>
++    <comment xml:lang="ru">Модель COLLADA</comment>
+     <sub-class-of type="application/xml"/>
+     <glob pattern="*.dae"/>
+   </mime-type>
+   <mime-type type="model/x-usd">
+     <comment>Universal Scene Description</comment>
++    <comment xml:lang="ru">Universal Scene Description</comment>
+     <magic priority="50">
+       <match type="string" value="PXR-USDC" offset="0"/>
+       <match type="string" value="#usda" offset="0"/>
+@@ -44,17 +51,20 @@
+   </mime-type>
+   <mime-type type="model/vnd.usda">
+     <comment>Universal Scene Description (text)</comment>
++    <comment xml:lang="ru">Universal Scene Description (текст)</comment>
+     <sub-class-of type="text/plain"/>
+     <glob pattern="*.usda"/>
+   </mime-type>
+   <mime-type type="model/vnd.usdz+zip">
+     <comment>Universal Scene Description package</comment>
++    <comment xml:lang="ru">Пакет Universal Scene Description</comment>
+     <sub-class-of type="application/zip"/>
+     <glob pattern="*.usdz"/>
+   </mime-type>
+   <!-- *.abc is also ABC music notation; the Ogawa magic tells Alembic caches apart. -->
+   <mime-type type="model/x-alembic">
+     <comment>Alembic model</comment>
++    <comment xml:lang="ru">Модель Alembic</comment>
+     <magic priority="60">
+       <match type="string" value="Ogawa" offset="0"/>
+     </magic>
+@@ -62,11 +72,13 @@
+   </mime-type>
+   <mime-type type="model/obj">
+     <comment>Wavefront OBJ model</comment>
++    <comment xml:lang="ru">Модель Wavefront OBJ</comment>
+     <sub-class-of type="text/plain"/>
+     <glob pattern="*.obj"/>
+   </mime-type>
+   <mime-type type="model/x-ply">
+     <comment>PLY model</comment>
++    <comment xml:lang="ru">Модель PLY</comment>
+     <magic priority="50">
+       <match type="string" value="ply\n" offset="0"/>
+       <match type="string" value="ply\r\n" offset="0"/>
+@@ -75,6 +87,7 @@
+   </mime-type>
+   <mime-type type="model/stl">
+     <comment>STL model</comment>
++    <comment xml:lang="ru">Модель STL</comment>
+     <glob pattern="*.stl"/>
+   </mime-type>
+ </mime-info>

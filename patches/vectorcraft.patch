@@ -1,0 +1,123 @@
+# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
+#
+# Russian Linux packaging (.desktop / AppStream / MIME) for storytold/vectorcraft
+# Upstream: https://github.com/storytold/vectorcraft
+# Base (origin merge-base): 063f55080244009e0e4bf28c24068479089481ac
+# Snapshot: 2026-11-20 11:25 PST
+# This patch is a draft localization contribution by SuperSfera LLC.
+#
+diff --git a/packaging/linux/ai.storyteller.vectorcraft.desktop b/packaging/linux/ai.storyteller.vectorcraft.desktop
+--- a/packaging/linux/ai.storyteller.vectorcraft.desktop
++++ b/packaging/linux/ai.storyteller.vectorcraft.desktop
+@@ -1,8 +1,12 @@
++# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
+ [Desktop Entry]
+ Type=Application
+ Name=VectorCraft
++Name[ru]=VectorCraft
+ GenericName=Vector Graphics Editor
++GenericName[ru]=Редактор векторной графики
+ Comment=Draw and edit vector illustrations, SVG and PDF
++Comment[ru]=Рисование и редактирование векторных иллюстраций, SVG и PDF
+ Exec=vectorcraft %F
+ TryExec=vectorcraft
+ Icon=ai.storyteller.vectorcraft
+@@ -11,6 +15,7 @@
+ StartupWMClass=ai.storyteller.vectorcraft
+ Categories=Graphics;2DGraphics;VectorGraphics;
+ Keywords=vector;illustration;svg;pdf;drawing;bezier;
++Keywords[ru]=вектор;векторная графика;иллюстрация;svg;pdf;рисование;безье;кривые;
+ # MimeType lists the formats File › Open reads that Info.plist.in declares for macOS. The type of .ai
+ # files is shared-mime-info's application/illustrator (brand-ok).
+ MimeType=image/svg+xml;application/pdf;application/x-vectorcraft;image/svg+xml-compressed;application/illustrator;application/x-ai-template;image/png;image/jpeg;image/gif;image/webp;image/tiff;image/bmp;application/x-vectorcraft-template;image/vnd.dxf;image/emf;image/wmf;image/x-eps;application/x-affinity;
+
+diff --git a/packaging/linux/ai.storyteller.vectorcraft.metainfo.xml.in b/packaging/linux/ai.storyteller.vectorcraft.metainfo.xml.in
+--- a/packaging/linux/ai.storyteller.vectorcraft.metainfo.xml.in
++++ b/packaging/linux/ai.storyteller.vectorcraft.metainfo.xml.in
+@@ -1,4 +1,5 @@
+ <?xml version="1.0" encoding="UTF-8"?>
++<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
+ <!-- AppStream metadata (software centres, Flathub). Template: package.sh and the Flatpak
+      manifest substitute @VERSION@ and @DATE@ from Cargo.toml and the build date. -->
+ <component type="desktop-application">
+@@ -7,6 +8,7 @@
+   <project_license>MIT OR Apache-2.0</project_license>
+   <name>VectorCraft</name>
+   <summary>Draw and edit vector illustrations, SVG and PDF</summary>
++  <summary xml:lang="ru">Рисование и редактирование векторных иллюстраций, SVG и PDF</summary>
+   <developer id="ai.storyteller">
+     <name>Learning Machines LLC</name>
+   </developer>
+@@ -16,6 +18,11 @@
+       style art with fills, strokes, gradients and live effects, lay out artboards and type, and
+       open and save SVG and PDF.
+     </p>
++    <p xml:lang="ru">
++      VectorCraft — открытое приложение для векторной иллюстрации. Рисуйте пером, фигурами
++      и кистями, оформляйте графику заливками, обводками, градиентами и динамическими
++      эффектами, размещайте монтажные области и текст, открывайте и сохраняйте SVG и PDF.
++    </p>
+   </description>
+   <launchable type="desktop-id">ai.storyteller.vectorcraft.desktop</launchable>
+   <icon type="stock">ai.storyteller.vectorcraft</icon>
+@@ -31,15 +38,22 @@
+   </categories>
+   <keywords>
+     <keyword>vector</keyword>
++    <keyword xml:lang="ru">вектор</keyword>
+     <keyword>illustration</keyword>
++    <keyword xml:lang="ru">иллюстрация</keyword>
+     <keyword>svg</keyword>
++    <keyword xml:lang="ru">svg</keyword>
+     <keyword>pdf</keyword>
++    <keyword xml:lang="ru">pdf</keyword>
+     <keyword>drawing</keyword>
++    <keyword xml:lang="ru">рисование</keyword>
+     <keyword>bezier</keyword>
++    <keyword xml:lang="ru">безье</keyword>
+   </keywords>
+   <screenshots>
+     <screenshot type="default">
+       <caption>Editing the Neon Drive poster with a live glow effect in the Appearance panel</caption>
++      <caption xml:lang="ru">Редактирование постера Neon Drive с динамическим эффектом свечения на панели «Оформление»</caption>
+       <image>https://raw.githubusercontent.com/storytold/vectorcraft/main/docs/images/shot-1-neon.png</image>
+     </screenshot>
+   </screenshots>
+
+diff --git a/packaging/linux/ai.storyteller.vectorcraft.mime.xml b/packaging/linux/ai.storyteller.vectorcraft.mime.xml
+--- a/packaging/linux/ai.storyteller.vectorcraft.mime.xml
++++ b/packaging/linux/ai.storyteller.vectorcraft.mime.xml
+@@ -1,21 +1,25 @@
+ <?xml version="1.0" encoding="UTF-8"?>
++<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
+ <!-- This package declares the types shared-mime-info lacks for the formats in the desktop entry's
+      MimeType line. The desktop entry lists these types with the shared ones; a test in
+      apps/vectorcraft/src/main.rs checks both files. -->
+ <mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+   <mime-type type="application/x-vectorcraft">
+     <comment>VectorCraft document</comment>
++    <comment xml:lang="ru">Документ VectorCraft</comment>
+     <icon name="ai.storyteller.vectorcraft"/>
+     <glob pattern="*.vectorcraft"/>
+     <glob pattern="*.drawcraft"/>
+   </mime-type>
+   <mime-type type="application/x-vectorcraft-template">
+     <comment>VectorCraft template</comment>
++    <comment xml:lang="ru">Шаблон VectorCraft</comment>
+     <sub-class-of type="application/x-vectorcraft"/>
+     <glob pattern="*.vctemplate"/>
+   </mime-type>
+   <mime-type type="application/x-ai-template">
+     <comment>PDF-compatible .ait template</comment>
++    <comment xml:lang="ru">Шаблон .ait, совместимый с PDF</comment>
+     <sub-class-of type="application/pdf"/>
+     <glob pattern="*.ait"/>
+   </mime-type>
+@@ -23,6 +27,7 @@
+        the document kind. -->
+   <mime-type type="application/x-affinity">
+     <comment>Affinity document</comment>
++    <comment xml:lang="ru">Документ Affinity</comment>
+     <glob pattern="*.afdesign"/>
+     <glob pattern="*.afpub"/>
+     <magic>

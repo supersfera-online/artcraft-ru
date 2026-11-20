@@ -1,0 +1,79 @@
+# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
+#
+# Russian Linux packaging (.desktop / AppStream / MIME) for storytold/pdfcraft
+# Upstream: https://github.com/storytold/pdfcraft
+# Base (origin merge-base): df18640982f6ff918ff6a5507d1267b6c78d105b
+# Snapshot: 2026-11-20 11:25 PST
+# This patch is a draft localization contribution by SuperSfera LLC.
+#
+diff --git a/packaging/linux/ai.storyteller.pdfcraft.desktop b/packaging/linux/ai.storyteller.pdfcraft.desktop
+--- a/packaging/linux/ai.storyteller.pdfcraft.desktop
++++ b/packaging/linux/ai.storyteller.pdfcraft.desktop
+@@ -1,8 +1,12 @@
++# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
+ [Desktop Entry]
+ Type=Application
+ Name=PdfCraft
++Name[ru]=PdfCraft
+ GenericName=PDF Editor
++GenericName[ru]=Редактор PDF
+ Comment=Read, organize, combine, split and secure PDFs
++Comment[ru]=Чтение, упорядочивание, объединение, разделение и защита PDF
+ Exec=pdfcraft %U
+ TryExec=pdfcraft
+ Icon=ai.storyteller.pdfcraft
+@@ -11,4 +15,5 @@
+ StartupWMClass=ai.storyteller.pdfcraft
+ Categories=Office;Viewer;
+ Keywords=pdf;viewer;editor;annotate;sign;forms;merge;split;
++Keywords[ru]=pdf;просмотр;редактор;аннотации;подпись;формы;объединение;разделение;
+ MimeType=application/pdf;
+
+diff --git a/packaging/linux/ai.storyteller.pdfcraft.metainfo.xml.in b/packaging/linux/ai.storyteller.pdfcraft.metainfo.xml.in
+--- a/packaging/linux/ai.storyteller.pdfcraft.metainfo.xml.in
++++ b/packaging/linux/ai.storyteller.pdfcraft.metainfo.xml.in
+@@ -1,4 +1,5 @@
+ <?xml version="1.0" encoding="UTF-8"?>
++<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
+ <!-- AppStream metadata (software centres, Flathub). Template: package.sh and the Flatpak
+      manifest substitute @VERSION@ and @DATE@ from Cargo.toml and the build date. -->
+ <component type="desktop-application">
+@@ -7,6 +8,7 @@
+   <project_license>MIT OR Apache-2.0</project_license>
+   <name>PdfCraft</name>
+   <summary>Read, organize, combine, split and secure PDFs</summary>
++  <summary xml:lang="ru">Чтение, упорядочивание, объединение, разделение и защита PDF</summary>
+   <developer id="ai.storyteller">
+     <name>Learning Machines LLC</name>
+   </developer>
+@@ -15,6 +17,11 @@
+       PdfCraft is an open-source PDF workbench. Read, comment on, fill in and sign PDFs;
+       organize, combine and split pages; edit, redact, protect and export documents.
+     </p>
++    <p xml:lang="ru">
++      PdfCraft — открытая рабочая среда для PDF. Читайте, комментируйте, заполняйте и
++      подписывайте PDF; упорядочивайте, объединяйте и разделяйте страницы; редактируйте
++      документы, скрывайте в них конфиденциальные фрагменты, защищайте и экспортируйте их.
++    </p>
+   </description>
+   <launchable type="desktop-id">ai.storyteller.pdfcraft.desktop</launchable>
+   <icon type="stock">ai.storyteller.pdfcraft</icon>
+@@ -29,13 +36,18 @@
+   </categories>
+   <keywords>
+     <keyword>pdf</keyword>
++    <keyword xml:lang="ru">pdf</keyword>
+     <keyword>viewer</keyword>
++    <keyword xml:lang="ru">просмотр</keyword>
+     <keyword>annotate</keyword>
++    <keyword xml:lang="ru">аннотации</keyword>
+     <keyword>forms</keyword>
++    <keyword xml:lang="ru">формы</keyword>
+   </keywords>
+   <screenshots>
+     <screenshot type="default">
+       <caption>A PDF open with its threaded comments</caption>
++      <caption xml:lang="ru">Открытый PDF с комментариями в ветках</caption>
+       <image>https://raw.githubusercontent.com/storytold/pdfcraft/main/docs/images/pdfcraft-viewer.png</image>
+     </screenshot>
+   </screenshots>
