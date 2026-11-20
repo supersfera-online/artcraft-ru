@@ -1,0 +1,83 @@
+# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
+file	line	source	translation	n_forms	ok
+cadcraft.tsv	887	{n} contributor|{n} contributors	{n} участник|{n} участника|{n} участников	3	yes
+common.tsv	1284	{n} commit|{n} commits	{n} коммит|{n} коммита|{n} коммитов	3	yes
+common.tsv	1289	{n} item|{n} items	{n} элемент|{n} элемента|{n} элементов	3	yes
+common.tsv	1292	{n} Layer|{n} Layers	{n} слой|{n} слоя|{n} слоёв	3	yes
+common.tsv	1296	{n} step|{n} steps	{n} шаг|{n} шага|{n} шагов	3	yes
+craft-launcher.tsv	40	ArtCraft Launcher · {n} update available|ArtCraft Launcher · {n} updates available	ArtCraft Launcher · {n} обновление|ArtCraft Launcher · {n} обновления|ArtCraft Launcher · {n} обновлений	3	yes
+craft-launcher.tsv	277	{n} app|{n} apps	{n} приложение|{n} приложения|{n} приложений	3	yes
+craft-launcher.tsv	278	{n} day ago|{n} days ago	{n} день назад|{n} дня назад|{n} дней назад	3	yes
+craft-launcher.tsv	279	{n} h ago|{n} h ago	{n} час назад|{n} часа назад|{n} часов назад	3	yes
+craft-launcher.tsv	280	{n} min ago|{n} min ago	{n} минуту назад|{n} минуты назад|{n} минут назад	3	yes
+pdfcraft.tsv	937	Delete {n} bookmark|Delete {n} bookmarks	Удалить {n} закладку|Удалить {n} закладки|Удалить {n} закладок	3	yes
+pdfcraft.tsv	938	Delete {n} field|Delete {n} fields	Удалить {n} поле|Удалить {n} поля|Удалить {n} полей	3	yes
+pdfcraft.tsv	1035	Downloaded {n} PDF|Downloaded {n} PDFs	Скачан {n} PDF-файл|Скачано {n} PDF-файла|Скачано {n} PDF-файлов	3	yes
+pdfcraft.tsv	3291	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	В порядке вычислений {n} запись, которая ничего не вычисляет. «Исправить порядок» удалит её.|В порядке вычислений {n} записи, которые ничего не вычисляют. «Исправить порядок» удалит их.|В порядке вычислений {n} записей, которые ничего не вычисляют. «Исправить порядок» удалит их.	3	yes
+pdfcraft.tsv	3943	{fields} builds some field names as it runs, so those reads aren't checked.|{fields} build some field names as they run, so those reads aren't checked.	{fields} составляет некоторые имена полей при выполнении, поэтому эти чтения не проверяются.|{fields} составляют некоторые имена полей при выполнении, поэтому эти чтения не проверяются.|{fields} составляют некоторые имена полей при выполнении, поэтому эти чтения не проверяются.	3	yes
+pdfcraft.tsv	3944	{fields} is missing from the order saved in the PDF, so other PDF viewers may not calculate it.|{fields} are missing from the order saved in the PDF, so other PDF viewers may not calculate them.	{fields} нет в порядке, сохранённом в PDF, поэтому другие программы просмотра PDF могут его не вычислить.|{fields} нет в порядке, сохранённом в PDF, поэтому другие программы просмотра PDF могут их не вычислить.|{fields} нет в порядке, сохранённом в PDF, поэтому другие программы просмотра PDF могут их не вычислить.	3	yes
+pdfcraft.tsv	3945	{fields} is missing|{fields} are missing	{fields} отсутствует|{fields} отсутствуют|{fields} отсутствуют	3	yes
+pdfcraft.tsv	3947	{fields} reads it|{fields} read it	{fields} читает его|{fields} читают его|{fields} читают его	3	yes
+pdfcraft.tsv	3948	{field} calculates before {fields}, which it reads.|{field} calculates before {fields}, which it reads.	{field} вычисляется раньше {fields}, которое оно читает.|{field} вычисляется раньше {fields}, которые оно читает.|{field} вычисляется раньше {fields}, которые оно читает.	3	yes
+pdfcraft.tsv	3953	{field} reads {fields}, which the form doesn't have.|{field} reads {fields}, which the form doesn't have.	{field} читает {fields}, которого нет в форме.|{field} читает {fields}, которых нет в форме.|{field} читает {fields}, которых нет в форме.	3	yes
+pdfcraft.tsv	3989	{n} byte|{n} bytes	{n} байт|{n} байта|{n} байт	3	yes
+pdfcraft.tsv	3990	{n} calculation now uses the new name.|{n} calculations now use the new name.	{n} вычисление теперь использует новое имя.|{n} вычисления теперь используют новое имя.|{n} вычислений теперь используют новое имя.	3	yes
+pdfcraft.tsv	3991	{n} comment|{n} comments	{n} комментарий|{n} комментария|{n} комментариев	3	yes
+pdfcraft.tsv	3995	{n} field name collides with earlier files and will be renamed: {list}|{n} field names collide with earlier files and will be renamed: {list}	Имя {n} поля конфликтует с предыдущими файлами и будет переименовано: {list}|Названия {n} полей конфликтуют с предыдущими файлами и будут переименованы: {list}|Названия {n} полей конфликтуют с предыдущими файлами и будут переименованы: {list}	3	yes
+pdfcraft.tsv	3996	{n} field shows an old value|{n} fields show old values	{n} поле показывает старое значение|{n} поля показывают старые значения|{n} полей показывают старые значения	3	yes
+pdfcraft.tsv	3998	{n} field|{n} fields	{n} поле|{n} поля|{n} полей	3	yes
+pdfcraft.tsv	4001	{n} file|{n} files	{n} файл|{n} файла|{n} файлов	3	yes
+pdfcraft.tsv	4002	{n} formula reads a field the form doesn't have|{n} formulas read fields the form doesn't have	{n} формула читает поле, которого нет в форме|{n} формулы читают поля, которых нет в форме|{n} формул читают поля, которых нет в форме	3	yes
+pdfcraft.tsv	4003	{n} image optimized|{n} images optimized	Оптимизировано {n} изображение|Оптимизировано {n} изображения|Оптимизировано {n} изображений	3	yes
+pdfcraft.tsv	4006	{n} item discarded|{n} items discarded	Отброшен {n} элемент|Отброшено {n} элемента|Отброшено {n} элементов	3	yes
+pdfcraft.tsv	4010	{n} more field calculates too early.|{n} more fields calculate too early.	Ещё {n} поле вычисляется слишком рано.|Ещё {n} поля вычисляются слишком рано.|Ещё {n} полей вычисляются слишком рано.	3	yes
+pdfcraft.tsv	4011	{n} more formula reads a missing field.|{n} more formulas read missing fields.	Ещё {n} формула читает отсутствующее поле.|Ещё {n} формулы читают отсутствующие поля.|Ещё {n} формул читают отсутствующие поля.	3	yes
+pdfcraft.tsv	4012	{n} object selected|{n} objects selected	Выделен {n} объект|Выделено {n} объекта|Выделено {n} объектов	3	yes
+pdfcraft.tsv	4022	{n} page|{n} pages	{n} страница|{n} страницы|{n} страниц	3	yes
+pdfcraft.tsv	4023	{n} pixel|{n} pixels	{n} пиксель|{n} пикселя|{n} пикселей	3	yes
+pdfcraft.tsv	4024	{n} reply|{n} replies	{n} ответ|{n} ответа|{n} ответов	3	yes
+pdfcraft.tsv	4025	{n} result|{n} results	{n} результат|{n} результата|{n} результатов	3	yes
+photocraft.tsv	1259	Exported {n} style to {file}|Exported {n} styles to {file}	Экспортирован {n} стиль в {file}|Экспортировано {n} стиля в {file}|Экспортировано {n} стилей в {file}	3	yes
+photocraft.tsv	1260	Exported {n} swatch to {file}|Exported {n} swatches to {file}	Экспортирован {n} образец в {file}|Экспортированы {n} образца в {file}|Экспортировано {n} образцов в {file}	3	yes
+photocraft.tsv	1572	Group · {n} layer|Group · {n} layers	Группа · {n} слой|Группа · {n} слоя|Группа · {n} слоёв	3	yes
+photocraft.tsv	1711	Imported {n} brush from {file}|Imported {n} brushes from {file}	Импортирована {n} кисть из {file}|Импортированы {n} кисти из {file}|Импортировано {n} кистей из {file}	3	yes
+photocraft.tsv	1712	Imported {n} brush from {group}|Imported {n} brushes from {group}	Импортирована {n} кисть из {group}|Импортированы {n} кисти из {group}|Импортировано {n} кистей из {group}	3	yes
+photocraft.tsv	1713	Imported {n} gradient from {file}|Imported {n} gradients from {file}	Импортирован {n} градиент из {file}|Импортированы {n} градиента из {file}|Импортировано {n} градиентов из {file}	3	yes
+photocraft.tsv	1714	Imported {n} pattern from {file}|Imported {n} patterns from {file}	Импортирован {n} узор из {file}|Импортированы {n} узора из {file}|Импортировано {n} узоров из {file}	3	yes
+photocraft.tsv	1716	Imported {n} style from {file}|Imported {n} styles from {file}	Импортирован {n} стиль из {file}|Импортировано {n} стиля из {file}|Импортировано {n} стилей из {file}	3	yes
+photocraft.tsv	1717	Imported {n} swatch from {file}|Imported {n} swatches from {file}	Импортирован {n} образец из {file}|Импортированы {n} образца из {file}|Импортировано {n} образцов из {file}	3	yes
+photocraft.tsv	1979	Loaded {n} action from {file}|Loaded {n} actions from {file}	Загружена {n} операция из {file}|Загружены {n} операции из {file}|Загружено {n} операций из {file}	3	yes
+photocraft.tsv	2551	Played {n} step|Played {n} steps	Воспроизведён {n} шаг|Воспроизведены {n} шага|Воспроизведено {n} шагов	3	yes
+photocraft.tsv	2967	Saved for Web: {n} file|Saved for Web: {n} files	Сохранено для Web: {n} файл|Сохранено для Web: {n} файла|Сохранено для Web: {n} файлов	3	yes
+photocraft.tsv	2971	Saved {n} action to {file}|Saved {n} actions to {file}	Сохранена {n} операция в {file}|Сохранены {n} операции в {file}|Сохранено {n} операций в {file}	3	yes
+photocraft.tsv	2972	Saved {n} color to {file}|Saved {n} colors to {file}	Сохранён {n} цвет в {file}|Сохранены {n} цвета в {file}|Сохранено {n} цветов в {file}	3	yes
+photocraft.tsv	3614	Updated {n} linked smart object changed on disk|Updated {n} linked smart objects changed on disk	Обновлён {n} связанный смарт-объект, изменённый на диске|Обновлены {n} связанных смарт-объекта, изменённых на диске|Обновлено {n} связанных смарт-объектов, изменённых на диске	3	yes
+photocraft.tsv	3793	{n} action file loaded|{n} action files loaded	Загружен {n} файл операций|Загружены {n} файла операций|Загружено {n} файлов операций	3	yes
+photocraft.tsv	3794	{n} action|{n} actions	{n} операция|{n} операции|{n} операций	3	yes
+photocraft.tsv	3796	{n} file could not be loaded: {errors}|{n} files could not be loaded: {errors}	Не удалось загрузить {n} файл: {errors}|Не удалось загрузить {n} файла: {errors}|Не удалось загрузить {n} файлов: {errors}	3	yes
+photocraft.tsv	3797	{n} layer recorded by this comp was deleted. Update the comp, or clear the warning.|{n} layers recorded by this comp were deleted. Update the comp, or clear the warning.	Удалён {n} слой, записанный в этом варианте. Обновите вариант или сбросьте предупреждение.|Удалены {n} слоя, записанных в этом варианте. Обновите вариант или сбросьте предупреждение.|Удалено {n} слоёв, записанных в этом варианте. Обновите вариант или сбросьте предупреждение.	3	yes
+photocraft.tsv	3798	{n} layer|{n} layers	{n} слой|{n} слоя|{n} слоёв	3	yes
+photocraft.tsv	3799	{n} mip level|{n} mip levels	{n} MIP-уровень|{n} MIP-уровня|{n} MIP-уровней	3	yes
+photocraft.tsv	3801	{n} plane|{n} planes	{n} плоскость|{n} плоскости|{n} плоскостей	3	yes
+photocraft.tsv	3802	{n} preset|{n} presets	{n} набор|{n} набора|{n} наборов	3	yes
+photocraft.tsv	3803	{n} sample point removed|{n} sample points removed	Удалена {n} точка замера|Удалены {n} точки замера|Удалено {n} точек замера	3	yes
+photocraft.tsv	3804	{n} sample|{n} samples	{n} образец|{n} образца|{n} образцов	3	yes
+photocraft.tsv	3805	{n} slice|{n} slices	{n} фрагмент|{n} фрагмента|{n} фрагментов	3	yes
+photocraft.tsv	3806	{n} step has no PhotoCraft equivalent yet|{n} steps have no PhotoCraft equivalent yet	{n} шаг пока не имеет эквивалента в PhotoCraft|{n} шага пока не имеют эквивалента в PhotoCraft|{n} шагов пока не имеют эквивалента в PhotoCraft	3	yes
+photocraft.tsv	3807	{n} step with no Photoshop equivalent left out|{n} steps with no Photoshop equivalent left out	Пропущен {n} шаг без эквивалента в Photoshop|Пропущены {n} шага без эквивалента в Photoshop|Пропущено {n} шагов без эквивалента в Photoshop	3	yes
+photocraft.tsv	3817	{warning} (+{n} more brush preset warning)|{warning} (+{n} more brush preset warnings)	{warning} (и ещё {n} предупреждение о наборах кистей)|{warning} (и ещё {n} предупреждения о наборах кистей)|{warning} (и ещё {n} предупреждений о наборах кистей)	3	yes
+photocraft.tsv	3818	{what} with {n} warning|{what} with {n} warnings	{what}: {n} предупреждение|{what}: {n} предупреждения|{what}: {n} предупреждений	3	yes
+vectorcraft.tsv	242	agrees with {n} default shortcut|agrees with {n} default shortcuts	совпадает с {n} сочетанием по умолчанию|совпадает с {n} сочетаниями по умолчанию|совпадает с {n} сочетаниями по умолчанию	3	yes
+vectorcraft.tsv	642	Color Table ({n} color)|Color Table ({n} colors)	Цветовая таблица ({n} цвет)|Цветовая таблица ({n} цвета)|Цветовая таблица ({n} цветов)	3	yes
+vectorcraft.tsv	892	Delete this {n} graphic style?|Delete these {n} graphic styles?	Удалить этот графический стиль ({n})?|Удалить эти графические стили ({n})?|Удалить эти графические стили ({n})?	3	yes
+vectorcraft.tsv	3960	{n} area highlighted|{n} areas highlighted	{n} область выделена|{n} области выделено|{n} областей выделено	3	yes
+vectorcraft.tsv	3961	{n} color|{n} colors	{n} цвет|{n} цвета|{n} цветов	3	yes
+vectorcraft.tsv	3962	{n} fill|{n} fills	{n} заливка|{n} заливки|{n} заливок	3	yes
+vectorcraft.tsv	3966	{n} glyph|{n} glyphs	{n} глиф|{n} глифа|{n} глифов	3	yes
+vectorcraft.tsv	3967	{n} more export waiting|{n} more exports waiting	Ещё {n} экспорт в очереди|Ещё {n} экспорта в очереди|Ещё {n} экспортов в очереди	3	yes
+vectorcraft.tsv	3968	{n} object highlighted|{n} objects highlighted	{n} объект выделен|{n} объекта выделено|{n} объектов выделено	3	yes
+vectorcraft.tsv	3970	{n} Object|{n} Objects	{n} объект|{n} объекта|{n} объектов	3	yes
+vectorcraft.tsv	3971	{n} part of the file wasn't read|{n} parts of the file weren't read	не прочитана {n} часть файла|не прочитаны {n} части файла|не прочитано {n} частей файла	3	yes
+vectorcraft.tsv	3972	{n} PR|{n} PRs	{n} PR|{n} PR|{n} PR	3	yes
+vectorcraft.tsv	3973	{n} star|{n} stars	{n} звезда|{n} звезды|{n} звёзд	3	yes
+vectorcraft.tsv	3974	{n} stroke|{n} strokes	{n} обводка|{n} обводки|{n} обводок	3	yes

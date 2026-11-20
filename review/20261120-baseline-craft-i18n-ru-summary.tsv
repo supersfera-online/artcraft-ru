@@ -1,0 +1,13 @@
+# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
+file	present_in_ru	etalon_union_ex_ru	ru_keys	missing_vs_union	extra_vs_union	max_locale	max_rows	missing_vs_max	extra_vs_max	untranslated_all	untranslated_possibly	untranslated_likely_ok_guess	parse_or_rule_errors	placeholder_rule_errors	newline_mismatches	tag_mismatches	mnemonic_candidates	length_ratio_gt_1_5	short_ui_ru_gt_60	plural_rows	plural_bad	clean_room_header
+anicraft.tsv	no	1697	0	1697	0	pt-br	1697	1697	0	0	0	0	0	0	0	0	0	0	0	0	0	n/a
+cadcraft.tsv	yes	1490	878	612	0	ka	1345	498	31	24	22	2	0	0	0	2	3	154	0	1	0	yes
+common.tsv	yes	1291	1287	4	0	lv	1291	4	0	25	21	4	0	0	0	0	0	294	0	4	0	yes
+craft-launcher.tsv	yes	345	273	72	0	ka	345	72	0	5	5	0	0	0	0	0	0	51	2	5	0	yes
+deckcraft.tsv	no	1084	0	1084	0	de	1084	1084	0	0	0	0	0	0	0	0	0	0	0	0	0	n/a
+filmcraft.tsv	yes	3615	314	3301	0	ka	3615	3301	0	26	26	0	0	0	0	0	0	65	0	0	0	yes
+pdfcraft.tsv	yes	4984	4053	931	0	fr	4559	582	76	62	57	5	0	0	0	0	1	601	3	27	0	yes
+photocraft.tsv	yes	4841	3843	998	0	ka	4682	900	61	81	45	36	0	0	0	0	0	721	2	30	0	yes
+texturecraft.tsv	no	997	0	997	0	ar	962	962	0	0	0	0	0	0	0	0	0	0	0	0	0	n/a
+vectorcraft.tsv	yes	5459	3982	1477	0	ka	5330	1353	5	33	26	7	0	0	0	1	0	795	2	14	0	yes
+wordcraft.tsv	yes	3216	2590	626	0	ka	3160	588	18	17	14	3	0	0	4	0	0	358	0	0	0	yes

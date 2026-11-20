@@ -1,0 +1,5 @@
+# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
+file	line	context	source	translation	en_tags	ru_tags	detail
+cadcraft.tsv	766		Specify second point or <use first point as displacement>	Укажите вторую точку или <использовать первую точку как смещение>	<use first point as displacement>		markup tags differ
+cadcraft.tsv	781		Specify third source point or <continue>	Укажите третью исходную точку или <продолжить>	<continue>		markup tags differ
+vectorcraft.tsv	95		<Opacity Mask>	<Непрозрачная маска>	<Opacity Mask>		markup tags differ
