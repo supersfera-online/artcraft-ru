@@ -1,0 +1,89 @@
+# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
+# Единый русский глоссарий ArtCraft + SolidCraft (отдел «Локализация ArtCraft»)
+
+Создан 20.11.2026 (America/Los_Angeles) терминологом отдела по указанию правообладателя, этап 1 плана
+`plan-ru-localization.md`. Только локально, наружу ничего не отправлено.
+
+## Файлы
+
+| Файл | О чём |
+|---|---|
+| `glossary.tsv` | Основной словарь: 681 терминов (после заходов 20.11, включая Amount/Rasterize, MaterialCraft/GridCraft, EffectCraft). Колонки: `en`, `ru`, `где_встречается`, `источник`, `пометка` |
+| `conflicts.md` | Разночтения между программами/источниками (135 записей), «Главные 15» — на решение правообладателю |
+| `sources.md` | Откуда что взято: репозитории, коммиты, лицензии, даты; что не найдено |
+| `README.md` | Этот файл |
+
+## Формат glossary.tsv
+
+- UTF-8, разделитель TAB, первая строка — заголовок. Одна строка = один смысл английского термина.
+  Если у слова несколько смыслов, в `en` в скобках стоит смысл: `Stroke (contour)`, `Fit (view)`.
+- `где_встречается` — программы, в чьих русских каталогах найден термин; `common (craft-i18n)` = общий каталог `locales/ru/common.tsv`.
+- `источник` — файл и короткий SHA коммита (полные — в sources.md).
+- `пометка` = **статус** + **степень проверки** (+ короткое примечание):
+  - статус: **принят** — термин закреплён в документе о терминологии у авторов (GLOSSARY.md craft-i18n, docs/localization-ru.md PhotoCraft, docs/translating.md FigCraft);
+    **предложен** — так уже стоит в официальных каталогах, но документом не закреплено (кандидат на «принят» после слова правообладателя);
+    **спорный** — в разных программах разные варианты, см. conflicts.md; в `ru` стоит самый частый вариант, это не решение.
+  - проверка: проверено (источник) / из файла / догадка / не проверено.
+- Строки 1–~50 — термины из документов авторов; дальше — частотные короткие UI-термины, встречающиеся в 3+ каталогах
+  (порядок: по числу программ). Добирались автоматически, правила отбора в sources.md.
+
+## Правила для всех переводчиков отдела
+
+1. Плейсхолдеры (`{name}`, `{n}`, `%s`), разметку, `\n`, конечное «…», горячие клавиши, ID команд, имена файлов — **не трогать** и не переводить. Число и набор плейсхолдеров в ru = как в en. **[проверено: шапка locales/ru/common.tsv craft-i18n]**
+2. Термин со статусом «принят» использовать как есть. «Спорный» — не менять уже стоящие в каталогах строки, пока правообладатель не решит.
+3. Команды — инфинитив/императив без «-те»: «Сохранить», «Удалить»; существительные, если каталог уже так делает («Уровни…»). **[проверено: photocraft docs/localization-ru.md]**
+4. Кавычки «ёлочки» **[проверено: FigCraft docs/translating.md]**; буква «ё» — предлагается писать всегда **[догадка, на решение — conflicts.md]**.
+5. Десятичная запятая; латиница для имён продуктов и технологий (PhotoCraft, Camera Raw, RGB, CMYK, LUT, WebP). **[проверено: photocraft docs/localization-ru.md]**
+6. Множественное число по русским правилам one/few/many, `{n}` во всех формах. **[проверено: FigCraft docs/translating.md]**
+7. **Чистая комната:** переводить от смысла английской строки; не смотреть и не копировать словари и интерфейсы Adobe, Autodesk, Figma, Microsoft и др. Термины из открытых репозиториев storytold и tangency-labs (Apache-2.0) учитываются как уже принятые — со ссылкой на источник. Если использовался ИИ — писать это в атрибуции. **[проверено: README craft-i18n, план разд. 1]**
+8. Один английский ключ с разными смыслами (Construction, Flat, Round, Normal, Gap, Clearance, Fit, Quantity, Reference…) — отдельная запись на каждый смысл. **[проверено: SolidCraft glossary «Words with more than one meaning»]**
+9. Каждая новая строка в glossary.tsv — с источником и пометкой. Ничего не удалять; изменения — дописыванием, старое значение переносить в conflicts.md.
+
+## Как пересобрать подсчёт
+
+Скрипты (в рабочей копии, только чтение источников): `tmp/l10n-build/build.py` → `gen2.py` → `gen3.py`;
+копии источников — `tmp/l10n-src/`. Внимание: gen2/gen3 перезаписывают glossary.tsv и conflicts.md —
+после ручных правок не запускать без копии.
+
+## Инвентарь 19 программ [из файла: план, раздел 3]
+
+| Программа | Репозиторий GitHub | Формат i18n / где править |
+|---|---|---|
+| PhotoCraft | storytold/photocraft | TSV craft-i18n `locales/ru/photocraft.tsv` + `common.tsv` |
+| PdfCraft | storytold/pdfcraft | TSV craft-i18n `locales/ru/pdfcraft.tsv` + `common.tsv` |
+| WordCraft | storytold/wordcraft | TSV craft-i18n `locales/ru/wordcraft.tsv` + `common.tsv` |
+| VectorCraft | storytold/vectorcraft | TSV `crates/ui-egui/src/i18n/ru.tsv` (живой, craft-i18n неполон) |
+| FilmCraft | storytold/filmcraft | TSV `crates/ui-egui/src/i18n/ru.tsv` (живой) |
+| CADCraft | storytold/cadcraft | TSV `crates/ui-egui/src/i18n/ru.tsv` |
+| artcraft-launcher | storytold/craft-launcher | TSV `crates/ui-egui/src/i18n/ru.tsv` |
+| LightCraft | storytold/lightcraft | JSON `crates/ui-egui/locales/ru.json`, `ru-formats.json` |
+| FigCraft | storytold/figcraft | TOML `crates/ui-egui/locales/ru.toml` |
+| craft-anything | storytold/craft-anything | двухколоночный TSV `crates/ui-egui/src/i18n/ru.tsv` |
+| DesignCraft | storytold/designcraft | Rust-таблица `crates/ui-egui/src/i18n/ru.rs` |
+| GridCraft | storytold/gridcraft | Rust-match `crates/ui-egui/src/i18n/ru.rs` |
+| TextureCraft | storytold/texturecraft | TSV craft-i18n `locales/ru/texturecraft.tsv` (нужно завести) |
+| AniCraft | storytold/anicraft | TSV craft-i18n `locales/ru/anicraft.tsv` (нужно завести) |
+| DeckCraft | storytold/deckcraft | TSV craft-i18n `locales/ru/deckcraft.tsv`; подключение в программе ещё надо проверить |
+| SoundCraft | storytold/soundcraft | Rust `crates/ui-egui/locales/<язык>/mod.rs` (ru нет) |
+| MaterialCraft | storytold/materialcraft | Rust-таблица; в плане назван только `ar.rs`, полный путь не указан |
+| EffectCraft | storytold/effectcraft | Rust `crates/ui-egui/src/i18n/ui.rs`, `effects.rs` (ru нет) |
+| SolidCraft | tangency-labs/solidcraft | JSON `assets/locales/ru.json`, ключи из `en.json` |
+
+## Что требует план [из файла: план, разделы 5–6]
+
+- Сначала один глоссарий, только затем массовый перевод для всех 19 программ. План предлагал `dept/photocraft/`, прямое задание правообладателя уточнило новое место `dept/l10n/glossary/`.
+- Опереться на craft-i18n GLOSSARY, PhotoCraft docs/localization-ru.md, SolidCraft glossary, FigCraft docs/translating.md; уже принятые термины без причины не менять.
+- Терминолог: единый словарь, спорные термины, проверка новых строк на соответствие уже принятым; решения принимает правообладатель.
+- Дат/дедлайнов этапов в плане **нет**; задан только порядок. Дата составления плана — 20.11.2026 (PT).
+- Роли отдела: каталоги craft-i18n, каталоги Storytold, каталоги SolidCraft, упаковка, документация, ревизор, CLI/ошибки. В плане только предложены; фактические папки, появившиеся во время этой работы, отмечены в sources.md.
+
+## Правила, закреплённые 20.11.2026 (со слов координатора; лично не проверено)
+
+Переданы координатором отдела как решения правообладателя от 20.11.2026. Для терминолога это **со слов координатора, лично не проверено**.
+
+1. Букву **«ё» пишем всегда**. Исключение-не-орфография: «все» и «всё» — разные слова, их не сводить правилом «ё». Дублировать ли в Keywords формы без «ё» — на взгляд правообладателя.
+2. **Frame** латиницей **только в FigCraft** (имя инструмента, ревью VanTan). В остальных программах переводим (в FilmCraft frames — «кадры»; иначе по смыслу).
+3. **Форма команд** в меню — как сейчас в каждой программе, не унифицировать. Расхождение только по форме команды (род/число, глагол/имя той же команды) — не конфликт, решение «как в программе».
+4. **Вариант авторов конкретной программы действует для этой программы:** общее решение + исключения по программам (отдельные строки в glossary.tsv и раздел в decisions-20261120.md). Так, PhotoCraft docs/localization-ru.md задаёт термины PhotoCraft; FigCraft docs/translating.md — FigCraft; SolidCraft ru.json — SolidCraft.
+5. Выбор спорных: **(а)** принятое авторами этой программы/документа; **(б)** самый частый в каталогах (указать счёт N:M); **(в)** при равенстве — общепринятое в русских графических редакторах, пометка «догадка/общепринятое», без копирования чужих проприетарных файлов. Законные разные смыслы (глагол/существительное, тема/свет) — развести. Normal (тип линии SolidCraft) — известная ошибка каталога («нормаль» вместо «обычная»).
+6. Где правило не даёт однозначного ответа или решение заметно спорно — пометка **«на взгляд правообладателя»**. Итог для показа: `decisions-20261120.md`.
