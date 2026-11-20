@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
-"""Пишет review/screenshot-checklists/<программа>.md (19 программ) по фактам из клонов в рабочей копии.
+"""Пишет review/screenshot-checklists/<программа>.md (19 программ) по фактам из клонов на box.
 
 Ручные сведения (как включить русский, что не переводится) — в таблице PROGRAMS ниже, у каждого
 источник; автоматические (ярлык .desktop, длинные строки, слова с «ё», термины глоссария) берутся
@@ -25,7 +25,7 @@ V, G, N = "проверено", "догадка", "не проверено"
 # name: (Название, как включить язык, статус+источник, ru в коде?, где каталог, панели для снимка, что не переводится + источник, примечания)
 PROGRAMS = {
  "anicraft": ("AniCraft", "Preferences › Appearance › Language (или запуск с `--lang ru`)", f"{V}: docs/localisation.md:22",
-   f"ru в списке READY в коде; каталога ru в репозитории программы нет, черновик `craft-i18n/locales/ru/anicraft.tsv` есть только локально (не в сборке) — {V}: клон craft-i18n, git status",
+   f"ru в списке READY в коде; каталога ru в репозитории программы нет, черновик `craft-i18n/locales/ru/anicraft.tsv` есть только локально на box (не в сборке) — {V}: клон craft-i18n, git status",
    "craft-i18n `locales/ru/anicraft.tsv` (вшивается при сборке через `CRAFT_I18N_DIR`)",
    ["Шкала времени (Timeline)", "Слои", "Библиотека символов"],
    f"документы пользователя (имена слоёв, символов, сцен), ID команд и параметры, формат `.anicraft`, `anicraft-cli`, `serve`, MCP, журнал, `--help`; пока не переводятся сообщения движка (тело ошибок и отчётов импорта; заголовки и кнопки переводятся) — {V}: docs/localisation.md:12-17",
@@ -43,7 +43,7 @@ PROGRAMS = {
    ["Список приложений", "Страница обновлений"],
    f"названия продуктов (ArtCraft Launcher, Craft App Suite, PhotoCraft…); где нет шрифта и в веб-версии интерфейс остаётся английским — {V}: docs/development.md:41, README.md:116", ""),
  "deckcraft": ("DeckCraft", "переключателя языка нет — интерфейс только на английском", f"{V}: docs/localization-parity.md:5",
-   f"ru не зарегистрирован — {V}; в craft-i18n лежит `deckcraft.tsv` у других языков, ru — только локальный черновик в рабочей копии",
+   f"ru не зарегистрирован — {V}; в craft-i18n лежит `deckcraft.tsv` у других языков, ru — только локальный черновик на box",
    "пока нет (craft-i18n `locales/ru/deckcraft.tsv` — черновик, программа его не читает)",
    ["Панель слайдов", "Инспектор"],
    f"всё (английский интерфейс) — {V}: docs/localization-parity.md:5",
@@ -75,7 +75,7 @@ PROGRAMS = {
    ["Библиотека", "Обработка (Develop)", "Метаданные"],
    f"технические ошибки нижних уровней, строки вне каталога; ID команд, имена файлов, метаданные пользователя — {V}: docs/localization-ru.md:8-9, docs/localization.md:60",
    "Окончания множественного числа через приём `{:.0}` — проверить фразы с числами (1, 2, 5, 21 фото)."),
- "materialcraft": ("MaterialCraft", "живой выбор языка в Preferences", f"{V}: docs/localization-parity.md", f"в выпущенном коде ru нет, есть только ar — {V}: клон packaging/src/materialcraft-r2 (`ar.rs`); локальный черновик в рабочей копии (apps/materialcraft, не закоммичен, 20.11.2026 ~11:08 PST) добавляет `crates/ui-egui/src/i18n/ru.rs` (711 строк) и правит i18n.rs — {V}: git status",
+ "materialcraft": ("MaterialCraft", "живой выбор языка в Preferences", f"{V}: docs/localization-parity.md", f"в выпущенном коде ru нет, есть только ar — {V}: клон packaging/src/materialcraft-r2 (`ar.rs`); локальный черновик на box (apps/materialcraft, не закоммичен, 20.11.2026 ~11:08 PST) добавляет `crates/ui-egui/src/i18n/ru.rs` (711 строк) и правит i18n.rs — {V}: git status",
    "пока нет", ["Граф узлов", "Библиотека", "Свойства узла"],
    f"не найдено в docs ({N})", "Снимки — исходное состояние: подтвердить, что русского в списке нет."),
  "pdfcraft": ("PdfCraft", "Меню › Edit › Preferences… › Interface language; «Auto» следует LC_ALL / LC_MESSAGES / LANG", f"{V}: docs/localization.md:3,7", f"ru зарегистрирован — {V}: код ui-egui",
@@ -93,10 +93,10 @@ PROGRAMS = {
    ["Дерево построения", "Эскиз", "Свойства элемента"],
    f"ID команд, горячие клавиши, форматы файлов, единицы, имена пользователя; устоявшиеся Loft, Sweep, Spline, Offset — {V}: docs/localization.md:97-100",
    f"Ярлык `.desktop` у SolidCraft без [ru] — {V}: assets/platforms/linux/io.tangencylabs.solidcraft.desktop."),
- "soundcraft": ("SoundCraft", "Appearance ▸ Language (или команда `ui.language`)", f"{V}: docs/localization-parity.md:47-49", f"в выпущенном коде ru нет, есть только pt-BR — {V}: клон packaging/src/soundcraft; локальный черновик в рабочей копии (apps/soundcraft, не закоммичен, 20.11.2026 11:05 PST) добавляет `crates/ui-egui/locales/ru/mod.rs` и правит localization.rs, menus.rs — {V}: git status",
+ "soundcraft": ("SoundCraft", "Appearance ▸ Language (или команда `ui.language`)", f"{V}: docs/localization-parity.md:47-49", f"в выпущенном коде ru нет, есть только pt-BR — {V}: клон packaging/src/soundcraft; локальный черновик на box (apps/soundcraft, не закоммичен, 20.11.2026 11:05 PST) добавляет `crates/ui-egui/locales/ru/mod.rs` и правит localization.rs, menus.rs — {V}: git status",
    "пока нет", ["Микшер", "Аранжировка", "Браузер"],
    f"не найдено в docs ({N})", "Снимки — исходное состояние: подтвердить, что русского в списке нет."),
- "texturecraft": ("TextureCraft", "Edit ▸ Settings ▸ Language (переключается сразу)", f"{V}: docs/localization-parity.md:10", f"ru не зарегистрирован — {V}; ru-каталог в craft-i18n только локальный черновик в рабочей копии",
+ "texturecraft": ("TextureCraft", "Edit ▸ Settings ▸ Language (переключается сразу)", f"{V}: docs/localization-parity.md:10", f"ru не зарегистрирован — {V}; ru-каталог в craft-i18n только локальный черновик на box",
    "пока нет (craft-i18n `locales/ru/texturecraft.tsv` — черновик)", ["Слои", "Свойства кисти", "Наборы текстур"],
    f"имена ассетов библиотеки (материалы, смарт-маски, альфы, окружения), содержимое пользователя, форматы и технические имена (sRGB8, L16F, RGB, OpenGL, DirectX), детали ошибок движка — {V}: docs/localization-parity.md:39-41",
    "Снимки — исходное состояние: подтвердить, что русского в списке нет."),
@@ -270,7 +270,7 @@ def write(prog: str) -> str:
     L.append("## 4. Ярлык в меню приложений")
     L.append("")
     if dpath:
-        L.append(f"Файл в клоне: `{dpath}` — **{V}** (чтение файла в рабочей копии).")
+        L.append(f"Файл в клоне: `{dpath}` — **{V}** (чтение файла на box).")
         L.append("")
         L.append("| Поле | English | Русский в клоне |")
         L.append("|---|---|---|")
@@ -278,8 +278,8 @@ def write(prog: str) -> str:
             L.append(f"| {k} | {esc(dv.get(k, '—'))} | {esc(dv.get(k + '[ru]', 'нет'))} |")
         L.append("")
         if any(k.endswith("[ru]") for k in dv):
-            L.append("Русские поля добавлены локальной черновой правкой в рабочей копии (коммит «отдел локализации packaging: черновой русский перевод .desktop, AppStream и mime», 20.11.2026) — "
-                     f"**{V}: git log клона**. В установленной у правообладателя версии их, скорее всего, нет (по плану 4.1 на установленной системе полей не было) — снимок фиксирует, что видно сейчас.")
+            L.append("Русские поля добавлены локальной черновой правкой на box (коммит «отдел локализации packaging: черновой русский перевод .desktop, AppStream и mime», 20.11.2026) — "
+                     f"**{V}: git log клона**. В установленной у правообладателя версии их, скорее всего, нет (по плану 4.1 на neosfera полей не было) — снимок фиксирует, что видно сейчас.")
     else:
         L.append(f"Файл `.desktop` в клоне не найден — **{N}**.")
     L.append("")
