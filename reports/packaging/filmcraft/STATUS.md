@@ -5,7 +5,7 @@
 
 - Репозиторий: https://github.com/storytold/filmcraft [проверено: git clone --depth 1]
 - Коммит источника (main): `960a661001767a887dc4402c51e24f0436176705` от 2026-11-20 06:05 PT [проверено: git log]
-- Локальный клон: `packaging/src/filmcraft/`, ветка `l10n-ru-packaging` (1 коммит(а), автор `отдел локализации <local@localhost>`, без remote-ветки) [проверено]
+- Локальный клон: `packaging/src/filmcraft/`, ветка `l10n-ru-packaging` (1 коммит(а), автор `отдел локализации <users.noreply.github.com>`, без remote-ветки) [проверено]
 - Изменения: 4 files changed, 19 insertions(+) [проверено: git diff --shortstat]
 
 ## Файлы (итоговый вид в `files/`)
@@ -21,7 +21,7 @@
 - Авторы не используют itstool/gettext для metainfo (шаблон .in подставляет только @VERSION@/@DATE@ через sed) — встроенный xml:lang уместен [проверено: package.sh, git grep itstool/msgfmt].
 
 ## Валидация (ветка l10n-ru-packaging; @VERSION@/@DATE@ подставлены как в package.sh)
-Инструменты: desktop-file-validate (системный), appstreamcli 1.0.5 `validate --no-net --pedantic` (распакован без sudo из .deb в tools-local), python xml.dom.minidom + lxml для mime. xmllint в рабочей копии нет.
+Инструменты: desktop-file-validate (системный), appstreamcli 1.0.5 `validate --no-net --pedantic` (распакован без sudo из .deb в tools-local), python xml.dom.minidom + lxml для mime. xmllint на box нет.
     desktop-file-validate ai.storyteller.filmcraft.desktop rc=0 OK
     appstreamcli ai.storyteller.filmcraft.metainfo.xml.in rc=0 I: ai.storyteller.filmcraft:15: description-first-para-too-short 
     xmlparse ai.storyteller.filmcraft.metainfo.xml.in OK
@@ -51,3 +51,22 @@
 ## Патч
 `filmcraft.patch` (git format-patch main..l10n-ru-packaging), копия в `../patches/filmcraft.patch`.
 Команда: `git -C packaging/src/filmcraft diff main..l10n-ru-packaging --stat`
+
+## Авторство перевода (20.11.2026, дополнение)
+
+Правила из `RULES-AUTHORSHIP.md` применены к уже сделанному черновику. История не переписывалась. [проверено]
+
+- Ветка по-прежнему `l10n-ru-packaging`. Новый коммит на кончике: `a4ddbab supersfera <223132313+supersfera-online@users.noreply.github.com>`.
+- Во все наши переводные `.desktop` / metainfo / mime (где есть русский) добавлен комментарий `Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0`: в `.desktop` — первой строкой, до `[Desktop Entry]`; в XML — сразу после `<?xml ...?>`, авторский комментарий про AppStream оставлен следующим, без изменений. Лицензионные файлы авторов и JSON не трогались.
+- `desktop-file-validate` и `appstreamcli validate --no-net --pedantic` снова прошли с rc=0 (те же подсказки авторов, что и раньше). [проверено]
+- Патч и `files/` обновлены с кончика ветки. Наружу ничего не отправлялось.
+
+Коммиты на ветке `main..HEAD` (старые имена авторов не переписывались):
+
+```
+a4ddbab supersfera <223132313+supersfera-online@users.noreply.github.com> l10n(ru): add translation copyright comments
+b219d3c отдел локализации <users.noreply.github.com> packaging: черновой русский перевод .desktop, AppStream и mime (ru)
+```
+
+- Генератор `apps/filmcraft/src/dev_icon.rs` тоже выдаёт ту же первую строку-комментарий, чтобы тест `desktop_file_matches_the_packaged_fields` не расходился с упакованным `.desktop`. Построчное сравнение (как в тесте) совпало. [проверено: воспроизведение логики теста]. Полный `cargo test` не запускался: в клоне нет `target/`. [не проверено]
+- Это авторский файл со смешанным содержимым: шапка на весь `.rs` не ставилась (первая строка обязана остаться `//!` crate docs); комментарий об авторстве перевода стоит над первым `Name[ru]` в генераторе.
