@@ -1,15 +1,46 @@
 # Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
 #
-# Russian Linux packaging (.desktop / AppStream / MIME) for storytold/filmcraft
+# Russian UI catalog and Linux packaging for storytold/filmcraft
 # Upstream: https://github.com/storytold/filmcraft
 # Base (origin merge-base): 960a661001767a887dc4402c51e24f0436176705
-# Snapshot: 2026-11-20 11:25 PST
+# Snapshot: 2026-11-20 12:09 PST
 # This patch is a draft localization contribution by SuperSfera LLC.
 #
+diff --git a/crates/ui-egui/src/i18n/ru.tsv b/crates/ui-egui/src/i18n/ru.tsv
+--- a/crates/ui-egui/src/i18n/ru.tsv
++++ b/crates/ui-egui/src/i18n/ru.tsv
+@@ -1,3 +1,5 @@
++# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
++# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
+ # Russian (ru) catalog. Columns separated by TAB: context <TAB> source <TAB> translation
+ # Empty context is a plain UI string. Escapes: \n, \t, \\; preserve placeholders and trailing …
+ # Full interface coverage: every string of the reference catalog is translated into Russian with
+@@ -3745,3 +3747,19 @@
+ 	Toggle Color Grading Section	Переключить раздел грейдинга
+ 	Color Grading Section	Раздел грейдинга
+ 	Read Video Scopes	Считать данные видеоскопов
++	From preset file:	Из файла пресета:
++	Hardware decoding: Auto uses the system's video decoder (VideoToolbox on macOS, Media Foundation on Windows, VA-API for H.264 and HEVC on Linux) for the streams it supports, and FilmCraft's own decoder for everything else or if the hardware fails. Media that is already open keeps its decoder until it is reopened.	Аппаратное декодирование: «Авто» использует системный видеодекодер (VideoToolbox в macOS, Media Foundation в Windows, VA-API для H.264 и HEVC в Linux) для поддерживаемых потоков, а собственный декодер FilmCraft — для всего остального или если оборудование не справляется. Уже открытые медиа сохраняют свой декодер, пока их не откроют заново.
++	Imported {n} preset(s)	Импортировано пресетов: {n}
++	Imported {n} preset(s); not imported: {error}	Импортировано пресетов: {n}; не импортировано: {error}
++	Imported {n} preset(s); {skipped} skipped	Импортировано пресетов: {n}; пропущено: {skipped}
++	Imported {n} preset(s); {skipped} skipped, {warnings} with unsupported parameters	Импортировано пресетов: {n}; пропущено: {skipped}, с неподдерживаемыми параметрами: {warnings}
++	Imported {n} preset(s); {warnings} with unsupported parameters	Импортировано пресетов: {n}; с неподдерживаемыми параметрами: {warnings}
++	MP3	MP3
++	MP3 48 kHz 320 kbps	MP3 48 кГц 320 кбит/с
++	MPEG audio (.mp3), joint stereo 48 kHz at 320 kbps	Аудио MPEG (.mp3), совмещённое стерео 48 кГц, 320 кбит/с
++	No presets folder: the app has no data directory	Нет папки пресетов: у приложения нет каталога данных
++	Open Presets Folder	Открыть папку пресетов
++	Preset library is up to date	Библиотека пресетов актуальна
++	Preset library updated	Библиотека пресетов обновлена
++	Preset library updated: {imported} loaded, {removed} removed	Библиотека пресетов обновлена: загружено {imported}, удалено {removed}
++	Scan Presets Folder	Сканировать папку пресетов
+
 diff --git a/packaging/linux/ai.storyteller.filmcraft.desktop b/packaging/linux/ai.storyteller.filmcraft.desktop
 --- a/packaging/linux/ai.storyteller.filmcraft.desktop
 +++ b/packaging/linux/ai.storyteller.filmcraft.desktop
-@@ -1,8 +1,12 @@
+@@ -1,8 +1,13 @@
++# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
 +# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
  [Desktop Entry]
  Type=Application
@@ -22,7 +53,7 @@ diff --git a/packaging/linux/ai.storyteller.filmcraft.desktop b/packaging/linux/
  Exec=filmcraft %F
  TryExec=filmcraft
  Icon=ai.storyteller.filmcraft
-@@ -12,3 +16,4 @@
+@@ -12,3 +17,4 @@
  Categories=AudioVideo;Video;AudioVideoEditing;
  MimeType=application/x-filmcraft;video/mp4;video/x-m4v;video/quicktime;video/x-matroska;video/webm;video/vnd.avi;video/x-msvideo;application/mxf;video/mp2t;video/mpeg;video/3gpp;
  Keywords=video;editor;film;timeline;color;grading;nle;
@@ -31,13 +62,14 @@ diff --git a/packaging/linux/ai.storyteller.filmcraft.desktop b/packaging/linux/
 diff --git a/packaging/linux/ai.storyteller.filmcraft.metainfo.xml.in b/packaging/linux/ai.storyteller.filmcraft.metainfo.xml.in
 --- a/packaging/linux/ai.storyteller.filmcraft.metainfo.xml.in
 +++ b/packaging/linux/ai.storyteller.filmcraft.metainfo.xml.in
-@@ -1,4 +1,5 @@
+@@ -1,4 +1,6 @@
  <?xml version="1.0" encoding="UTF-8"?>
++<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
 +<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
  <!-- AppStream metadata (software centres, Flathub). Template: package.sh and the Flatpak
       manifest substitute @VERSION@ and @DATE@ from Cargo.toml and the build date. -->
  <component type="desktop-application">
-@@ -7,6 +8,7 @@
+@@ -7,6 +9,7 @@
    <project_license>MIT OR Apache-2.0</project_license>
    <name>FilmCraft</name>
    <summary>Edit video, color and sound</summary>
@@ -45,7 +77,7 @@ diff --git a/packaging/linux/ai.storyteller.filmcraft.metainfo.xml.in b/packagin
    <developer id="ai.storyteller">
      <name>Learning Machines LLC</name>
    </developer>
-@@ -14,6 +16,9 @@
+@@ -14,6 +17,9 @@
      <p>
        FilmCraft is a video editor. Edit video, color and sound
      </p>
@@ -55,7 +87,7 @@ diff --git a/packaging/linux/ai.storyteller.filmcraft.metainfo.xml.in b/packagin
    </description>
    <launchable type="desktop-id">ai.storyteller.filmcraft.desktop</launchable>
    <icon type="stock">ai.storyteller.filmcraft</icon>
-@@ -29,14 +34,20 @@
+@@ -29,14 +35,20 @@
    </categories>
    <keywords>
      <keyword>video</keyword>
@@ -80,8 +112,9 @@ diff --git a/packaging/linux/ai.storyteller.filmcraft.metainfo.xml.in b/packagin
 diff --git a/packaging/linux/ai.storyteller.filmcraft.mime.xml b/packaging/linux/ai.storyteller.filmcraft.mime.xml
 --- a/packaging/linux/ai.storyteller.filmcraft.mime.xml
 +++ b/packaging/linux/ai.storyteller.filmcraft.mime.xml
-@@ -1,10 +1,12 @@
+@@ -1,10 +1,13 @@
  <?xml version="1.0" encoding="UTF-8"?>
++<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
 +<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
  <!-- shared-mime-info definitions for types the system database doesn't have.
       Installed to /usr/share/mime/packages/ (update-mime-database runs on install).
