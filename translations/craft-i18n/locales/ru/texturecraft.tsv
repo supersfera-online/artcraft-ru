@@ -1,0 +1,901 @@
+# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
+# Русский (ru) interface catalog for TextureCraft.
+# Columns, separated by a TAB:  context <TAB> English source text <TAB> translation
+#   context  usually empty. `@plural`, `@id` and `@msg` mean something to the apps; any other
+#            word is a label that tells apart two meanings of the same English.
+#   escapes  \n  \t  \\  inside a column. `{name}` placeholders must appear in both columns (in any
+#            order), and a trailing "…" in one needs one in the other.
+#   @plural  English `one|other`; the translation lists this language's plural forms, `|`-separated.
+#   Lines starting with # and blank lines are ignored. A missing entry shows in English.
+#
+# Clean room: every entry was written from the plain meaning of the English text in ordinary
+# computing vocabulary. No other product's localisation, string table or translated UI was
+# consulted or copied; add entries the same way.
+
+#	"{layer}" can't be filled: select a paint layer or a layer's mask	
+#	"{layer}" has no paint yet: the filter changes what you paint on it.	
+#	0 turns autosave off. Copies go to {folder}	
+#	1 effect	
+#	2D view only	
+#	32 bits (float)	
+#	3D MESH	
+#	3D mesh	
+#	3D meshes	
+#	3D texture painting: layers, masks, smart materials, mesh map baking and export.	
+#	3D view only	
+#	3D/2D views	
+#	A click fills what is under it; a dragged rectangle fills what it selects as it grows	
+#	A folder blends its children (pass-through). Set per-channel opacity in the layer rows.	
+#	a missing layer	
+#	About TextureCraft	
+#	About TextureCraft...	
+#	Accent color	
+#	ACES filmic	
+#	Add an anchor point to a layer below to use its stack as a mask.	
+#	Add anchor point	
+#	Add as decal (view center)	
+#	Add black mask	
+#	Add channel	
+#	Add color	
+#	Add compare mask	
+#	Add effect	
+#	Add fill	
+#	Add fill layer	
+#	Add filter	
+#	Add folder	
+#	Add generator	
+#	Add High-Poly Meshes	
+#	Add levels	
+#	Add mask	
+#	Add mask with color selection	
+#	Add output	
+#	Add paint	
+#	Add paint layer	
+#	Add smart material from the shelf	
+#	Add to the layer content	
+#	Add to the mask	
+#	Add white mask	
+#	Add...	
+#	Advanced settings	
+#	Aligned: the offset set by the first stroke is kept. V + click sets a new source.	
+#	Alignment and culling	
+#	All layers	
+#	Alphas	
+#	Also bound to {item} ({menu})	
+#	Alt + LMB drag	
+#	Amber	
+#	Ambient	
+#	Ambient Occlusion	
+#	Ambient occlusion	
+#	Anchor point	
+#	Anchor: {name}	
+#	Anchor: {name} ({channel})	
+#	Angle (degrees)	
+#	Angle fade from	
+#	Angle fade to	
+#	Angle jitter	
+#	Angle span	
+#	aniso	
+#	aniso angle	
+#	Anisotropy angle	
+#	Anisotropy level	
+#	Antialiasing	
+#	ao	
+#	AO intensity	
+#	Aperture	
+#	Apply Diffusion	
+#	ArtCraft website...	
+#	Assets	
+#	Attenuation	
+#	Auto Tonemapping	
+#	Automatic (from the mesh UVs)	
+#	Autosave every	
+#	Autosaves, smart materials, presets, templates and UI layouts go to the data folder. A new folder applies on restart; files already saved stay where they are.	
+#	Average Normals	
+#	Axis	
+#	Axis position	
+#	Back to painting	
+#	Backface culling	
+#	Bake an ID map (F8) to pick colors from the mesh.	
+#	Bake Mesh Maps	
+#	Bake mesh maps	
+#	Bake mesh maps (F8) for curvature, AO and thickness based generators.	
+#	Bake Selected Textures ({n})	
+#	Baked Lighting	
+#	Baked maps imported: {count}	
+#	Baking	
+#	Baking Visualization	
+#	Baking {map} ({n}/{total})	
+#	Baking {map} ({n}/{total}), texture set {set} of {sets}	
+#	Base color	
+#	Base color is the diffuse color, Specular the F0 color and Glossiness 1 - roughness (add these channels in the texture set settings).	
+#	Base color, Metallic, Roughness and Specular level.	
+#	Based on each texture set's size	
+#	Basic settings	
+#	BBox	
+#	Bent Normals	
+#	Bevel	
+#	Blending	
+#	Blending mode of the displayed channel	
+#	Blur and sharpen	
+#	Blur Directional	
+#	Bounces	
+#	Bricks	
+#	Brush	
+#	Brush name	
+#	Brush size	
+#	Brush size down / up	
+#	Brushed lines	
+#	BSphere	
+#	Built-in (read-only): duplicate it to edit	
+#	Built-in mesh	
+#	Built-in templates are read-only: duplicate one to edit it	
+#	Built-in: {mesh}	
+#	By Mesh Name	
+#	Cage	
+#	Cage Scene	
+#	Cage Type	
+#	Cage: {name}	
+#	Camera	
+#	Camera settings	
+#	Cancel the stroke	
+#	Cavities	
+#	Cell size (texels at 2K)	
+#	Cells	
+#	Change them in Texture Set Settings	
+#	Channel source: uniform value, procedural, image or anchor	
+#	Check All	
+#	Check for Updates...	
+#	Checker	
+#	Choose another mesh file for the project. It is read when you press OK.	
+#	Choosing or reimporting a mesh recomputes all channels.	
+#	Clamp	
+#	Clear mask	
+#	Clear recent projects	
+#	Click a mesh part to show or hide the selected layer on it.	
+#	Click the mesh to pick its material into the brush	
+#	Click the mesh to place the decal	
+#	Click, then press the new shortcut (Esc cancels)	
+#	Click: turn this channel on or off. Alt+click: this channel only	
+#	Closed path	
+#	Cloud	
+#	Clouds	
+#	coat	
+#	Coat normal	
+#	coat nrm	
+#	coat rough	
+#	Coat roughness	
+#	Coat weight	
+#	color	
+#	Color burn	
+#	Color dodge	
+#	Color Generator	
+#	Color of the light that travels under the surface (each channel goes as far as its value)	
+#	Color picker	
+#	Color selection	
+#	Color Source	
+#	Color space	
+#	Color to replace	
+#	Colors near the first shift towards the second, keeping their shading.	
+#	Colors read as gray. Add a levels or blur effect above to shape the result.	
+#	Combine with the layer's height	
+#	Common Parameters	
+#	Common Settings	
+#	Compare mask	
+#	Compositing	
+#	Constant	
+#	Constants	
+#	Contained center: fill polygons whose center is in the rectangle	
+#	Content effects	
+#	Continue with the sample project	
+#	Contrast/Luminosity	
+#	Converted maps	
+#	Cooked at {size} px	
+#	Copper	
+#	Copy effect	
+#	Copy from	
+#	Copy layer(s)	
+#	Copy RGB values	
+#	Copy the selected layer alone (its empty parts copy nothing)	
+#	Copy to all texture sets	
+#	Copy what the texture set shows	
+#	Coral	
+#	Cores kept for the UI	
+#	Cosine	
+#	Couldn't encode the render	
+#	Couldn't export textures: {error}	
+#	Couldn't export the mesh: {error}	
+#	Couldn't export the template: {error}	
+#	Couldn't import {name}: {error}	
+#	Couldn't open {name}: {error}	
+#	Couldn't read the render back from the GPU	
+#	Couldn't save the render: {error}	
+#	Couldn't save {name}: {error}	
+#	Count	
+#	Count per stamp	
+#	Crate	
+#	Create smart material	
+#	Ctrl+right-drag in a view sets the size and hardness, Ctrl+left-drag the flow and angle.	
+#	Cube	
+#	Current layer	
+#	Custom File	
+#	Cut effect	
+#	Cut layer(s)	
+#	Cyan / red	
+#	Cylinder	
+#	Cylindrical projection	
+#	Dark to light: the content's luminance picks a color along these stops.	
+#	Darken (Min)	
+#	Data folder	
+#	Decal	
+#	Decal projection	
+#	Default camera	
+#	Delete the selected template	
+#	Delete this camera	
+#	Deleted template "{name}"	
+#	Denoise	
+#	Depth of field	
+#	Depth of field (viewport and Rendering mode)	
+#	Depth of the sharp plane along the view (0: the orbit center)	
+#	Detail sizes	
+#	Details saved to {file}	
+#	Dilation + default background color	
+#	Dilation + transparent	
+#	Dilation infinite	
+#	Dilation Width	
+#	DirectX normal map	
+#	Dirt	
+#	Disable	
+#	Displacement (height channel)	
+#	Display material	
+#	Display next channel	
+#	Display next mesh map	
+#	Display previous channel	
+#	Display previous mesh map	
+#	Display Settings	
+#	Distance-Based	
+#	Distribution	
+#	Document resolution	
+#	Documentation...	
+#	Don't save	
+#	Done on CPU: {n} / {max} samples, {s} s	
+#	Done on GPU: {n} / {max} samples, {s} s	
+#	Double-click or press Enter to edit	
+#	Double-click to rename	
+#	Download as	
+#	Downloaded {name}	
+#	Drag onto an output channel	
+#	Drag the frame to move the decal, a corner to scale it, the round handle to turn it	
+#	Drags the layer stack's values along the stroke into the selected layer.	
+#	Draws {name} of texture set "{set}". Edits to the source show in every instance.	
+#	Drop an image from the Assets panel here to use it as this mesh map	
+#	Dry streaks	
+#	Duplicate effect	
+#	Duplicate layer(s)	
+#	Duplicate the selected template	
+#	Edge Contrast	
+#	Edge Detect	
+#	Edge Distance	
+#	Edge Protection	
+#	Edges	
+#	Edges and cavities	
+#	Edit keyboard shortcuts...	
+#	Edit quick mask	
+#	Editing quick mask: paint where painting is allowed (U to finish)	
+#	Editing the quick mask: fills paint where painting is allowed. Press U to finish.	
+#	Editing the quick mask: strokes paint where painting is allowed. Press U to finish.	
+#	emiss	
+#	Emissive	
+#	Enable or disable the effect	
+#	Enable quick mask	
+#	Enable Seams	
+#	Enter a finite number	
+#	Environment blur	
+#	Environment exposure (EV)	
+#	Environment map	
+#	Environment opacity	
+#	Environment rotation	
+#	Environment settings	
+#	Environment: {name}	
+#	Environments	
+#	Expand or collapse the folder	
+#	Export mesh	
+#	Export Mesh...	
+#	Export template	
+#	Export templates	
+#	Export textures	
+#	Export Textures...	
+#	Export the selected template (.json)	
+#	Exported mesh to {path}	
+#	Exported template "{name}" to {path}	
+#	Exported {n} textures to {folder}	
+#	F0 from specular level	
+#	Fabric weave	
+#	Face Normals Based	
+#	Field of view (deg)	
+#	File ID	
+#	File name without extension; variables insert names	
+#	File not found	
+#	File type	
+#	Fill layer	
+#	Fill mode	
+#	Fill only polygons the camera sees (3D view)	
+#	Fill the closed path (lasso)	
+#	Fill the path (close it first)	
+#	Filter the remaining noise while keeping edges and texture detail	
+#	Filters	
+#	Fine noise	
+#	Fingerprints	
+#	Fit the input range to the histogram	
+#	Flatten layer	
+#	Flips the image's green channel, for normal maps made with Y pointing down	
+#	Flow	
+#	Flow and opacity	
+#	Flow jitter	
+#	Focus distance	
+#	Focus: show only the active texture set	
+#	Fold or unfold these effects	
+#	Folders	
+#	Follow Newest Map	
+#	Follow path	
+#	For the whole project: how normal map images set as mesh maps are read (set them again after a change), and the default for export	
+#	Free and open source (MIT OR Apache-2.0), written in Rust.	
+#	From template	
+#	From template / project	
+#	Full Scene	
+#	General export parameters	
+#	General properties	
+#	Generate from Mesh	
+#	Generate from Normal Map	
+#	Generator	
+#	Geometry and UVs only	
+#	Geometry mask	
+#	GGX specular with height-correlated Smith visibility, Lambert diffuse, split-sum image-based lighting with spherical-harmonics irradiance and horizon fading.	
+#	gloss	
+#	Glossiness	
+#	Glossiness from roughness	
+#	glTF binary with textures	
+#	Go to camera 1	
+#	Go to camera 2	
+#	Go to camera 3	
+#	Go to camera 4	
+#	Go to camera 5	
+#	Go to camera 6	
+#	Go to camera 7	
+#	Go to camera 8	
+#	Go to camera 9	
+#	GPU error: {error}	
+#	Gradient Map	
+#	Gravity	
+#	Gray + A	
+#	Gray 50%	
+#	Green channel convention of normal maps: OpenGL (Y+) or DirectX (Y-). Imported and exported normal maps follow it.	
+#	Ground Plane	
+#	Ground Plane Offset	
+#	Group layer(s)	
+#	Grunge	
+#	Half	
+#	Hammered	
+#	Hard light	
+#	Hardness	
+#	HDR environments	
+#	height	
+#	Height offset	
+#	Height to normal strength	
+#	Hide all	
+#	Hide UI	
+#	Hide while painting	
+#	High Definition Mesh (HP)	
+#	High Poly Mesh Suffix	
+#	High Poly Scene	
+#	High poly: {name}	
+#	High-Poly Parameters	
+#	Histogram Range	
+#	Histogram Scan	
+#	Histogram Shift	
+#	Hit-test	
+#	Hold S: left-drag rotates, right-drag scales, middle-drag moves the stencil.	
+#	Hold V and click the mesh to set the clone source	
+#	Hold V and click the mesh to set the source, then paint elsewhere to copy it.	
+#	How a rectangle selects polygons	
+#	How far light travels under the surface, as a fraction of the mesh size (where the Scattering weight channel is painted)	
+#	How strongly transmissive surfaces bend light (where the Transmission channel is painted): water 1.33, glass 1.5, diamond 2.42	
+#	HSL Perceptive	
+#	Hue shift (degrees)	
+#	ID	
+#	Ignore Backface	
+#	Ignore Backface Suffix	
+#	Image: {name}	
+#	Import a template (.json)	
+#	Import an image (File > Import resources) to project it onto the mesh.	
+#	Import baked maps	
+#	Import HDR...	
+#	Import images to use them in fills and masks	
+#	Import material...	
+#	Import MaterialX material...	
+#	Import resources...	
+#	Import settings	
+#	Import...	
+#	Imported template "{name}"	
+#	Imported {name}	
+#	Include in Bake	
+#	Index of refraction	
+#	Input high	
+#	Input low	
+#	Input maps	
+#	Insert a variable	
+#	Instance	
+#	Instantiate across texture sets	
+#	Intensity (texels at 2K)	
+#	Interface scale	
+#	Intersection: fill polygons the rectangle touches	
+#	Inverse divide	
+#	Inverse Subtract	
+#	Invert mask	
+#	Invert mask background	
+#	Invert mask value	
+#	Invert quick mask	
+#	Invert show/hide	
+#	Jitters	
+#	Join the ArtCraft community on Discord	
+#	Join the community (Discord)...	
+#	Key light (shadow-casting light, direct only)	
+#	Keyboard	
+#	Keyboard shortcuts	
+#	Layer mask	
+#	Layer memory: {mb} MB	
+#	Lazy mouse	
+#	Lazy mouse distance	
+#	Leather grain	
+#	Lens size: how quickly things blur away from the focus distance	
+#	Lifetime (steps)	
+#	Light / direction	
+#	Light azimuth (degrees)	
+#	Light elevation (degrees)	
+#	Light intensity	
+#	Lighten (Max)	
+#	Linear burn	
+#	Linear dodge (Add)	
+#	Linear light	
+#	List of exports	
+#	LMB	
+#	Load Cage	
+#	Load UI Layout	
+#	Loaded UI layout {path}	
+#	Lock Output Size	
+#	Log	
+#	Low Poly Mesh Suffix	
+#	Made by the ArtCraft team and community.	
+#	Magenta / green	
+#	Main shader	
+#	Manipulator size	
+#	Manual	
+#	Marble veins	
+#	Mask Editor: Edge wear	
+#	Mask effects	
+#	Mask value (gray)	
+#	Mask with height	
+#	Match	
+#	Material	
+#	Material ball	
+#	Material Color	
+#	Material finish	
+#	MaterialCraft material	
+#	Materials	
+#	MaterialX materials	
+#	MatFinish Grind	
+#	MatFinish Hammered	
+#	MatFinish Raw	
+#	MatFinish Sanded	
+#	Max Frontal Distance	
+#	Max Occluder Distance	
+#	Max project size on open	
+#	Max RAM while saving	
+#	Max Rear Distance	
+#	Maximum decompressed project data. Increase this limit to open larger projects.	
+#	Medium dark	
+#	Medium light	
+#	Mesh fill	
+#	Mesh ID	
+#	Mesh Map Bakers	
+#	Mesh Map Settings	
+#	Mesh map: {map}	
+#	Mesh maps	
+#	Mesh maps baked	
+#	Mesh Normals Based	
+#	Meshes	
+#	metal	
+#	Metallic	
+#	min	
+#	Min Occluder Distance	
+#	Minimum size (%)	
+#	Mirror symmetry	
+#	missing	
+#	Missing (bake to create)	
+#	missing source	
+#	Mixed AO	
+#	MMB drag / Alt + MMB	
+#	More in Assets > Alphas: click one, or drag it here	
+#	Move down	
+#	Move up	
+#	Moves the surface by the height channel on a finer copy of the mesh, at the height to normal strength (viewport only: painting follows the base surface)	
+#	My brushes	
+#	My smart materials	
+#	Name each file after its texture set, like Body_normal.png	
+#	New project	
+#	New project...	
+#	New template	
+#	No font on this system can show this language	
+#	no GPU	
+#	No GPU renderer available	
+#	No High-Poly Meshes	
+#	No outputs yet: add one above, then drag input maps onto its channels.	
+#	No padding (passthrough)	
+#	No Parameters	
+#	No recent projects yet	
+#	No UV tiles	
+#	Noise amount	
+#	Noise scale	
+#	none	
+#	Normal DirectX	
+#	Normal from height	
+#	Normal Invert	
+#	Normal map combine	
+#	Normal map detail	
+#	Normal map format	
+#	Normal map inverse detail	
+#	Normal OpenGL	
+#	Normal: painting uses the flat normal	
+#	Normalization	
+#	Normalization Scale	
+#	Normalization Type	
+#	Not enough GPU memory to show texture set "{name}" fully: lower the viewport Texture resolution in Settings. Painting and export are not affected.	
+#	Not enough GPU memory to show {count} texture sets fully ({names}): lower the viewport Texture resolution in Settings. Painting and export are not affected.	
+#	Not exported: no source in this texture set	
+#	Not imported: {files}	
+#	Not saved: {error}	
+#	nrm	
+#	off	
+#	Offset right	
+#	Offset up	
+#	Offset {axis}	
+#	Offsets the textures by the height channel, at the height to normal strength	
+#	Only Same Mesh Name	
+#	op	
+#	Open in MaterialCraft	
+#	Open sample project...	
+#	Open...	
+#	Opened in MaterialCraft: use File > Send to TextureCraft there to bring your changes back	
+#	Opened {name}	
+#	Optional channels add a clear coat (Coat weight, Coat roughness, Coat normal), sheen (Sheen weight, color, roughness), anisotropy (Anisotropy level, angle), subsurface scattering (Scattering weight) and transmission (Transmission).	
+#	Orbit	
+#	Orthographic	
+#	Output directory	
+#	Output high	
+#	Output low	
+#	Output Size	
+#	Output template	
+#	Output templates	
+#	Overlay opacity	
+#	Padding	
+#	Paint	
+#	Paint Cage	
+#	Paint chips	
+#	Paint layer	
+#	Paint on the mesh to edit the layer content.	
+#	Paint on the mesh to edit this mask. Use the Material tab's mask value for gray.	
+#	Paint Skew Correction	
+#	Paint with the current tool	
+#	Painted layer pixels {pixels} MB, composited channels {composites} MB, compositing cache {cache} MB	
+#	Painted strokes follow the surface when the new mesh's UVs differ	
+#	Painting is paused while a bake is shown. Cancel the bake or wait for it to finish.	
+#	Pan	
+#	Parallax occlusion (height channel)	
+#	Parameters change in the desktop app, with MaterialCraft installed	
+#	Partial mask values follow the layer's height: high parts show first	
+#	Particle brush (slides down the surface)	
+#	Particle brush: particles slide down the surface	
+#	Particles	
+#	Passthrough	
+#	Paste as instance	
+#	Paste effect	
+#	Paste layer(s)	
+#	Path trace on the processor instead of the graphics card (slower)	
+#	Path: click adds a point, click the curve inserts one, drag moves it, Enter applies, Esc cancels	
+#	Paths stay editable: pick one to move its points or change its brush and material, and the sublayer repaints at once. Add paths with the Path tool.	
+#	Pattern scale	
+#	PBR - Metallic Roughness (TextureCraft)	
+#	Per Material	
+#	Perlin noise	
+#	Pick color	
+#	Pick focus in the viewport	
+#	Pin light	
+#	Place as decal	
+#	Place on the surface	
+#	Place path points on the mesh	
+#	Planar projection	
+#	Plane	
+#	PNG image	
+#	Polygon fill	
+#	Pores	
+#	Position gradient	
+#	Position jitter	
+#	Preserve stroke positions on mesh	
+#	Press a key...	
+#	Procedurals	
+#	Project	
+#	Project configuration	
+#	Project Configuration...	
+#	Project Mesh (LP)	
+#	Project opened	
+#	PROJECT SETTINGS	
+#	Project template	
+#	Projection	
+#	Projects and meshes	
+#	Quarter	
+#	Quick mask	
+#	Quit	
+#	Radial settings	
+#	Radial symmetry	
+#	Radius (texels at 2K)	
+#	Raw curvature	
+#	Re-cook	
+#	Read the mesh file again, keeping the layers and painted strokes	
+#	Reads the curvature map as baked: changing the mode or a size turns detail sizes on.	
+#	Rebind any menu item, tool or command	
+#	Recent projects	
+#	Records the stack up to this layer. Fill effects in masks (and fill layers) above can read it as a source.	
+#	Rectangle fill	
+#	Reimport mesh	
+#	Relative to Bounding Box	
+#	Relative to Low Mesh	
+#	Relative to Min/Max	
+#	Relative to Ray Distances	
+#	Relative to the bounding box diagonal.	
+#	Remove Cage	
+#	Remove channel	
+#	Remove effect	
+#	Remove last	
+#	Remove layer	
+#	Remove layer(s)	
+#	Remove mask	
+#	Remove point	
+#	Remove resolution override	
+#	Remove resource	
+#	Remove Skew Correction	
+#	Remove skew correction	
+#	Remove the shortcut	
+#	Remove this output	
+#	Remove unused resources...	
+#	Rename the selected template	
+#	Render on the CPU	
+#	RENDERING	
+#	Rendering	
+#	Rendering (path traced)	
+#	Rendering on CPU: {n} / {max} samples, {s} s	
+#	Rendering on GPU: {n} / {max} samples, {s} s	
+#	Rendering, path traced	
+#	Replace Color	
+#	Replacement color	
+#	Report a bug...	
+#	Rescan the library folder	
+#	Reset all	
+#	Reset Painted Cage	
+#	Reset to defaults	
+#	Reset to {shortcut}	
+#	Reset UI	
+#	Resizing	
+#	Restore Defaults	
+#	Restore every default shortcut	
+#	Return to Painting Mode	
+#	Return to this step	
+#	Right-click a layer > Create smart material	
+#	Rotation (degrees)	
+#	rough	
+#	Roughness	
+#	Roughness from glossiness	
+#	Round	
+#	Rounded cube	
+#	Samples	
+#	Sampling Radius	
+#	Save a copy...	
+#	Save as...	
+#	Save current brush	
+#	Save current layout...	
+#	Save current project as template	
+#	Save render...	
+#	Save the changes to {name} before closing?	
+#	Save the changes to {name} first?	
+#	Save UI Layout	
+#	Save view as camera	
+#	Saved UI layout {path}	
+#	Saved {path}	
+#	Saving UI layouts to files is available in the desktop app	
+#	Saving uses the other cores and at most this share of the free RAM. At least one core always works.	
+#	Scale / tiling	
+#	Scaling Divisor	
+#	scatter	
+#	Scatter color	
+#	Scatter radius	
+#	Scattering weight	
+#	Scratches	
+#	Screenshot of the viewport	
+#	Seams Intensity	
+#	Search all assets	
+#	Search commands or keys	
+#	Secondary Rays	
+#	Seed	
+#	Select a layer	
+#	Select a paint layer or a layer's mask to fill	
+#	Select an output template	
+#	Select source	
+#	Select the layer content	
+#	Select the mask (Alt+click: show it in the viewport)	
+#	Select...	
+#	Selection mode	
+#	Self Intersection	
+#	Self Occlusion	
+#	Settings...	
+#	Shader instance	
+#	Shader Settings	
+#	sheen	
+#	Sheen color	
+#	sheen color	
+#	Sheen color × weight	
+#	sheen rough	
+#	Sheen roughness	
+#	Sheen weight	
+#	Shift + wheel	
+#	Shortcuts list...	
+#	Show all	
+#	Show at startup	
+#	Show axis	
+#	Show axis position manipulator	
+#	Show cursor	
+#	Show entire mesh	
+#	Show for Selected Texture Set Only	
+#	Show intersection	
+#	Show log...	
+#	Show on all parts	
+#	Show or hide texture sets	
+#	Show or hide the layer	
+#	Show or hide the texture set	
+#	Show plane	
+#	Show UV wireframe in the 2D view	
+#	Show wireframe in the 3D view	
+#	Signed addition (AddSub)	
+#	Size in screen space	
+#	Size jitter	
+#	Size of the textures the viewport shows: lower uses less GPU memory with large texture sets. Painting and export keep full resolution.	
+#	Skew Correction	
+#	Skew Correction Method	
+#	Slope Blur	
+#	Slope scale	
+#	Smart masks	
+#	Smart material saved to {path}	
+#	Smart materials	
+#	Smooth	
+#	Smudge	
+#	Soft light	
+#	Source  U {u}  V {v}	
+#	spec	
+#	Specular	
+#	specular	
+#	Specular level	
+#	Sphere	
+#	Spherical projection	
+#	Spray	
+#	Spread Angle	
+#	Stamp depth	
+#	Start window	
+#	Starting render...	
+#	Stencil	
+#	Steps	
+#	Streaks	
+#	Stripes	
+#	Stroke opacity	
+#	Submesh	
+#	Subsampling 2x2	
+#	Subsampling 4x4	
+#	Subsampling 8x8	
+#	Subsurface scattering	
+#	Symmetry	
+#	Symmetry color display	
+#	Symmetry settings	
+#	System title bar (applies on restart)	
+#	Tangent | Wrap	
+#	Template name	
+#	Temporal anti-aliasing (refines the 3D view while it is still)	
+#	Texture resolution	
+#	Texture set channels	
+#	Texture set resolution	
+#	Texture Set Settings	
+#	Texture Sets	
+#	Texture sets	
+#	TextureCraft had to close:	
+#	TextureCraft PBR - Metallic Roughness	
+#	TextureCraft PBR - Specular Glossiness	
+#	TextureCraft project	
+#	TextureCraft project or mesh	
+#	Textures	
+#	Textures embedded; for game engines and most viewers	
+#	Textures packaged; for USD tools and AR Quick Look	
+#	The bake worker stopped	
+#	The eraser removes paint from the enabled channels.	
+#	The file dialog couldn't be shown: {error}	
+#	The first stroke sets the offset from the source.	
+#	The GPU couldn't render this scene: {error}	
+#	The image's alpha cuts the decal's shape; faces turned away and surfaces beyond its depth stay clear.	
+#	The mesh file the project is built on. Hover the path to see it in full.	
+#	The next click in the 3D view moves the decal there	
+#	The project changed while the dialog was open, so nothing was done	
+#	The resize worker stopped	
+#	The UV tiles (UDIMs) of each texture set, shown for reference. Change them in Texture Set Settings.	
+#	There is no mesh file to read again. Select one.	
+#	Thin areas	
+#	Tiles	
+#	Title bar	
+#	Toggle mask	
+#	Tone mapping	
+#	Torus	
+#	transm	
+#	Transmission	
+#	Tri-planar projection	
+#	Triangle fill	
+#	Triangle fills single triangles, Polygon whole quads and n-gons, Mesh the connected geometry, UV island the UV islands	
+#	Twill weave	
+#	UDIM plane	
+#	UDIM tiles painted by this texture set, each at the set's size	
+#	UI layout	
+#	UI layout: {error}	
+#	UI layouts	
+#	UI {ms} ms	
+#	Uniform value	
+#	USD binary, textures alongside	
+#	USD text, textures alongside	
+#	USDZ with textures	
+#	Use an equirectangular .hdr or .exr image as the environment	
+#	Use as brush alpha	
+#	Use Low Poly Mesh as High Poly Mesh	
+#	Use the control channel or `texturecraft-cli render` for screenshots	
+#	Use the operating system's window frame and buttons instead of TextureCraft's own title bar	
+#	Use this brush (keeps its size)	
+#	UV checker	
+#	UV island fill	
+#	UV projection	
+#	UV Seams	
+#	UV Tile settings (UDIMs)	
+#	UV tile {tile} resolution	
+#	UV tiles	
+#	UV tiles (UDIM)	
+#	UV transformations	
+#	Value Bounds Max	
+#	Value Bounds Min	
+#	Version: {version} ({gpu})	
+#	Vertex Color	
+#	View through this camera	
+#	Viewer settings	
+#	Viewport	
+#	Viewport and brush (fixed)	
+#	Views	
+#	Visible polygons only	
+#	Vivid light	
+#	Voronoi	
+#	Warp Directional	
+#	Wavefront OBJ with MTL, textures alongside	
+#	WebGPU isn't available in this browser, so TextureCraft runs on WebGL2: Rendering mode path traces on the CPU (slower) and large texture sets show at reduced resolution. A current Chrome, Edge or Safari has WebGPU.	
+#	What the 3D view shows while the bake runs: the newest finished map, one finished map, or the material. Maps not baked yet show a neutral value.	
+#	Wheel / Alt + RMB drag	
+#	Width (texels at 2K)	
+#	Wood grain	
+#	Works in texture space, like the blur: it does not cross UV seams.	
+#	World Space Normal	
+#	Yellow / blue	
+#	{action} (undone)	
+#	{count} effects	
+#	{file}: add above the selected layer (or drag it into the layer stack or onto the viewport)	
+#	{name} copy	
+#	{n} bits	
+#	{n} control points. Click the mesh (or the 2D view) to add points and drag them to adjust; click the first point to close the path. Enter paints it with the brush (a closed, filled path fills its inside), Esc cancels.	
+#	{n} items share a shortcut; the first one listed wins.	
+#	{pattern} (scale {scale}, seed {seed})	

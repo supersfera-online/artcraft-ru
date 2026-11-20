@@ -1,0 +1,1093 @@
+# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
+# Русский (ru) interface catalog for DeckCraft.
+# Columns, separated by a TAB:  context <TAB> English source text <TAB> translation
+#   context  usually empty. `@plural`, `@id` and `@msg` mean something to the apps; any other
+#            word is a label that tells apart two meanings of the same English.
+#   escapes  \n  \t  \\  inside a column. `{name}` placeholders must appear in both columns (in any
+#            order), and a trailing "…" in one needs one in the other.
+#   @plural  English `one|other`; the translation lists this language's plural forms, `|`-separated.
+#   Lines starting with # and blank lines are ignored. A missing entry shows in English.
+#
+# Clean room: every entry was written from the plain meaning of the English text in ordinary
+# computing vocabulary. No other product's localisation, string table or translated UI was
+# consulted or copied; add entries the same way.
+
+#	  Fixed date (empty = update automatically):	
+#	  Footer text:	
+#	  Present  	
+#	 (not checked)	
+#	 — Edited	
+#	(no spelling suggestions)	
+#	+ Add	
+#	+ New Comment	
+#	+ Row	
+#	+ Series	
+#	1 picture	
+#	1 picture with title	
+#	1.5 lines	
+#	100% Stacked Bar	
+#	100% Stacked Column	
+#	2 pictures	
+#	2 pictures with title	
+#	3-D	
+#	3-D Format	
+#	3-D Rotation	
+#	4 pictures	
+#	4 pictures with title	
+#	a dictionaries folder	
+#	A fixed copy that keeps its layout on any device	
+#	A photo album holds at most 48 pictures or text boxes	
+#	About DeckCraft	
+#	Accent 1	
+#	Accent 2	
+#	Accent 3	
+#	Accent 4	
+#	Accent 5	
+#	Accent 6	
+#	Accept	
+#	Accept All ({n})	
+#	Accept Revision	
+#	Accept\nAll	
+#	Accessibility Checker	
+#	Account	
+#	Action	
+#	Action Button: {kind}	
+#	Action Buttons	
+#	Action on click	
+#	Action on mouse over	
+#	Action Settings	
+#	Action Settings…	
+#	Add a picture or a text box first	
+#	Add a title with a picture or some text to get layout ideas.	
+#	Add Animation	
+#	Add Assistant	
+#	Add Horizontal Guide	
+#	Add Pictures…	
+#	Add Point	
+#	Add Section	
+#	Add Shape	
+#	Add Shape Above	
+#	Add Shape After	
+#	Add Shape Before	
+#	Add Shape Below	
+#	Add to Quick Access Toolbar	
+#	Add Vertical Guide	
+#	Add\nAnimation	
+#	Address:	
+#	Adjust Shape	
+#	After	
+#	After Previous	
+#	After text	
+#	After:	
+#	Album theme	
+#	Align Cell Text	
+#	Align text to the bottom of the cell	
+#	Align text to the center of the cell	
+#	Align text to the top of the cell	
+#	All caps	
+#	ALL pictures black and white	
+#	All slides	
+#	Alt Text	
+#	Alt text	
+#	Alt\nText	
+#	An open-source, clean-room project. Not affiliated with Microsoft.	
+#	Animated GIF (.gif)	
+#	Animation Painter (double-click to keep it on)	
+#	Animation Styles	
+#	Animation\nPainter	
+#	Animation\nPane	
+#	Animations	
+#	Applies to this presentation's theme colours.	
+#	Apply Animation	
+#	Apply Design Idea	
+#	Apply only to this picture	
+#	Apply To All	
+#	Apply to All	
+#	Apply\nTo All	
+#	Arrow at end	
+#	Arrow at start	
+#	Arrows at both ends	
+#	Art deco	
+#	Artistic Effects	
+#	Artistic\nEffects	
+#	As:	
+#	At	
+#	Audio from File…	
+#	AutoCorrect	
+#	AutoCorrect as you type	
+#	AutoCorrect Options…	
+#	Autofit	
+#	Automatic bulleted and numbered lists	
+#	Available formats:	
+#	Back	
+#	Back (Esc)	
+#	Back or Previous	
+#	Background\nStyles	
+#	Balanced	
+#	Banded Columns	
+#	Banded Rows	
+#	Basic Cycle	
+#	Basic List	
+#	Basic Process	
+#	Before text	
+#	Beginning	
+#	Bevel	
+#	Blank Presentation	
+#	Body sample  {font}	
+#	Body:	
+#	Box and Whisker	
+#	Brick Scene	
+#	Bright room	
+#	Brightness {pct}	
+#	Brightness {pct}%	
+#	Bring\nForward	
+#	Browse for Themes needs the desktop app for now	
+#	Browse for Themes…	
+#	Browsed at a kiosk (full screen)	
+#	Browsed by an individual (window)	
+#	Bubble	
+#	Bulleted	
+#	Bullets	
+#	Bullets and Numbering	
+#	Bullets and Numbering…	
+#	By	
+#	Camera capture is not available yet	
+#	Capitalize Each Word	
+#	Capitalize first letter of sentences	
+#	Capitalize names of days	
+#	Caps	
+#	Captions under pictures	
+#	Cartoon	
+#	Cell Margins	
+#	Center Tab	
+#	Change Chart Type	
+#	Change Colors	
+#	Change File Type	
+#	Change Layout	
+#	Change Picture	
+#	Change Picture…	
+#	Change Shape	
+#	Change Spelling	
+#	Change to:	
+#	Change\nChart Type	
+#	Character Spacing	
+#	Character spacing must be a number	
+#	Chart	
+#	Chart cell	
+#	Chart Data	
+#	Chart Design	
+#	Chart Elements	
+#	Chart…	
+#	Check for Updates…	
+#	Check\nAccessibility	
+#	Chilly	
+#	Choose a font	
+#	Choose a slide to show it, or press G to return.	
+#	Choose a SmartArt Graphic	
+#	Choose where to save	
+#	Choosing a presentation to reuse needs the desktop app	
+#	Choosing a sound file needs the desktop app	
+#	Clear All Formatting	
+#	Clear the tab at {pos}	
+#	Click a colour in the picture to make it transparent	
+#	Click a symbol to insert it at the insertion point.	
+#	Click icon to add chart	
+#	Click icon to add media	
+#	Click icon to add picture	
+#	Click icon to add SmartArt graphic	
+#	Click icon to add table	
+#	Click the preview to zoom.	
+#	Click the slide to take the colour under the pointer	
+#	Click to add first slide	
+#	Click to add notes	
+#	Click to add subtitle	
+#	Click to add text	
+#	Click to add title	
+#	Click to change this one; Shift-click to change all	
+#	Close Path	
+#	Close\nMaster View	
+#	Clustered Bar	
+#	Clustered Column	
+#	Collapse the Ribbon	
+#	Colorful	
+#	Colorful Range - Accent Colors 2 to 3	
+#	Colorful Range - Accent Colors 3 to 4	
+#	Colorful Range - Accent Colors 4 to 5	
+#	Colorful Range - Accent Colors 5 to 6	
+#	Columns…	
+#	Combo	
+#	Command Palette	
+#	Community Links	
+#	Compare needs the desktop app for now	
+#	Compare this presentation with a revised copy from Review › Compare.	
+#	Compared with {name}	
+#	Compare…	
+#	Compress	
+#	Compress Pictures	
+#	Compression options	
+#	Connect Shapes	
+#	Content	
+#	Contrast {pct}	
+#	Contrast {pct}%	
+#	Contrasting	
+#	Convert to Diagram	
+#	Convert to Shapes	
+#	Convert to SmartArt	
+#	Convert to Text	
+#	Convex	
+#	Cool slant	
+#	Copied the path	
+#	Copy path	
+#	Correct accidental use of cAPS LOCK key	
+#	Correct TWo INitial CApitals	
+#	Corrections	
+#	Couldn't save AutoRecover information: {error}	
+#	Create a PDF Document	
+#	Create Handouts	
+#	Create New Theme Colors	
+#	Create New Theme Fonts	
+#	Crop 10% each side	
+#	Crop 20% each side	
+#	Crop to Shape	
+#	Custom character:	
+#	Custom Show 1	
+#	Custom Shows	
+#	Custom Show…	
+#	Custom Slide Show	
+#	Custom width	
+#	Custom\nShow	
+#	Customize Colors…	
+#	Customize Fonts…	
+#	Customize Quick Access Toolbar	
+#	Dark appearance	
+#	Dark Mode	
+#	Dark\nMode	
+#	Dash	
+#	Dash Dot	
+#	Dashes	
+#	Date & Time	
+#	Date &\nTime	
+#	Date and time	
+#	Decimal	
+#	Decimal Tab	
+#	DeckCraft can't export “{format}”	
+#	DeckCraft can't find “{text}”.	
+#	DeckCraft has no accounts: there is nothing to sign in to, and your presentations stay on your device.	
+#	DeckCraft Presentation (*.deckcraft)	
+#	DeckCraft prints through a PDF: it downloads, ready to print from your browser or PDF viewer.	
+#	DeckCraft prints through a PDF: it opens in your PDF viewer, where you choose the printer.	
+#	DeckCraft's own format: everything is kept	
+#	Decorative Text	
+#	Decorative Text style {n}	
+#	Decrease List Level	
+#	Decrease {label}	
+#	Default tab stops (in):	
+#	Delay	
+#	Delay:	
+#	Delete Columns	
+#	Delete Comment	
+#	Delete cropped areas of pictures	
+#	Delete Guide	
+#	Delete Layout	
+#	Delete Point	
+#	Delete Repeated Word	
+#	Delete Rows	
+#	Delete Segment	
+#	Delete Slide	
+#	Delete Table	
+#	Delete Text	
+#	Demote	
+#	Design	
+#	Design\nIdeas	
+#	Diagram	
+#	Diagram Design	
+#	Diagram items	
+#	Diagram Styles	
+#	Diagram text	
+#	Dictionary: {name}	
+#	Display drawing guides on screen	
+#	Display grid on screen	
+#	Distribute Columns	
+#	Distribute Horizontally	
+#	Distribute Rows	
+#	Distribute Vertically	
+#	Distributed	
+#	Divot	
+#	Dk edge	
+#	Do not Autofit	
+#	Do not check spelling or grammar	
+#	Don't show on title slide	
+#	Double	
+#	Doughnut	
+#	Download the file	
+#	Draw Table	
+#	Duplicate Selected Slides	
+#	Duplicate Slide	
+#	Duration handle {n}	
+#	Duration:	
+#	E-mail (96 ppi): minimise document size for sharing	
+#	e.g. 1-3, 5	
+#	Edit Alt Text…	
+#	Edit Data	
+#	Edit Photo Album…	
+#	Edit Points	
+#	Edit SmartArt Text	
+#	Edit Text	
+#	Edit the data: first row = series names, first column = categories.	
+#	Edit\nData	
+#	Edit\nShape	
+#	Effect Options	
+#	Effect\nOptions	
+#	Email Address	
+#	Email address:	
+#	End	
+#	End of slide show	
+#	End Review	
+#	End Show	
+#	End trim (s):	
+#	End\nReview	
+#	English (United Kingdom)	
+#	English (United States)	
+#	Enter a zoom percent	
+#	Equation	
+#	Exactly	
+#	Exit Edit Points	
+#	Export the presentation as:	
+#	Exported {name}	
+#	Extra Large (1920 px wide)	
+#	Fade in (s):	
+#	Fade out (s):	
+#	Filled Radar	
+#	Find what:	
+#	Find whole words only	
+#	First Column	
+#	First line	
+#	First Slide	
+#@plural	First {n} slide|First {n} slides	
+#	Fit slide to current window	
+#	Fit to slide	
+#	Fit to Window	
+#	Fit to\nWindow	
+#	Flood	
+#	Follow Path	
+#	Font Color	
+#	Font name	
+#	Font size must be a number	
+#	Font…	
+#	Footer	
+#	Footers	
+#	For rectangles and rounded rectangles	
+#	Foreground	
+#	Format Background	
+#	Format Background…	
+#	Format Painter (double-click to keep it on)	
+#	Format Shape…	
+#	Format\nBackground	
+#	Format\nPane	
+#	Forward or Next	
+#	Fragment	
+#	Frame shape	
+#	Frame Slides	
+#	Freeform	
+#	Freezing	
+#	French (France)	
+#	From bottom left	
+#	From bottom right	
+#	From center	
+#	From slide:	
+#	From the top-left corner of the slide	
+#	From top left	
+#	From top right	
+#	From\nBeginning	
+#	From\nCurrent Slide	
+#	Full Page Slides	
+#	Funnel	
+#	Go to	
+#	Go to slide {n}	
+#	Gradient bar	
+#	Gradient fill	
+#	Gradient Range - Accent 1	
+#	Gradient Range - Accent 2	
+#	Gradient Range - Accent 3	
+#	Gradient Range - Accent 4	
+#	Gradient Range - Accent 5	
+#	Gradient Range - Accent 6	
+#	Gradient stop {n}	
+#	Gradient stops	
+#	Gradient…	
+#	Grid and Guides	
+#	Grid Options	
+#	Grid Options…	
+#	Grid\nOptions	
+#	Gridlines	
+#	Group Objects	
+#	Half	
+#	Handout Master	
+#	Handout Placeholders	
+#	Handout\nMaster	
+#	Handouts (1 slide per page)	
+#	Handouts (2 slides per page)	
+#	Handouts (3 slides per page)	
+#	Handouts (4 slides per page)	
+#	Handouts (6 slides per page)	
+#	Handouts (9 slides per page)	
+#	Hanging	
+#	Hard edge	
+#	Harsh	
+#	HD (330 ppi): good quality for high-definition displays	
+#	Header &\nFooter	
+#	Header and Footer	
+#	Header and Footer…	
+#	Header Row	
+#	Heading and body fonts for this presentation.	
+#	Heading sample  {font}	
+#	Heading:	
+#	Heavy	
+#	Height ({abbr}):	
+#	Hide Background Graphics	
+#	Hide background graphics	
+#	Hide During Show	
+#	Hide Slide	
+#	Hide\nSlide	
+#	Hierarchy	
+#	Highlight click	
+#	How would you describe this object and its context to someone who is blind or has low vision?	
+#	Hyperlink to:	
+#	Icons	
+#	Include hidden slides	
+#	Increase List Level	
+#	Increase {label}	
+#	Indent after text must be a number of inches	
+#	Indent before text must be a number of inches	
+#	Indentation	
+#	Information	
+#	Ink to Math (coming soon)	
+#	Ink to Shape	
+#	Ink to Shape: turn drawn lines, rectangles, ovals and triangles into shapes	
+#	Ink to Text (coming soon)	
+#	Ink to\nMath	
+#	Ink to\nShape	
+#	Ink to\nText	
+#	Inner	
+#	Insert Above	
+#	Insert Below	
+#	Insert Hyperlink	
+#	Insert Layout	
+#	Insert Left	
+#	Insert Picture	
+#	Insert picture from file…	
+#	Insert Picture in SmartArt	
+#	Insert Picture in SmartArt…	
+#	Insert Placeholder	
+#	Insert Right	
+#	Insert slides from {name} after the current slide:	
+#	Insert Synonym	
+#	Insert Table	
+#	Insert Table…	
+#	Insert\nAbove	
+#	Insert\nBelow	
+#	Insert\nLayout	
+#	Insert\nLeft	
+#	Insert\nPlaceholder	
+#	Insert\nRight	
+#@plural	Inserted {n} slide|Inserted {n} slides	
+#	Insert…	
+#	Inset	
+#	Intense Effect	
+#	Interface language:	
+#	Interface size	
+#	Isometric bottom down	
+#	Isometric bottom up	
+#	Isometric left down	
+#	Isometric left up	
+#	Isometric right down	
+#	Isometric right up	
+#	Isometric top down	
+#	Isometric top up	
+#	Join our community on Discord	
+#	Join the ArtCraft community on Discord	
+#	JPEG image (current slide)	
+#	JPEG Picture (*.jpg)	
+#	Justify low	
+#	Keep Source Formatting	
+#	Keep source formatting	
+#	Keep Text Only	
+#	Keeps the layout, fonts and pictures	
+#	Language for All Text	
+#	Large (1280 px wide)	
+#	Last Column	
+#	Last Slide	
+#	Last Slide Viewed	
+#	Layout Placeholders	
+#	Learn\nMore	
+#	Leave the slide background out: only what is on the slide is drawn	
+#	Left Tab	
+#	Legacy wireframe	
+#	Less Brightness	
+#	Less Contrast	
+#	Light/Dark appearance	
+#	Line Spacing	
+#	Line spacing must be a number	
+#	Line Spacing Options…	
+#	Line with Markers	
+#	Lock aspect ratio	
+#	Long Dash	
+#	Long Dash Dot	
+#	Loop continuously until 'Esc'	
+#	Loop forever	
+#	Loop until Stopped	
+#	Loose	
+#	Map	
+#	Margins (pt)	
+#	Mark all text in the presentation as:	
+#	Mark as decorative	
+#	Mark selected text as:	
+#	Match case	
+#	Match {n} of {total} on slide {slide} (notes).	
+#	Match {n} of {total} on slide {slide}.	
+#	Maximize content (else ensure fit)	
+#	Measurement units:	
+#	Media	
+#	Media position	
+#	Medium (960 px wide)	
+#	Merge Shapes	
+#	Merge\nCells	
+#	Merge\nShapes	
+#	Metal	
+#	Mirror type	
+#	MIT OR Apache-2.0 · © 2026 ArtCraft Team and the DeckCraft contributors	
+#	Month names and AM/PM are listed for English. Other languages list the numeric date and 24-hour time.	
+#	More Brightness	
+#	More Colors… #	
+#	More Columns…	
+#	More Contrast	
+#	More presentations	
+#	More templates	
+#	More themes	
+#	Morning	
+#	Mouse Click	
+#	Mouse Over	
+#	Move Guide	
+#	Move Handle	
+#	Move Point	
+#	Move Section	
+#	Move Section Down	
+#	Move Section Up	
+#	Move Slide	
+#	Multiple	
+#	Mute	
+#	Narrow	
+#	New Comment	
+#	New Photo Album…	
+#	New show name:	
+#	New Slide	
+#	New Slide (⇧⌘N)	
+#	New Text Box	
+#	New\nComment	
+#	New\nSlide	
+#	New\nWindow	
+#	Next Slide	
+#	No accessibility issues found. People with disabilities should not have difficulty reading this document.	
+#	No comments.	
+#	No contributor data was built into this copy.	
+#	No differences left.	
+#	No fill	
+#	No Glow	
+#	No icons match.	
+#	No line	
+#	No model credits were built into this copy.	
+#	No notes.	
+#	No pictures yet	
+#	No presentation is open.	
+#	No recent presentations match “{query}”.	
+#	No Reflection	
+#	No Shadow	
+#	No Soft Edges	
+#	No synonyms for "{word}".	
+#	No themes or templates match “{query}”.	
+#	No {lang} dictionary is installed, so only common misspellings are found. Put a Hunspell .aff/.dic pair in {folder}.	
+#	Not a copy of this presentation: slides are matched by position.	
+#	Not saved yet	
+#	Notes	
+#	Notes Master	
+#	Notes Page	
+#	Notes Pages	
+#	Notes Placeholders	
+#	Notes\nMaster	
+#	Nothing to print: every slide in the range is hidden.	
+#	Nudge	
+#	Number of columns:	
+#	Number of rows:	
+#	Number:	
+#	Numbered	
+#	Numbering	
+#	Oblique bottom left	
+#	Oblique bottom right	
+#	Oblique top left	
+#	Oblique top right	
+#	Offset bottom	
+#	Offset left	
+#	Offset right	
+#	Offset top	
+#	On Click	
+#	On Click of {name}	
+#	On Click of… (none)	
+#	On Mouse Click	
+#	Open a presentation from a folder (Ctrl+O)	
+#	Open another window on this presentation	
+#	Open Dialog	
+#	Open file location	
+#	Open Path	
+#	Open source under MIT OR Apache-2.0. Not affiliated with Microsoft.	
+#	Opened the presentation as a PDF to print	
+#	Opening {name}…	
+#	Opens in PowerPoint and other presentation apps	
+#	Opens on any device with a PDF viewer	
+#	Order Objects	
+#	Ordinals (1st) with superscript	
+#	Orthographic front	
+#	Other Sound…	
+#	Outer	
+#	Outline (*.txt)	
+#	Outline (.txt)	
+#	Outline View	
+#	Outline/RTF (*.rtf)	
+#	Outline/RTF (.rtf)	
+#	Oval ends	
+#	Page Setup…	
+#	Paper size	
+#	Paragraph…	
+#	Pass pictures to insert.photoAlbum	
+#	Paste (⌘V)	
+#	Paste and Match Formatting	
+#	Paste Formatting	
+#	Paste or type an outline. Unindented lines become slide titles; tab-indented lines become bullets.	
+#	Paste Special…	
+#	Pattern fill	
+#	Pause animated GIF	
+#	PDF document (.pdf)	
+#	Pen Color	
+#	Pen Style	
+#	Pen Weight	
+#	Percent:	
+#	Perspective above	
+#	Perspective above left facing	
+#	Perspective above right facing	
+#	Perspective below	
+#	Perspective contrasting left facing	
+#	Perspective contrasting right facing	
+#	Perspective front	
+#	Perspective heroic extreme left facing	
+#	Perspective heroic extreme right facing	
+#	Perspective heroic left facing	
+#	Perspective heroic right facing	
+#	Perspective left	
+#	Perspective relaxed	
+#	Perspective relaxed moderately	
+#	Perspective right	
+#	Photo Album	
+#	Photo Album options	
+#	Photo Album…	
+#	Photo\nAlbum	
+#	Pick a design for this slide. Ideas are generated on your device.	
+#	Pick a graphic; type one item per line.	
+#	Picture	
+#	Picture (PNG)	
+#	Picture Border	
+#	Picture Format	
+#	Picture from File…	
+#	Picture layout	
+#	Picture or texture fill	
+#	Picture source	
+#	Picture Styles	
+#	Pictures	
+#	Pictures in album	
+#	Pie	
+#	Plastic	
+#	Play Across Slides	
+#	Play animated GIF	
+#	Play from\nCurrent Slide	
+#	Play from\nStart	
+#	Play Full Screen	
+#	Play Narrations	
+#	Play the shape's media	
+#	Play this slide's animations on the canvas	
+#	Play this slide's transition	
+#	Playback	
+#	PNG images (all slides)	
+#	PNG images (current slide)	
+#	PNG Picture (*.png)	
+#	Point Type	
+#	Polished	
+#	Position and Size	
+#	Position Objects	
+#	Post	
+#	Poster Frame	
+#	Powder	
+#	PowerPoint Presentation (*.pptx)	
+#	PowerPoint Presentation (.pptx)	
+#	Presentations	
+#	Presentations and slide shows, rebuilt from scratch in pure Rust.	
+#	Presentations you open show up here. Use Open to browse for one.	
+#	Presented by a speaker (full screen)	
+#	Presenter View	
+#	Presenter\nView	
+#	Preset gradients	
+#	Preview Animations	
+#	Previewing animations	
+#	Previous Slide	
+#	Print (220 ppi): excellent quality on most printers and screens	
+#	Print Hidden Slides	
+#	Print layout	
+#	Print layout:	
+#	Print range	
+#	Print them for your audience	
+#	Product Information	
+#	Program:	
+#	Promote	
+#	Put a picture in the selected node's picture placeholder	
+#	Quick Access Toolbar	
+#	Quick Styles	
+#	Quick\nStyles	
+#	Radar	
+#	Reading the file: {seconds} s	
+#	Reading View	
+#	Recolor	
+#	Record	
+#	Recording narration needs audio capture (coming soon)	
+#	Recover Unsaved Presentations	
+#	Reflection	
+#	Regroup	
+#	Rehearse\nTimings	
+#	Reject	
+#	Reject All ({n})	
+#	Relaxed inset	
+#	Remove All Animations	
+#	Remove All Sections	
+#	Remove Animation	
+#	Remove bullets and numbering	
+#	Remove from Quick Access Toolbar	
+#	Remove from Recent	
+#	Remove Less (tighter)	
+#	Remove More (looser)	
+#	Remove Section	
+#	Remove Section & Slides	
+#	Remove Shape	
+#	Remove stop	
+#	Remove the picture style	
+#	Remove\nBackground	
+#	Rename Layout	
+#	Rename Section	
+#	Rename Section…	
+#	Rename Slide	
+#	Reopen	
+#	Reorder Animation	
+#	Reorder Objects	
+#	Repeated word	
+#	Replace All	
+#	Replace Font	
+#	Replace Fonts	
+#	Replace Fonts…	
+#	Replace fractions (1/2) with fraction characters (½)	
+#	Replace straight quotes with smart quotes	
+#	Replace text as you type	
+#	Replace with:	
+#@plural	Replaced {n} occurrence.|Replaced {n} occurrences.	
+#	Replaced “{font}” with “{replacement}”.	
+#	Replace…	
+#	Reply…	
+#	Rescan Installed Fonts	
+#	Reset 3-D	
+#	Reset Background	
+#	Reset Crop	
+#	Reset Effects	
+#	Reset Picture	
+#	Reset Slide	
+#	Reset Slide Background	
+#	Reset Style	
+#	Reset to Defaults	
+#	Resize shape to fit text	
+#	Resolve	
+#	Resolve Thread	
+#	Return	
+#	Return to the audience window to resume the connection.	
+#	Reuse Slides	
+#	Reuse Slides needs the desktop app	
+#	Reuse Slides…	
+#	Rewind after Playing	
+#	Ribbon Tab	
+#	Riblet	
+#	Right Tab	
+#	Right-click any ribbon button to add it.	
+#	Right-to-Left Text Direction	
+#	Rotate all text 270°	
+#	Rotate all text 90°	
+#	Rotate Left	
+#	Rotate Left 90°	
+#	Rotate Right	
+#	Rotate Right 90°	
+#	Rotate with shape	
+#	Round Dot	
+#	Rounded	
+#	Run program:	
+#	Saturation {pct}	
+#	Saturation {pct}%	
+#	Save as type	
+#	Save to the page	
+#	Saved {name}	
+#	Saving a copy needs a file picker, which this window doesn't have.	
+#	Scale Height	
+#	Scale Width	
+#	Scatter	
+#	Scheme name	
+#	Screenshot	
+#	Screenshot (not available yet)	
+#	ScreenTip:	
+#	Scroll ribbon left	
+#	Scroll ribbon right	
+#	Search commands (⇧⌘P)	
+#	Search commands…	
+#	Search for a file	
+#	Search for a word	
+#	Search for themes and templates	
+#	Search icons	
+#	Seconds per slide:	
+#	Seconds per slide: enter {min} to {max}	
+#	Section	
+#	Section Zoom	
+#	Segment Type	
+#	Select a chart first.	
+#	Select a Diagram graphic to edit its text.	
+#	Select a shape to format it.	
+#	Select a SmartArt graphic to edit its text.	
+#	Select a word on the slide, or type one above.	
+#	Select an object on the slide and add an animation from the Animations tab.	
+#	Select None	
+#	Selected text	
+#	Selection Pane…	
+#	Selection\nPane	
+#	Send\nBackward	
+#	Sentence case.	
+#	Set as Default Shape	
+#	Set Text	
+#	Set Transparent Color	
+#	Set Up Slide Show	
+#	Set Up Slide Show…	
+#	Set Up\nSlide Show	
+#	Set Zoom	
+#	Several slides on each page of a PDF	
+#	Shading	
+#	Shape Fill	
+#	Shape Format	
+#	Shape Outline	
+#	Shape\nStyles	
+#	Show Media Controls	
+#	Show smart guides	
+#	Show type	
+#	Show without animation	
+#	Show without narration	
+#	Show/Hide	
+#	Show\nComments	
+#	Shrink text on overflow	
+#	Simple Fill	
+#	Simple, white	
+#	Single	
+#	Size (% of text):	
+#	Size and Position	
+#	Size and Position…	
+#	Slide background fill	
+#	Slide Master	
+#	Slide Number	
+#	Slide number	
+#	Slide Show	
+#	Slide Size	
+#	Slide Sorter	
+#	Slide text	
+#	Slide timings recorded.	
+#	Slide title	
+#	Slide Zoom	
+#	Slide {n}	
+#	Slide {n} of {total}	
+#	Slide {n}: {issue}	
+#	Slide {n}: {issue} — {name}	
+#	Slide {n}: “{word}”	
+#	Slide\nMaster	
+#	Slide\nNumber	
+#	Slide\nSize	
+#	Slides	
+#	Slides (e.g. 1,3,5):	
+#	Slides from Outline	
+#	Slides from Outline…	
+#	Slides per page	
+#	Slides Per\nPage: {n}	
+#	Slides sized for:	
+#	Slides:	
+#	Slides: choose a range from 1 to {n}	
+#	Slide…	
+#	Slope	
+#	Small (640 px wide)	
+#	Small caps	
+#	SmartArt Design	
+#	SmartArt items	
+#	SmartArt Styles	
+#	SmartArt text	
+#	Smooth Corners	
+#	Snap	
+#	Snap objects to grid	
+#	Snap objects to other objects	
+#	Soft edge	
+#	Soft Edges	
+#	Soft round	
+#	Softmetal	
+#	Solid	
+#	Solid fill	
+#	Solid line	
+#	Sound	
+#	Source on GitHub	
+#	Spacing (in):	
+#	Spacing (pt):	
+#	Spacing after	
+#	Spacing after must be a number	
+#	Spacing before	
+#	Spacing before must be a number	
+#	Special indent must be a number of inches	
+#	Spelling is checked for languages marked (dictionary).	
+#	Split Cells	
+#	Split\nCells	
+#	Square Dot	
+#	Stacked Area	
+#	Stacked Bar	
+#	Stacked Column	
+#	Stacked Line	
+#	Standard Colors	
+#	Start Automatically	
+#	Start time (s):	
+#	Stealth end	
+#	Still opening {name}	
+#	Stock	
+#	Stopped opening {name}	
+#	Style {n}	
+#	Subtle Effect	
+#	Summary Zoom	
+#	Sunrise	
+#	Sunset	
+#	Surface	
+#	Swedish	
+#	System language	
+#	Tab stop position (in):	
+#	Tab stops:	
+#	Table Design	
+#	Table Eraser	
+#	Table Style Options	
+#	Table Styles	
+#	Table…	
+#	Tabs…	
+#	Task Pane	
+#	Text Box	
+#	Text Box Margins	
+#	Text box:	
+#	Text Direction	
+#	Text Effects	
+#	Text Fill	
+#	Text Highlight Color	
+#	Text is longer than 400 characters	
+#	Text Outline	
+#	Text ruler	
+#	Text Shadow	
+#	Text Transform	
+#	Text Transparency	
+#	Text\nBox	
+#	Text\nPane	
+#	That file is empty	
+#	That picture is larger than 32 MB	
+#	The audience window has closed.	
+#	The audience window is not responding.	
+#	The current slide as a compressed picture	
+#	The current slide as a picture	
+#	The Eyedropper takes colours from a slide	
+#	The picture list is invalid	
+#	The presentation keeps its own file	
+#	The slide titles and bullet text as plain text	
+#	The slide titles and bullet text for word processors	
+#	The spelling check is complete. No issues found.	
+#	The web build inserts album pictures from data passed to insert.photoAlbum	
+#	Theme Colors	
+#	Themes	
+#	Themes (whole presentation)	
+#	There are no unsaved presentations to recover	
+#	This Document	
+#	This presentation has no custom shows (Slide Show ▸ Custom Slide Show).	
+#	This slide has no animations	
+#	Three a page leaves lines for notes	
+#	Three pt	
+#	Tick at least one slide to insert	
+#	Tight	
+#	Tile picture as texture	
+#	Timing	
+#	Timing bar {n}	
+#	To slide:	
+#	Top Left Corner	
+#	Total Row	
+#	Transition	
+#	Transitions	
+#	Translation needs a language model (not bundled)	
+#	Translucent powder	
+#	Transparent background	
+#	Trigger	
+#	Trim	
+#	Trim Media	
+#	Two pt	
+#	Type an equation in linear form (e.g. a^2+b^2=c^2, x=(-b±√(b^2-4ac))/2a).	
+#	Type and organise the diagram's text	
+#	Type Text	
+#	Type the text for the new text box	
+#	Type your text here	
+#	Update automatically	
+#	Use Destination Theme	
+#	Use Timings	
+#	Use timings, if present	
+#	User Information	
+#	Variants	
+#	Vertical alignment	
+#	Very Loose	
+#	Very loose	
+#	Very Tight	
+#	Very tight	
+#	Video from File…	
+#	Volume	
+#	Waiting for the audience window…	
+#	Warm matte	
+#	Waterfall	
+#	Wavy	
+#	Web (150 ppi): good for web pages and projectors	
+#	Web Page or File	
+#	White Outline	
+#	Whole presentation	
+#	Wide	
+#	Widescreen (16:9)	
+#	Width (pixels):	
+#	Width ({abbr}):	
+#	Width: 	
+#	Width: enter {min} to {max} pixels	
+#	Window title bar	
+#	With	
+#	With Previous	
+#	With:	
+#	WordArt style {n}	
+#	Wrap Text in Shape	
+#	Wrap text in shape	
+#	Your name (comments):	
+#	Zoom level	
+#	Zoom to	
+#	{char}  Bullet	
+#	{color} hex	
+#	{kind} (click to change)	
+#	{label} value	
+#@plural	{name} ({n} slide)|{name} ({n} slides)	
+#	{name} options	
+#@plural	{n} Column|{n} Columns	
+#@plural	{n} contributor|{n} contributors	
+#@plural	{n} Slide|{n} Slides	
+#	{path} — this file can't be found	
+#	“{font}” isn't used explicitly.	
+#	“{name}” is not available yet.	
