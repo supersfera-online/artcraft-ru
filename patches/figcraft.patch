@@ -1,0 +1,112 @@
+# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
+#
+# Russian Linux packaging (.desktop / AppStream / MIME) for storytold/figcraft
+# Upstream: https://github.com/storytold/figcraft
+# Base (origin merge-base): 8320b6699e3f837c1f2af4c3166c4862526fb754
+# Snapshot: 2026-11-20 11:25 PST
+# This patch is a draft localization contribution by SuperSfera LLC.
+#
+diff --git a/packaging/linux/ai.storyteller.figcraft.desktop b/packaging/linux/ai.storyteller.figcraft.desktop
+--- a/packaging/linux/ai.storyteller.figcraft.desktop
++++ b/packaging/linux/ai.storyteller.figcraft.desktop
+@@ -1,8 +1,12 @@
++# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
+ [Desktop Entry]
+ Type=Application
+ Name=FigCraft
++Name[ru]=FigCraft
+ GenericName=Interface Design Tool
++GenericName[ru]=Инструмент для дизайна интерфейсов
+ Comment=Design and prototype user interfaces
++Comment[ru]=Дизайн и прототипирование пользовательских интерфейсов
+ Exec=figcraft %U
+ TryExec=figcraft
+ Icon=ai.storyteller.figcraft
+@@ -11,4 +15,5 @@
+ StartupWMClass=ai.storyteller.figcraft
+ Categories=Graphics;2DGraphics;VectorGraphics;X-Design;
+ Keywords=design;interface;ui;ux;prototype;wireframe;mockup;vector;layout;components;
++Keywords[ru]=дизайн;интерфейс;ui;ux;прототип;вайрфрейм;макет;вектор;вёрстка;компоненты;
+ MimeType=application/x-figcraft;image/svg+xml;image/png;image/jpeg;application/x-sketch;x-scheme-handler/figcraft;
+
+diff --git a/packaging/linux/ai.storyteller.figcraft.metainfo.xml.in b/packaging/linux/ai.storyteller.figcraft.metainfo.xml.in
+--- a/packaging/linux/ai.storyteller.figcraft.metainfo.xml.in
++++ b/packaging/linux/ai.storyteller.figcraft.metainfo.xml.in
+@@ -1,4 +1,5 @@
+ <?xml version="1.0" encoding="UTF-8"?>
++<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
+ <!-- AppStream metadata (software centres, Flathub). Template: package.sh and the Flatpak
+      manifest substitute @VERSION@ and @DATE@ from Cargo.toml and the build date. -->
+ <component type="desktop-application">
+@@ -7,6 +8,7 @@
+   <project_license>MIT OR Apache-2.0</project_license>
+   <name>FigCraft</name>
+   <summary>Design and prototype user interfaces</summary>
++  <summary xml:lang="ru">Дизайн и прототипирование пользовательских интерфейсов</summary>
+   <developer id="ai.storyteller">
+     <name>Learning Machines LLC</name>
+   </developer>
+@@ -16,13 +18,25 @@
+       on an infinite canvas with frames, auto layout and constraints, build reusable components
+       and variants, and link screens into clickable prototypes.
+     </p>
++    <p xml:lang="ru">
++      FigCraft — открытый нативный инструмент для дизайна и прототипирования интерфейсов.
++      Размещайте экраны на бесконечном холсте с помощью Frame, автолейаута и ограничений,
++      создавайте повторно используемые компоненты и варианты и связывайте экраны в
++      кликабельные прототипы.
++    </p>
+     <ul>
+       <li>Frames, vector shapes, text and images on an infinite canvas</li>
++      <li xml:lang="ru">Frame, векторные фигуры, текст и изображения на бесконечном холсте</li>
+       <li>Auto layout and constraints for responsive designs</li>
++      <li xml:lang="ru">Автолейаут и ограничения для адаптивных макетов</li>
+       <li>Components, variants, shared styles and variables</li>
++      <li xml:lang="ru">Компоненты, варианты, общие стили и переменные</li>
+       <li>Prototyping with interactions and transitions, and a presentation mode</li>
++      <li xml:lang="ru">Прототипирование со взаимодействиями и переходами, режим презентации</li>
+       <li>Inspect panel with measurements and code snippets; SVG and PNG export</li>
++      <li xml:lang="ru">Панель «Инспектор» с измерениями и фрагментами кода; экспорт в SVG и PNG</li>
+       <li>Every action is a command, scriptable from a CLI, a JSON control channel and an MCP server</li>
++      <li xml:lang="ru">Каждое действие — это команда, которую можно вызывать из CLI, через управляющий канал JSON и сервер MCP</li>
+     </ul>
+   </description>
+   <launchable type="desktop-id">ai.storyteller.figcraft.desktop</launchable>
+@@ -40,9 +54,13 @@
+   </categories>
+   <keywords>
+     <keyword>interface design</keyword>
++    <keyword xml:lang="ru">дизайн интерфейсов</keyword>
+     <keyword>prototyping</keyword>
++    <keyword xml:lang="ru">прототипирование</keyword>
+     <keyword>ui</keyword>
++    <keyword xml:lang="ru">ui</keyword>
+     <keyword>wireframe</keyword>
++    <keyword xml:lang="ru">вайрфрейм</keyword>
+   </keywords>
+   <branding>
+     <color type="primary" scheme_preference="light">#9fd3ff</color>
+
+diff --git a/packaging/linux/ai.storyteller.figcraft.mime.xml b/packaging/linux/ai.storyteller.figcraft.mime.xml
+--- a/packaging/linux/ai.storyteller.figcraft.mime.xml
++++ b/packaging/linux/ai.storyteller.figcraft.mime.xml
+@@ -1,16 +1,19 @@
+ <?xml version="1.0" encoding="UTF-8"?>
++<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
+ <!-- shared-mime-info definitions for FigCraft's own document type and for Sketch files, which
+      FigCraft opens (SVG, PNG and JPEG are already in the system database). Installed to /usr/share/mime/packages/ (update-mime-database runs on
+      install). -->
+ <mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+   <mime-type type="application/x-figcraft">
+     <comment>FigCraft document</comment>
++    <comment xml:lang="ru">Документ FigCraft</comment>
+     <icon name="ai.storyteller.figcraft"/>
+     <glob pattern="*.figcraft"/>
+   </mime-type>
+   <!-- Sketch 48 and newer save a zip of JSON. -->
+   <mime-type type="application/x-sketch">
+     <comment>Sketch document</comment>
++    <comment xml:lang="ru">Документ Sketch</comment>
+     <sub-class-of type="application/zip"/>
+     <glob pattern="*.sketch"/>
+   </mime-type>

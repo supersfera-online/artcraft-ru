@@ -1,0 +1,99 @@
+# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
+#
+# Russian Linux packaging (.desktop / AppStream / MIME) for storytold/deckcraft
+# Upstream: https://github.com/storytold/deckcraft
+# Base (origin merge-base): b16257a8b20eadd68e9b512ff0a2398641f5e932
+# Snapshot: 2026-11-20 11:25 PST
+# This patch is a draft localization contribution by SuperSfera LLC.
+#
+diff --git a/packaging/linux/ai.storyteller.deckcraft.desktop b/packaging/linux/ai.storyteller.deckcraft.desktop
+--- a/packaging/linux/ai.storyteller.deckcraft.desktop
++++ b/packaging/linux/ai.storyteller.deckcraft.desktop
+@@ -1,8 +1,12 @@
++# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
+ [Desktop Entry]
+ Type=Application
+ Name=DeckCraft
++Name[ru]=DeckCraft
+ GenericName=Presentation
++GenericName[ru]=Презентации
+ Comment=Create and present slide decks
++Comment[ru]=Создание и показ презентаций
+ Exec=deckcraft %F
+ TryExec=deckcraft
+ Icon=ai.storyteller.deckcraft
+@@ -12,3 +16,4 @@
+ Categories=Office;Presentation;
+ MimeType=application/x-deckcraft;application/vnd.openxmlformats-officedocument.presentationml.presentation;application/vnd.openxmlformats-officedocument.presentationml.template;application/vnd.openxmlformats-officedocument.presentationml.slideshow;application/vnd.ms-powerpoint;
+ Keywords=presentation;slides;slide show;deck;pptx;keynote;powerpoint;
++Keywords[ru]=презентация;слайды;слайд-шоу;показ слайдов;pptx;keynote;powerpoint;
+
+diff --git a/packaging/linux/ai.storyteller.deckcraft.metainfo.xml.in b/packaging/linux/ai.storyteller.deckcraft.metainfo.xml.in
+--- a/packaging/linux/ai.storyteller.deckcraft.metainfo.xml.in
++++ b/packaging/linux/ai.storyteller.deckcraft.metainfo.xml.in
+@@ -1,4 +1,5 @@
+ <?xml version="1.0" encoding="UTF-8"?>
++<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
+ <!-- AppStream metadata (software centres, Flathub). Template: package.sh and the Flatpak
+      manifest substitute @VERSION@ and @DATE@ from Cargo.toml and the build date. -->
+ <component type="desktop-application">
+@@ -7,6 +8,7 @@
+   <project_license>MIT OR Apache-2.0</project_license>
+   <name>DeckCraft</name>
+   <summary>Create and present slide decks</summary>
++  <summary xml:lang="ru">Создание и показ презентаций</summary>
+   <developer id="ai.storyteller">
+     <name>Learning Machines LLC</name>
+   </developer>
+@@ -16,9 +18,18 @@
+       tables, charts, transitions and animations. It opens and saves PowerPoint (.pptx) files
+       and presents them full screen with a presenter view.
+     </p>
++    <p xml:lang="ru">
++      DeckCraft создаёт презентации и слайд-шоу: темы, макеты, фигуры, рисунки, таблицы,
++      диаграммы, переходы и анимации. Открывает и сохраняет файлы PowerPoint (.pptx) и
++      показывает их во весь экран с режимом докладчика.
++    </p>
+     <p>
+       Every action is also a command that the command line and AI agents (through MCP) can drive.
+     </p>
++    <p xml:lang="ru">
++      Каждое действие — это ещё и команда, которую можно выполнить из командной строки или
++      поручить ИИ-агентам (через MCP).
++    </p>
+   </description>
+   <launchable type="desktop-id">ai.storyteller.deckcraft.desktop</launchable>
+   <icon type="stock">ai.storyteller.deckcraft</icon>
+@@ -33,13 +44,18 @@
+   </categories>
+   <keywords>
+     <keyword>presentation</keyword>
++    <keyword xml:lang="ru">презентация</keyword>
+     <keyword>slides</keyword>
++    <keyword xml:lang="ru">слайды</keyword>
+     <keyword>slide show</keyword>
++    <keyword xml:lang="ru">слайд-шоу</keyword>
+     <keyword>pptx</keyword>
++    <keyword xml:lang="ru">pptx</keyword>
+   </keywords>
+   <screenshots>
+     <screenshot type="default">
+       <caption>Slide editor with thumbnails, a process diagram and notes</caption>
++      <caption xml:lang="ru">Редактор слайдов с миниатюрами, схемой процесса и заметками</caption>
+       <image type="source" width="1600" height="1000">https://raw.githubusercontent.com/storytold/deckcraft/main/docs/images/editor.png</image>
+     </screenshot>
+   </screenshots>
+
+diff --git a/packaging/linux/ai.storyteller.deckcraft.mime.xml b/packaging/linux/ai.storyteller.deckcraft.mime.xml
+--- a/packaging/linux/ai.storyteller.deckcraft.mime.xml
++++ b/packaging/linux/ai.storyteller.deckcraft.mime.xml
+@@ -1,7 +1,9 @@
+ <?xml version="1.0" encoding="UTF-8"?>
++<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
+ <mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+   <mime-type type="application/x-deckcraft">
+     <comment>DeckCraft presentation</comment>
++    <comment xml:lang="ru">Презентация DeckCraft</comment>
+     <sub-class-of type="application/zip"/>
+     <glob pattern="*.deckcraft"/>
+     <icon name="ai.storyteller.deckcraft"/>

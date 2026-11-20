@@ -1,0 +1,81 @@
+# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
+#
+# Russian Linux packaging (.desktop / AppStream / MIME) for storytold/craft-launcher
+# Upstream: https://github.com/storytold/craft-launcher
+# Base (origin merge-base): bbb3844954d90e64c70a89ea493d0e7270478553
+# Snapshot: 2026-11-20 11:25 PST
+# This patch is a draft localization contribution by SuperSfera LLC.
+#
+diff --git a/packaging/linux/ai.storyteller.artcraft-launcher.desktop b/packaging/linux/ai.storyteller.artcraft-launcher.desktop
+--- a/packaging/linux/ai.storyteller.artcraft-launcher.desktop
++++ b/packaging/linux/ai.storyteller.artcraft-launcher.desktop
+@@ -1,8 +1,12 @@
++# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
+ [Desktop Entry]
+ Type=Application
+ Name=ArtCraft Launcher
++Name[ru]=ArtCraft Launcher
+ GenericName=App Launcher
++GenericName[ru]=Запуск приложений
+ Comment=Install, update and launch the Craft App Suite
++Comment[ru]=Установка, обновление и запуск приложений Craft App Suite
+ Exec=artcraft-launcher
+ TryExec=artcraft-launcher
+ Icon=ai.storyteller.artcraft-launcher
+@@ -11,3 +15,4 @@
+ StartupWMClass=ai.storyteller.artcraft-launcher
+ Categories=Utility;PackageManager;
+ Keywords=artcraft;craft;launcher;installer;updater;photocraft;filmcraft;apps;
++Keywords[ru]=artcraft;craft;лаунчер;запуск;установщик;обновление;photocraft;filmcraft;приложения;
+
+diff --git a/packaging/linux/ai.storyteller.artcraft-launcher.metainfo.xml.in b/packaging/linux/ai.storyteller.artcraft-launcher.metainfo.xml.in
+--- a/packaging/linux/ai.storyteller.artcraft-launcher.metainfo.xml.in
++++ b/packaging/linux/ai.storyteller.artcraft-launcher.metainfo.xml.in
+@@ -1,4 +1,5 @@
+ <?xml version="1.0" encoding="UTF-8"?>
++<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
+ <!-- AppStream metadata (software centres, Flathub). Template: package.sh and the Flatpak
+      manifest substitute @VERSION@ and @DATE@ from Cargo.toml and the build date. -->
+ <component type="desktop-application">
+@@ -7,6 +8,7 @@
+   <project_license>MIT OR Apache-2.0</project_license>
+   <name>ArtCraft Launcher</name>
+   <summary>Install, update and launch the Craft App Suite</summary>
++  <summary xml:lang="ru">Установка, обновление и запуск приложений Craft App Suite</summary>
+   <developer id="ai.storyteller">
+     <name>Learning Machines LLC</name>
+   </developer>
+@@ -16,10 +18,19 @@
+       DesignCraft, VectorCraft, PdfCraft, EffectCraft, WordCraft, DeckCraft, GridCraft, CADCraft,
+       SoundCraft and FigCraft), installs the right build for your computer, and keeps them up to date.
+     </p>
++    <p xml:lang="ru">
++      ArtCraft Launcher показывает все приложения Craft App Suite (PhotoCraft, LightCraft,
++      FilmCraft, DesignCraft, VectorCraft, PdfCraft, EffectCraft, WordCraft, DeckCraft,
++      GridCraft, CADCraft, SoundCraft и FigCraft), устанавливает подходящую для вашего
++      компьютера сборку и поддерживает их в актуальном состоянии.
++    </p>
+     <ul>
+       <li>One place to find, install and open every Craft app</li>
++      <li xml:lang="ru">Одно место, чтобы найти, установить и открыть любое приложение Craft</li>
+       <li>Checks GitHub releases for updates and installs them for you</li>
++      <li xml:lang="ru">Проверяет выпуски на GitHub и сам устанавливает обновления</li>
+       <li>Lives in the system tray and tells you when updates are ready</li>
++      <li xml:lang="ru">Работает в области уведомлений и сообщает, когда обновления готовы</li>
+     </ul>
+   </description>
+   <launchable type="desktop-id">ai.storyteller.artcraft-launcher.desktop</launchable>
+@@ -35,9 +46,13 @@
+   </categories>
+   <keywords>
+     <keyword>launcher</keyword>
++    <keyword xml:lang="ru">лаунчер</keyword>
+     <keyword>installer</keyword>
++    <keyword xml:lang="ru">установщик</keyword>
+     <keyword>updater</keyword>
++    <keyword xml:lang="ru">обновление</keyword>
+     <keyword>artcraft</keyword>
++    <keyword xml:lang="ru">artcraft</keyword>
+   </keywords>
+   <branding>
+     <color type="primary" scheme_preference="light">#d9dce3</color>
