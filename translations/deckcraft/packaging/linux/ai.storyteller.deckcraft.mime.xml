@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
+<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+  <mime-type type="application/x-deckcraft">
+    <comment>DeckCraft presentation</comment>
+    <comment xml:lang="ru">Презентация DeckCraft</comment>
+    <sub-class-of type="application/zip"/>
+    <glob pattern="*.deckcraft"/>
+    <icon name="ai.storyteller.deckcraft"/>
+  </mime-type>
+</mime-info>
