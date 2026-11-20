@@ -1,0 +1,21 @@
+# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
+[Desktop Entry]
+Type=Application
+Name=AniCraft
+Name[ru]=AniCraft
+GenericName=Animation Studio
+GenericName[ru]=Анимационная студия
+Comment=Draw and animate 2D vector art on a timeline
+Comment[ru]=Рисование и анимация 2D-векторной графики на шкале времени
+Exec=anicraft %f
+TryExec=anicraft
+Icon=ai.storyteller.anicraft
+Terminal=false
+# The native runner does not complete desktop startup-notification handshakes.
+StartupNotify=false
+# The window's Wayland app_id and X11 class (src/platform.rs), so docks match it to this entry.
+StartupWMClass=ai.storyteller.anicraft
+Categories=Graphics;2DGraphics;VectorGraphics;
+Keywords=animation;animator;timeline;keyframe;tween;vector;drawing;cartoon;motion;
+Keywords[ru]=анимация;аниматор;шкала времени;таймлайн;ключевой кадр;твин;вектор;рисование;мультфильм;движение;
+MimeType=application/x-anicraft;application/x-fla;application/x-xfl;

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
+<!-- AppStream metadata (software centres, Flathub). Template: package.sh and the Flatpak
+     manifest substitute @VERSION@ and @DATE@ from Cargo.toml and the build date. -->
+<component type="desktop-application">
+  <id>ai.storyteller.anicraft</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT OR Apache-2.0</project_license>
+  <name>AniCraft</name>
+  <summary>Draw and animate 2D vector art on a timeline</summary>
+  <summary xml:lang="ru">Рисование и анимация 2D-векторной графики на шкале времени</summary>
+  <developer id="ai.storyteller">
+    <name>ArtCraft Team</name>
+  </developer>
+  <description>
+    <p>
+      AniCraft is an open-source, native 2D animation studio. Draw with vector tools, animate on a
+      layered timeline with keyframes, classic, shape and motion tweens, and export frames, GIFs,
+      sprite sheets, SVG, Lottie and video.
+    </p>
+    <p xml:lang="ru">
+      AniCraft — открытая нативная студия 2D-анимации. Рисуйте векторными инструментами,
+      анимируйте на многослойной шкале времени с ключевыми кадрами, классическими твинами,
+      твинами формы и движения и экспортируйте кадры, GIF, листы спрайтов, SVG, Lottie и
+      видео.
+    </p>
+    <ul>
+      <li>Pen, pencil, shapes, paint bucket, text, width and subselection tools for editable vector art</li>
+      <li xml:lang="ru">Перо, карандаш, фигуры, заливка, текст, инструменты ширины и частичного выделения для редактируемой векторной графики</li>
+      <li>Timeline with layers, folders, masks, onion skin, easing and a motion editor</li>
+      <li xml:lang="ru">Шкала времени со слоями, папками, масками, калькой, сглаживанием движения и редактором движения</li>
+      <li>Symbols, a library and nested timelines</li>
+      <li xml:lang="ru">Символы, библиотека и вложенные шкалы времени</li>
+      <li>Opens FLA and XFL documents as untitled copies</li>
+      <li xml:lang="ru">Открывает документы FLA и XFL как безымянные копии</li>
+      <li>Every action is a command, scriptable from a CLI, a JSON control channel and an MCP server</li>
+      <li xml:lang="ru">Каждое действие — это команда, которую можно вызывать из CLI, через управляющий канал JSON и сервер MCP</li>
+    </ul>
+  </description>
+  <launchable type="desktop-id">ai.storyteller.anicraft.desktop</launchable>
+  <icon type="stock">ai.storyteller.anicraft</icon>
+  <!-- Only url types known to appstream 0.15 (Ubuntu 22.04, where release CI validates): no vcs-browser. -->
+  <url type="homepage">https://getartcraft.com/apps/anicraft</url>
+  <url type="bugtracker">https://github.com/storytold/AniCraft/issues</url>
+  <url type="help">https://github.com/storytold/AniCraft</url>
+  <categories>
+    <category>Graphics</category>
+    <category>2DGraphics</category>
+    <category>VectorGraphics</category>
+  </categories>
+  <keywords>
+    <keyword>animation</keyword>
+    <keyword xml:lang="ru">анимация</keyword>
+    <keyword>timeline</keyword>
+    <keyword xml:lang="ru">шкала времени</keyword>
+    <keyword>keyframe</keyword>
+    <keyword xml:lang="ru">ключевой кадр</keyword>
+    <keyword>tween</keyword>
+    <keyword xml:lang="ru">твин</keyword>
+    <keyword>vector</keyword>
+    <keyword xml:lang="ru">вектор</keyword>
+  </keywords>
+  <screenshots>
+    <screenshot type="default">
+      <caption>The sample animation on the stage, with tweens on the timeline and the easing curve in Properties</caption>
+      <caption xml:lang="ru">Пример анимации на сцене: твины на шкале времени и кривая сглаживания на панели «Свойства»</caption>
+      <image>https://raw.githubusercontent.com/storytold/AniCraft/main/docs/images/shot-1-stage.png</image>
+    </screenshot>
+  </screenshots>
+  <branding>
+    <color type="primary" scheme_preference="light">#f2e66a</color>
+    <color type="primary" scheme_preference="dark">#6b6102</color>
+  </branding>
+  <requires>
+    <display_length compare="ge">760</display_length>
+  </requires>
+  <supports>
+    <control>keyboard</control>
+    <control>pointing</control>
+    <control>tablet</control>
+  </supports>
+  <provides>
+    <binary>anicraft</binary>
+    <binary>anicraft-cli</binary>
+    <mediatype>application/x-anicraft</mediatype>
+    <mediatype>application/x-fla</mediatype>
+    <mediatype>application/x-xfl</mediatype>
+  </provides>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="@VERSION@" date="@DATE@"/>
+  </releases>
+</component>
