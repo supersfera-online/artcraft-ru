@@ -3,7 +3,7 @@
 # Russian UI catalog and Linux packaging for storytold/materialcraft
 # Upstream: https://github.com/storytold/materialcraft
 # Base (origin merge-base): 4ff5af9af7371613ee37b186e03caf49ee6dbd88
-# Snapshot: 2026-11-20 11:25 PST
+# Snapshot: 2026-11-20 12:09 PST
 # This patch is a draft localization contribution by SuperSfera LLC.
 #
 diff --git a/crates/ui-egui/src/i18n.rs b/crates/ui-egui/src/i18n.rs
@@ -96,7 +96,8 @@ diff --git a/crates/ui-egui/src/i18n/ru.rs b/crates/ui-egui/src/i18n/ru.rs
 new file mode 100644
 --- /dev/null
 +++ b/crates/ui-egui/src/i18n/ru.rs
-@@ -0,0 +1,758 @@
+@@ -0,0 +1,759 @@
++// Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
 +// Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
 +//! Russian UI text: (English key, translation). Keys are the English strings passed to `tr`.
 +
@@ -717,7 +718,7 @@ new file mode 100644
 +    ("Select downstream nodes", "Выделить узлы ниже по потоку"),
 +    ("Select output", "Выбрать выход"),
 +    ("Select upstream nodes", "Выделить узлы выше по потоку"),
-+    ("Select: click the mesh (Shift+click with any tool)", "Выделение: щёлкните сетку (Shift+щёлчок с любым инструментом)"),
++    ("Select: click the mesh (Shift+click with any tool)", "Выделение: щёлкните сетку (Shift+щелчок с любым инструментом)"),
 +    ("Selected", "Выделено"),
 +    ("Selected max", "Максимум выделенного"),
 +    ("Selected pixels", "Выделенные пиксели"),
@@ -901,7 +902,8 @@ diff --git a/crates/ui-egui/tests/language_switching.rs b/crates/ui-egui/tests/l
 diff --git a/packaging/linux/ai.storyteller.materialcraft.desktop b/packaging/linux/ai.storyteller.materialcraft.desktop
 --- a/packaging/linux/ai.storyteller.materialcraft.desktop
 +++ b/packaging/linux/ai.storyteller.materialcraft.desktop
-@@ -1,8 +1,12 @@
+@@ -1,8 +1,13 @@
++# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
 +# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
  [Desktop Entry]
  Type=Application
@@ -914,7 +916,7 @@ diff --git a/packaging/linux/ai.storyteller.materialcraft.desktop b/packaging/li
  Exec=materialcraft %F
  TryExec=materialcraft
  Icon=ai.storyteller.materialcraft
-@@ -11,4 +15,5 @@
+@@ -11,4 +16,5 @@
  StartupWMClass=materialcraft
  Categories=Graphics;3DGraphics;
  Keywords=material;procedural;node;graph;pbr;texture;noise;3d;
@@ -924,13 +926,14 @@ diff --git a/packaging/linux/ai.storyteller.materialcraft.desktop b/packaging/li
 diff --git a/packaging/linux/ai.storyteller.materialcraft.metainfo.xml.in b/packaging/linux/ai.storyteller.materialcraft.metainfo.xml.in
 --- a/packaging/linux/ai.storyteller.materialcraft.metainfo.xml.in
 +++ b/packaging/linux/ai.storyteller.materialcraft.metainfo.xml.in
-@@ -1,4 +1,5 @@
+@@ -1,4 +1,6 @@
  <?xml version="1.0" encoding="UTF-8"?>
++<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
 +<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
  <!-- AppStream metadata (software centres, Flathub). Template: package.sh and the Flatpak
       manifest substitute @VERSION@ and @DATE@ from Cargo.toml and the build date. -->
  <component type="desktop-application">
-@@ -7,6 +8,7 @@
+@@ -7,6 +9,7 @@
    <project_license>MIT OR Apache-2.0</project_license>
    <name>MaterialCraft</name>
    <summary>Design procedural PBR materials with node graphs</summary>
@@ -938,7 +941,7 @@ diff --git a/packaging/linux/ai.storyteller.materialcraft.metainfo.xml.in b/pack
    <developer id="ai.storyteller">
      <name>Learning Machines LLC</name>
    </developer>
-@@ -16,11 +18,20 @@
+@@ -16,11 +19,20 @@
        materials from noises, patterns and filters in a node graph, preview them live in 2D and 3D,
        and export the texture maps for any engine.
      </p>
@@ -959,7 +962,7 @@ diff --git a/packaging/linux/ai.storyteller.materialcraft.metainfo.xml.in b/pack
      </ul>
    </description>
    <launchable type="desktop-id">ai.storyteller.materialcraft.desktop</launchable>
-@@ -36,11 +47,17 @@
+@@ -36,11 +48,17 @@
    </categories>
    <keywords>
      <keyword>procedural</keyword>
@@ -981,8 +984,9 @@ diff --git a/packaging/linux/ai.storyteller.materialcraft.metainfo.xml.in b/pack
 diff --git a/packaging/linux/ai.storyteller.materialcraft.mime.xml b/packaging/linux/ai.storyteller.materialcraft.mime.xml
 --- a/packaging/linux/ai.storyteller.materialcraft.mime.xml
 +++ b/packaging/linux/ai.storyteller.materialcraft.mime.xml
-@@ -1,9 +1,11 @@
+@@ -1,9 +1,12 @@
  <?xml version="1.0" encoding="UTF-8"?>
++<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
 +<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
  <!-- shared-mime-info definitions for MaterialCraft's package format.
       Installed to /usr/share/mime/packages/ (update-mime-database runs on install). -->
