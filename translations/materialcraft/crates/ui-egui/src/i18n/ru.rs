@@ -1,4 +1,5 @@
 // Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
+// Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
 //! Russian UI text: (English key, translation). Keys are the English strings passed to `tr`.
 
 pub const TABLE: &[(&str, &str)] = &[
@@ -618,7 +619,7 @@ pub const TABLE: &[(&str, &str)] = &[
     ("Select downstream nodes", "Выделить узлы ниже по потоку"),
     ("Select output", "Выбрать выход"),
     ("Select upstream nodes", "Выделить узлы выше по потоку"),
-    ("Select: click the mesh (Shift+click with any tool)", "Выделение: щёлкните сетку (Shift+щёлчок с любым инструментом)"),
+    ("Select: click the mesh (Shift+click with any tool)", "Выделение: щёлкните сетку (Shift+щелчок с любым инструментом)"),
     ("Selected", "Выделено"),
     ("Selected max", "Максимум выделенного"),
     ("Selected pixels", "Выделенные пиксели"),
