@@ -3,13 +3,14 @@
 # Russian Linux packaging (.desktop / AppStream / MIME) for storytold/craft-anything
 # Upstream: https://github.com/storytold/craft-anything
 # Base (origin merge-base): 827be601e781daea91ce2013fa0f64d658abd028
-# Snapshot: 2026-11-20 11:25 PST
+# Snapshot: 2026-11-20 12:09 PST
 # This patch is a draft localization contribution by SuperSfera LLC.
 #
 diff --git a/packaging/linux/ai.storyteller.craft-anything.desktop b/packaging/linux/ai.storyteller.craft-anything.desktop
 --- a/packaging/linux/ai.storyteller.craft-anything.desktop
 +++ b/packaging/linux/ai.storyteller.craft-anything.desktop
-@@ -1,8 +1,12 @@
+@@ -1,8 +1,13 @@
++# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
 +# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
  [Desktop Entry]
  Type=Application
@@ -22,7 +23,7 @@ diff --git a/packaging/linux/ai.storyteller.craft-anything.desktop b/packaging/l
  Exec=craft-anything %F
  TryExec=craft-anything
  Icon=ai.storyteller.craft-anything
-@@ -11,3 +15,4 @@
+@@ -11,3 +16,4 @@
  StartupWMClass=ai.storyteller.craft-anything
  Categories=Development;Debugger;
  Keywords=reverse engineering;disassembler;binary;analysis;executable;decompiler;inspect;
@@ -31,13 +32,14 @@ diff --git a/packaging/linux/ai.storyteller.craft-anything.desktop b/packaging/l
 diff --git a/packaging/linux/ai.storyteller.craft-anything.metainfo.xml.in b/packaging/linux/ai.storyteller.craft-anything.metainfo.xml.in
 --- a/packaging/linux/ai.storyteller.craft-anything.metainfo.xml.in
 +++ b/packaging/linux/ai.storyteller.craft-anything.metainfo.xml.in
-@@ -1,4 +1,5 @@
+@@ -1,4 +1,6 @@
  <?xml version="1.0" encoding="UTF-8"?>
++<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
 +<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
  <!-- AppStream metadata (software centres, Flathub). Template: package.sh and the Flatpak
       manifest substitute @VERSION@ and @DATE@ from Cargo.toml and the build date. -->
  <component type="desktop-application">
-@@ -7,6 +8,7 @@
+@@ -7,6 +9,7 @@
    <project_license>MIT OR Apache-2.0</project_license>
    <name>Craft Anything</name>
    <summary>Find out how any software works, then craft your own</summary>
@@ -45,7 +47,7 @@ diff --git a/packaging/linux/ai.storyteller.craft-anything.metainfo.xml.in b/pac
    <developer id="ai.storyteller">
      <name>Learning Machines LLC</name>
    </developer>
-@@ -16,12 +18,23 @@
+@@ -16,12 +19,23 @@
        then helps them rebuild it. Open a program, an app, a file or a website and get a plain
        explanation of what it is, what it does and how it is put together.
      </p>
@@ -69,7 +71,7 @@ diff --git a/packaging/linux/ai.storyteller.craft-anything.metainfo.xml.in b/pac
      </ul>
    </description>
    <launchable type="desktop-id">ai.storyteller.craft-anything.desktop</launchable>
-@@ -37,8 +50,11 @@
+@@ -37,8 +51,11 @@
    </categories>
    <keywords>
      <keyword>reverse engineering</keyword>

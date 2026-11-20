@@ -1,15 +1,35 @@
 # Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
 #
-# Russian Linux packaging (.desktop / AppStream / MIME) for storytold/craft-launcher
+# Russian UI catalog and Linux packaging for storytold/craft-launcher
 # Upstream: https://github.com/storytold/craft-launcher
 # Base (origin merge-base): bbb3844954d90e64c70a89ea493d0e7270478553
-# Snapshot: 2026-11-20 11:25 PST
+# Snapshot: 2026-11-20 12:09 PST
 # This patch is a draft localization contribution by SuperSfera LLC.
 #
+diff --git a/crates/ui-egui/src/i18n/ru.tsv b/crates/ui-egui/src/i18n/ru.tsv
+--- a/crates/ui-egui/src/i18n/ru.tsv
++++ b/crates/ui-egui/src/i18n/ru.tsv
+@@ -1,3 +1,5 @@
++# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
++# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
+ # Russian (ru) catalog for ArtCraft Launcher.
+ # Format: context<TAB>source<TAB>translation
+ # Empty context = plain UI string (tl!, t).
+@@ -476,3 +478,8 @@
+ 	Added	Добавлено
+ 	Remove	Удалить
+ 	Add	Добавить
++	Classic	Классические
++	Inspired by	По мотивам
++	Like {name}	Как {name}
++	Website (coming soon)	Веб-сайт (скоро)
++@id	sort.inspired	По мотивам
+
 diff --git a/packaging/linux/ai.storyteller.artcraft-launcher.desktop b/packaging/linux/ai.storyteller.artcraft-launcher.desktop
 --- a/packaging/linux/ai.storyteller.artcraft-launcher.desktop
 +++ b/packaging/linux/ai.storyteller.artcraft-launcher.desktop
-@@ -1,8 +1,12 @@
+@@ -1,8 +1,13 @@
++# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
 +# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
  [Desktop Entry]
  Type=Application
@@ -22,7 +42,7 @@ diff --git a/packaging/linux/ai.storyteller.artcraft-launcher.desktop b/packagin
  Exec=artcraft-launcher
  TryExec=artcraft-launcher
  Icon=ai.storyteller.artcraft-launcher
-@@ -11,3 +15,4 @@
+@@ -11,3 +16,4 @@
  StartupWMClass=ai.storyteller.artcraft-launcher
  Categories=Utility;PackageManager;
  Keywords=artcraft;craft;launcher;installer;updater;photocraft;filmcraft;apps;
@@ -31,13 +51,14 @@ diff --git a/packaging/linux/ai.storyteller.artcraft-launcher.desktop b/packagin
 diff --git a/packaging/linux/ai.storyteller.artcraft-launcher.metainfo.xml.in b/packaging/linux/ai.storyteller.artcraft-launcher.metainfo.xml.in
 --- a/packaging/linux/ai.storyteller.artcraft-launcher.metainfo.xml.in
 +++ b/packaging/linux/ai.storyteller.artcraft-launcher.metainfo.xml.in
-@@ -1,4 +1,5 @@
+@@ -1,4 +1,6 @@
  <?xml version="1.0" encoding="UTF-8"?>
++<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
 +<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
  <!-- AppStream metadata (software centres, Flathub). Template: package.sh and the Flatpak
       manifest substitute @VERSION@ and @DATE@ from Cargo.toml and the build date. -->
  <component type="desktop-application">
-@@ -7,6 +8,7 @@
+@@ -7,6 +9,7 @@
    <project_license>MIT OR Apache-2.0</project_license>
    <name>ArtCraft Launcher</name>
    <summary>Install, update and launch the Craft App Suite</summary>
@@ -45,7 +66,7 @@ diff --git a/packaging/linux/ai.storyteller.artcraft-launcher.metainfo.xml.in b/
    <developer id="ai.storyteller">
      <name>Learning Machines LLC</name>
    </developer>
-@@ -16,10 +18,19 @@
+@@ -16,10 +19,19 @@
        DesignCraft, VectorCraft, PdfCraft, EffectCraft, WordCraft, DeckCraft, GridCraft, CADCraft,
        SoundCraft and FigCraft), installs the right build for your computer, and keeps them up to date.
      </p>
@@ -65,7 +86,7 @@ diff --git a/packaging/linux/ai.storyteller.artcraft-launcher.metainfo.xml.in b/
      </ul>
    </description>
    <launchable type="desktop-id">ai.storyteller.artcraft-launcher.desktop</launchable>
-@@ -35,9 +46,13 @@
+@@ -35,9 +47,13 @@
    </categories>
    <keywords>
      <keyword>launcher</keyword>
