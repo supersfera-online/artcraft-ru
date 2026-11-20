@@ -1,0 +1,6 @@
+# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
+file	line	context	source	translation	en_amp	ru_amp	en_underscore	ru_underscore	detail
+cadcraft.tsv	718		Specify first point on circle: _tan to	Укажите первую точку на круге: _tan к			t	t	mnemonic/accelerator candidate
+cadcraft.tsv	765		Specify second point on circle: _tan to	Укажите вторую точку на круге: _tan к			t	t	mnemonic/accelerator candidate
+cadcraft.tsv	780		Specify third point on circle: _tan to	Укажите третью точку на круге: _tan к			t	t	mnemonic/accelerator candidate
+pdfcraft.tsv	3988		{name}_unsigned.pdf	{name}_без_подписи.pdf			u	б	mnemonic/accelerator candidate
