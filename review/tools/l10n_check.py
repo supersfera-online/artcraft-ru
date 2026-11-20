@@ -40,7 +40,7 @@ from dataclasses import dataclass, field
 
 import authorship as auth  # noqa: E402
 
-VERSION = "1.1 (2026-11-20)"
+VERSION = "1.3 (2026-11-20)"
 L10N_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 DEFAULT_GLOSSARY = os.path.join(L10N_ROOT, "glossary", "glossary.tsv")
 
@@ -1160,10 +1160,10 @@ def check_catalog(cat: Catalog, opt: Options) -> tuple[list, dict]:
     F: list[Finding] = []
     fname = rel(cat.path)
 
-    def add(sev, check, e, msg, line=None, key=None, en=None, ru=None):
+    def add(sev, check, e, msg, line=None, key=None, en=None, ru=None, file=None):
         if e is not None:
             ru_text = e.value if e.value is not None else " | ".join((e.forms or {}).values())
-        F.append(Finding(sev, check, prog, fname,
+        F.append(Finding(sev, check, prog, file if file is not None else fname,
                          line if line is not None else (e.line if e else 0),
                          short(key if key is not None else (e.key.replace("\x1f", " | ") if e else ""), 120),
                          short(en if en is not None else (e.source if e else "")),
@@ -1173,15 +1173,17 @@ def check_catalog(cat: Catalog, opt: Options) -> tuple[list, dict]:
     for sev, check, line, key, msg in cat.problems:
         add(sev, check, None, msg, line=line, key=key, en="", ru="")
 
-    auth.check_header(cat, add)
-    auth.check_bot_names_in_file(cat, opt.bot_patterns, add)
     root = auth.git_root(cat.path)
+    under_review = os.path.abspath(cat.path).startswith(os.path.join(L10N_ROOT, "review") + os.sep)
+    auth.check_header(cat, add, repo=None if under_review else root)
+    auth.check_bot_names_in_file(cat, opt.bot_patterns, add)
     if opt.bot_patterns and root and root not in opt._commit_repos:
-        under_review = os.path.abspath(cat.path).startswith(os.path.join(L10N_ROOT, "review") + os.sep)
         if not under_review:
             opt._commit_repos.add(root)
-            for sev, check, msg, line, key, en, ru in auth.scan_local_commits(root, opt.bot_patterns, rel):
-                add(sev, check, None, msg, line=line, key=key, en=en, ru=ru)
+            for row in auth.scan_local_commits(root, opt.bot_patterns, rel):
+                sev, check, msg, line, key, en, ru = row[:7]
+                file = row[7] if len(row) > 7 and row[7] else rel(root)
+                add(sev, check, None, msg, line=line, key=key, en=en, ru=ru, file=file)
 
     craft_root = is_craft_i18n_file(cat.path)
     strict_keys = cat.fmt in ("json", "toml", "ftl") and bool(cat.meta.get("en_path"))
@@ -1423,7 +1425,8 @@ def discover(roots: list, locale: str) -> list:
                     push((guess_program(p), "ftl", p, "Fluent"))
                 elif ext == ".desktop":
                     try:
-                        txt = open(p, encoding="utf-8", errors="replace").read()
+                        with open(p, encoding="utf-8", errors="replace") as fh:
+                            txt = fh.read()
                     except OSError:
                         continue
                     if re.search(r"^(Name|GenericName|Comment|Keywords)\[ru\]\s*=", txt, re.M):
@@ -1432,7 +1435,8 @@ def discover(roots: list, locale: str) -> list:
                     if not any(x in low for x in ("metainfo", "mime", "appdata")):
                         continue
                     try:
-                        txt = open(p, encoding="utf-8", errors="replace").read()
+                        with open(p, encoding="utf-8", errors="replace") as fh:
+                            txt = fh.read()
                     except OSError:
                         continue
                     if 'xml:lang="ru"' in txt or "xml:lang='ru'" in txt:
@@ -1468,7 +1472,10 @@ CHECK_TITLES = {
     "missing": "Нет в переводе", "extra": "Лишние ключи", "redundant-override": "Лишнее переопределение common",
     "language-name": "Имя языка", "plural-forms": "Формы множественного числа",
     "authorship-header": "Шапка авторства", "authorship-header-unsupported": "Формат без комментариев (шапка)",
-    "authorship-header-breaks": "Шапка ломает формат", "assistant-name": "Имя исполнителя",
+    "authorship-header-breaks": "Шапка ломает формат", "authorship-header-placement": "Шапка не на месте",
+    "authorship-header-comments": "Изменён авторский комментарий",
+    "authorship-header-unneeded": "Шапка в файле без нашего перевода",
+    "authorship-attribution": "Формулировка ATTRIBUTION.md (ru)", "assistant-name": "Имя исполнителя",
 }
 
 
@@ -1501,7 +1508,7 @@ def render_md(title: str, summaries: list, findings: list, opt: Options, tsv_pat
         out.append(f"- Все находки построчно: `{rel(tsv_path)}`")
     out.append(f"- **Итог: ошибок {errs}**, предупреждений {warns}, справочных {infos} — " + ("**НЕ ПРОЙДЕНО** (есть ошибки)" if errs else "ошибок нет"))
     out.append("")
-    out.append("Достоверность: все цифры — **[проверено: подсчёт этим скриптом по файлам в рабочей копии в момент запуска]**. "
+    out.append("Достоверность: все цифры — **[проверено: подсчёт этим скриптом по файлам на box в момент запуска]**. "
                "Что значит находка, решает человек: «совпадает с английским», «длина» и «глоссарий» часто законны.")
     out.append("")
     out.append("## Каталоги")
