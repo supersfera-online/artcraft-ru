@@ -1,5 +1,6 @@
 # Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
 # Русский (ru) interface catalog for PdfCraft.
+# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
 # Columns, separated by a TAB:  context <TAB> English source text <TAB> translation
 #   context  usually empty. `@plural`, `@id` and `@msg` mean something to the apps; any other
 #            word is a label that tells apart two meanings of the same English.
@@ -1849,7 +1850,7 @@ calendar weekday	Mo	Пн
 	Move comment	Переместить комментарий
 	Move comment pop-up	Переместить всплывающее окно комментария
 	Move comments	Переместить комментарии
-	Move down	Переместить вниз
+	Move down	Переместить вdownarrow
 	Move earlier	Переместить раньше
 	Move image	Переместить изображение
 	Move into previous tag	Переместить внутрь предыдущего тега
@@ -4148,7 +4149,7 @@ document scrollbar width	Wide	Широкая
 	Background image	Фоновое изображение
 	Background opacity:	Непрозрачность фона:
 	Background removal	Удаление фона
-	Bitmap images	Черно-белые изображения
+	Bitmap images	Чёрно-белые изображения
 	Black and white (binarize)	Чёрно-белое (бинаризация)
 	Bleed	Вылет
 	bold	полужирный
@@ -4634,3 +4635,5 @@ review-suggestion	Replacement text	Текст замены
 	· not fixable here	· здесь исправить нельзя
 	· password-protected	· защищено паролем
 	… and {} more on this page	… и ещё {} на этой странице
+# Author catalog rows kept unchanged (present upstream, missing from our revision)
+@plural	{n} byte|{n} bytes	{n} байт|{n} байта|{n} байт
