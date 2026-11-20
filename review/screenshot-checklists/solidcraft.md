@@ -40,7 +40,7 @@
 
 ## 4. Ярлык в меню приложений
 
-Файл в клоне: `solidcraft/solidcraft/assets/platforms/linux/io.tangencylabs.solidcraft.desktop` — **проверено** (чтение файла в рабочей копии).
+Файл в клоне: `solidcraft/solidcraft/assets/platforms/linux/io.tangencylabs.solidcraft.desktop` — **проверено** (чтение файла на box).
 
 | Поле | English | Русский в клоне |
 |---|---|---|
