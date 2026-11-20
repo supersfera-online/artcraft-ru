@@ -66,7 +66,7 @@ drawing	чертёж	ru.json	106	8
 view	вид	ru.json	285	236
 section	сечение	ru.json	51	35
 viewport	область просмотра	ru.json	20	5
-workspace	рабочая область (в ru.json также «рабочее пространство»)	ru.json (спорно)	20	7
+workspace	Рабочая область	ru.json (спорно)	20	7
 toolbar	панель инструментов	ru.json	12	8
 panel	панель	ru.json	104	53
 preferences	настройки	ru.json	25	96
