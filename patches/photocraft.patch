@@ -3,13 +3,14 @@
 # Russian Linux packaging (.desktop / AppStream / MIME) for storytold/photocraft
 # Upstream: https://github.com/storytold/photocraft
 # Base (origin merge-base): 877d58844029967b80e36a964902d309de1be158
-# Snapshot: 2026-11-20 11:25 PST
+# Snapshot: 2026-11-20 12:09 PST
 # This patch is a draft localization contribution by SuperSfera LLC.
 #
 diff --git a/packaging/linux/ai.storyteller.photocraft.desktop b/packaging/linux/ai.storyteller.photocraft.desktop
 --- a/packaging/linux/ai.storyteller.photocraft.desktop
 +++ b/packaging/linux/ai.storyteller.photocraft.desktop
-@@ -1,8 +1,12 @@
+@@ -1,8 +1,13 @@
++# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
 +# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
  [Desktop Entry]
  Type=Application
@@ -22,7 +23,7 @@ diff --git a/packaging/linux/ai.storyteller.photocraft.desktop b/packaging/linux
  Exec=photocraft %F
  TryExec=photocraft
  Icon=ai.storyteller.photocraft
-@@ -12,6 +16,7 @@
+@@ -12,6 +17,7 @@
  StartupWMClass=ai.storyteller.photocraft
  Categories=Graphics;2DGraphics;RasterGraphics;Photography;
  Keywords=photo;image;editor;psd;layers;retouch;paint;
@@ -34,13 +35,14 @@ diff --git a/packaging/linux/ai.storyteller.photocraft.desktop b/packaging/linux
 diff --git a/packaging/linux/ai.storyteller.photocraft.metainfo.xml.in b/packaging/linux/ai.storyteller.photocraft.metainfo.xml.in
 --- a/packaging/linux/ai.storyteller.photocraft.metainfo.xml.in
 +++ b/packaging/linux/ai.storyteller.photocraft.metainfo.xml.in
-@@ -1,4 +1,5 @@
+@@ -1,4 +1,6 @@
  <?xml version="1.0" encoding="UTF-8"?>
++<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
 +<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
  <!-- AppStream metadata (software centres, Flathub). Template: package.sh and the Flatpak
       manifest substitute @VERSION@ and @DATE@ from Cargo.toml and the build date. -->
  <component type="desktop-application">
-@@ -7,6 +8,7 @@
+@@ -7,6 +9,7 @@
    <project_license>MIT OR Apache-2.0</project_license>
    <name>PhotoCraft</name>
    <summary>Edit photos and layered PSD documents</summary>
@@ -48,7 +50,7 @@ diff --git a/packaging/linux/ai.storyteller.photocraft.metainfo.xml.in b/packagi
    <developer id="ai.storyteller">
      <name>Learning Machines LLC</name>
    </developer>
-@@ -16,11 +18,20 @@
+@@ -16,11 +19,20 @@
        shortcuts, panels and tools professionals expect: layers, masks, adjustment
        layers, layer styles, type and brushes.
      </p>
@@ -69,7 +71,7 @@ diff --git a/packaging/linux/ai.storyteller.photocraft.metainfo.xml.in b/packagi
      </ul>
    </description>
    <launchable type="desktop-id">ai.storyteller.photocraft.desktop</launchable>
-@@ -37,13 +48,18 @@
+@@ -37,13 +49,18 @@
    </categories>
    <keywords>
      <keyword>photo</keyword>
@@ -92,8 +94,9 @@ diff --git a/packaging/linux/ai.storyteller.photocraft.metainfo.xml.in b/packagi
 diff --git a/packaging/linux/ai.storyteller.photocraft.mime.xml b/packaging/linux/ai.storyteller.photocraft.mime.xml
 --- a/packaging/linux/ai.storyteller.photocraft.mime.xml
 +++ b/packaging/linux/ai.storyteller.photocraft.mime.xml
-@@ -1,14 +1,17 @@
+@@ -1,14 +1,18 @@
  <?xml version="1.0" encoding="UTF-8"?>
++<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
 +<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
  <!-- shared-mime-info definitions for types the system database may not have.
       Installed to /usr/share/mime/packages/ (update-mime-database runs on install). -->
@@ -110,7 +113,7 @@ diff --git a/packaging/linux/ai.storyteller.photocraft.mime.xml b/packaging/linu
      <sub-class-of type="image/vnd.adobe.photoshop"/>
      <generic-icon name="image-x-generic"/>
      <magic priority="60">
-@@ -18,6 +21,7 @@
+@@ -18,6 +22,7 @@
    </mime-type>
    <mime-type type="image/qoi">
      <comment>QOI image</comment>
@@ -118,7 +121,7 @@ diff --git a/packaging/linux/ai.storyteller.photocraft.mime.xml b/packaging/linu
      <generic-icon name="image-x-generic"/>
      <magic priority="50">
        <match type="string" value="qoif" offset="0"/>
-@@ -26,6 +30,7 @@
+@@ -26,6 +31,7 @@
    </mime-type>
    <mime-type type="image/x-paintnet">
      <comment>Paint.NET document</comment>

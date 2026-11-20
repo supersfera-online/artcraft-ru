@@ -3,13 +3,14 @@
 # Russian Linux packaging (.desktop / AppStream / MIME) for storytold/anicraft
 # Upstream: https://github.com/storytold/anicraft
 # Base (origin merge-base): 3ccb59e02b1a03457fffdd946a1c15604ad22e2f
-# Snapshot: 2026-11-20 11:25 PST
+# Snapshot: 2026-11-20 12:09 PST
 # This patch is a draft localization contribution by SuperSfera LLC.
 #
 diff --git a/packaging/linux/ai.storyteller.anicraft.desktop b/packaging/linux/ai.storyteller.anicraft.desktop
 --- a/packaging/linux/ai.storyteller.anicraft.desktop
 +++ b/packaging/linux/ai.storyteller.anicraft.desktop
-@@ -1,8 +1,12 @@
+@@ -1,8 +1,13 @@
++# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
 +# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
  [Desktop Entry]
  Type=Application
@@ -22,7 +23,7 @@ diff --git a/packaging/linux/ai.storyteller.anicraft.desktop b/packaging/linux/a
  Exec=anicraft %f
  TryExec=anicraft
  Icon=ai.storyteller.anicraft
-@@ -13,4 +17,5 @@
+@@ -13,4 +18,5 @@
  StartupWMClass=ai.storyteller.anicraft
  Categories=Graphics;2DGraphics;VectorGraphics;
  Keywords=animation;animator;timeline;keyframe;tween;vector;drawing;cartoon;motion;
@@ -32,13 +33,14 @@ diff --git a/packaging/linux/ai.storyteller.anicraft.desktop b/packaging/linux/a
 diff --git a/packaging/linux/ai.storyteller.anicraft.metainfo.xml.in b/packaging/linux/ai.storyteller.anicraft.metainfo.xml.in
 --- a/packaging/linux/ai.storyteller.anicraft.metainfo.xml.in
 +++ b/packaging/linux/ai.storyteller.anicraft.metainfo.xml.in
-@@ -1,4 +1,5 @@
+@@ -1,4 +1,6 @@
  <?xml version="1.0" encoding="UTF-8"?>
++<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
 +<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
  <!-- AppStream metadata (software centres, Flathub). Template: package.sh and the Flatpak
       manifest substitute @VERSION@ and @DATE@ from Cargo.toml and the build date. -->
  <component type="desktop-application">
-@@ -7,6 +8,7 @@
+@@ -7,6 +9,7 @@
    <project_license>MIT OR Apache-2.0</project_license>
    <name>AniCraft</name>
    <summary>Draw and animate 2D vector art on a timeline</summary>
@@ -46,7 +48,7 @@ diff --git a/packaging/linux/ai.storyteller.anicraft.metainfo.xml.in b/packaging
    <developer id="ai.storyteller">
      <name>ArtCraft Team</name>
    </developer>
-@@ -16,12 +18,23 @@
+@@ -16,12 +19,23 @@
        layered timeline with keyframes, classic, shape and motion tweens, and export frames, GIFs,
        sprite sheets, SVG, Lottie and video.
      </p>
@@ -70,7 +72,7 @@ diff --git a/packaging/linux/ai.storyteller.anicraft.metainfo.xml.in b/packaging
      </ul>
    </description>
    <launchable type="desktop-id">ai.storyteller.anicraft.desktop</launchable>
-@@ -37,14 +50,20 @@
+@@ -37,14 +51,20 @@
    </categories>
    <keywords>
      <keyword>animation</keyword>
@@ -95,8 +97,9 @@ diff --git a/packaging/linux/ai.storyteller.anicraft.metainfo.xml.in b/packaging
 diff --git a/packaging/linux/ai.storyteller.anicraft.mime.xml b/packaging/linux/ai.storyteller.anicraft.mime.xml
 --- a/packaging/linux/ai.storyteller.anicraft.mime.xml
 +++ b/packaging/linux/ai.storyteller.anicraft.mime.xml
-@@ -1,10 +1,12 @@
+@@ -1,10 +1,13 @@
  <?xml version="1.0" encoding="UTF-8"?>
++<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
 +<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
  <!-- shared-mime-info definitions for AniCraft's own format and the formats it opens as an
       untitled import (ADR 0009), which the system database doesn't have.
@@ -108,7 +111,7 @@ diff --git a/packaging/linux/ai.storyteller.anicraft.mime.xml b/packaging/linux/
      <!-- A JSON file (crates/engine/src/format.rs), so text tools can still open it. -->
      <sub-class-of type="application/json"/>
      <icon name="ai.storyteller.anicraft"/>
-@@ -12,11 +14,13 @@
+@@ -12,11 +15,13 @@
    </mime-type>
    <mime-type type="application/x-fla">
      <comment>FLA document</comment>
