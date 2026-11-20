@@ -1,0 +1,99 @@
+# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
+en	ru	источник	строк_en_с_термином	строк_ru_с_переводом
+body	тело	ru.json + glossary	152	388
+component	компонент	ru.json + glossary	91	71
+occurrence	вхождение	ru.json + glossary	10	11
+design	дизайн	ru.json (спорно)	231	134
+design file	файл дизайна	ru.json	9	5
+sketch	эскиз	ru.json + glossary	288	217
+sketch entity	элемент эскиза (в ru.json также «объект эскиза»)	ru.json (спорно)	0	5
+constraint	ограничение	ru.json	29	49
+dimension	размер	ru.json	71	101
+feature (timeline)	операция	ru.json	109	79
+timeline	шкала (истории)	ru.json	10	5
+history (undo)	история	ru.json + glossary	36	34
+folder	папка	ru.json	50	19
+browser (panel)	браузер	ru.json (спорно: glossary просит не путать с веб-браузером)	48	26
+web browser	веб-браузер	моё	0	0
+construction entity	вспомогательный элемент	ru.json	0	51
+construction plane/axis/point	вспомогательная плоскость/ось/точка	ru.json	0	51
+profile (sketch)	профиль	ru.json	94	82
+settings profile	профиль настроек	ru.json	10	9
+joint	сопряжение	ru.json	82	61
+plane	плоскость	ru.json	113	88
+axis	ось	ru.json	86	71
+point	точка	ru.json	272	183
+edge	ребро	ru.json	183	48
+face	грань	ru.json	232	248
+vertex	вершина	ru.json	15	19
+curve	кривая	ru.json	130	119
+surface	поверхность	ru.json	127	98
+extrude	выдавливание / выдавить	ru.json	21	18
+revolve	вращение	ru.json	9	24
+sweep	сдвиг	ru.json	12	13
+loft	лофт	ru.json	5	3
+fillet	скругление	ru.json + glossary (Round≠fillet)	10	7
+chamfer	фаска	ru.json	15	12
+shell	оболочка	ru.json	11	6
+pattern	массив	ru.json	35	16
+pattern instance	экземпляр (массива)	ru.json	0	5
+mirror	зеркало / зеркально отразить	ru.json	22	19
+hole	отверстие	ru.json	54	43
+thread	резьба	ru.json	15	14
+draft (geometry)	уклон	ru.json	41	11
+flange	фланец	ru.json	15	12
+hem	кромка (подгибка)	ru.json	3	14
+bend	гиб (в ru.json также «сгиб»)	ru.json (спорно)	33	31
+sheet metal	листовой металл	ru.json	24	16
+flat pattern	развёртка	ru.json	8	10
+counterbore	цековка	ru.json	3	3
+countersink	зенковка	ru.json	4	3
+assembly	сборка	ru.json	30	39
+bill of materials	спецификация	ru.json	2	14
+part number	номер детали	ru.json	3	1
+standard part	стандартная деталь	ru.json	5	5
+material	материал	ru.json + glossary	85	74
+appearance	внешний вид	ru.json + glossary	60	63
+render	рендер / рендеринг	ru.json	187	139
+render shot	кадр (рендера) (в ru.json также «снимок»)	ru.json (спорно)	4	79
+environment	окружение	ru.json	54	51
+camera	камера	ru.json	60	54
+samples (render)	сэмплы	ru.json	43	52
+mesh	меш (в ru.json также «сетка»)	ru.json (спорно)	32	43
+canvas	подложка (в ru.json один раз «холст»)	ru.json	14	9
+decal	наклейка	ru.json	2	3
+drawing	чертёж	ru.json	106	8
+view	вид	ru.json	285	236
+section	сечение	ru.json	51	35
+viewport	область просмотра	ru.json	20	5
+workspace	рабочая область (в ru.json также «рабочее пространство»)	ru.json (спорно)	20	7
+toolbar	панель инструментов	ru.json	12	8
+panel	панель	ru.json	104	53
+preferences	настройки	ru.json	25	96
+plugin	плагин	ru.json	71	6
+library	библиотека	ru.json	41	37
+parameter	параметр	ru.json	50	74
+report	отчёт	ru.json	68	36
+export / import	экспорт / импорт	ru.json	96	78
+snap	привязка	ru.json	32	36
+grid	сетка	ru.json	23	23
+clearance	зазор	ru.json	15	24
+interference	пересечение / интерференция	ru.json (спорно)	5	12
+motion study	исследование движения	ru.json	11	13
+agent	агент (ИИ-агент)	ru.json	94	85
+slicer	слайсер	ru.json	22	14
+suppress	подавить	ru.json	17	26
+ground / unground	закрепить / открепить	ru.json	28	17
+configuration	конфигурация	ru.json	25	21
+rule	правило	ru.json	65	50
+note (check)	замечание	ru.json	27	2
+note (annotation)	примечание	ru.json	27	2
+tolerance	допуск	ru.json	6	10
+exposure	экспозиция	ru.json	13	13
+tone mapping	тональная компрессия	ru.json	4	4
+rib	ребро жёсткости	ru.json	16	5
+boss	бобышка	ru.json	12	5
+airfoil	аэродинамический профиль	моё (glossary: не путать с профилем эскиза)	3	0
+leader	выноска	моё	2	0
+diagram	схема	craft-i18n GLOSSARY	0	12
+decorative text	декоративный текст	craft-i18n GLOSSARY	0	0
