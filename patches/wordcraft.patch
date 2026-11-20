@@ -3,13 +3,14 @@
 # Russian Linux packaging (.desktop / AppStream / MIME) for storytold/wordcraft
 # Upstream: https://github.com/storytold/wordcraft
 # Base (origin merge-base): f2e6234c5240737c84926e19d8c8a421ea010ca9
-# Snapshot: 2026-11-20 11:25 PST
+# Snapshot: 2026-11-20 12:09 PST
 # This patch is a draft localization contribution by SuperSfera LLC.
 #
 diff --git a/packaging/linux/ai.storyteller.wordcraft.desktop b/packaging/linux/ai.storyteller.wordcraft.desktop
 --- a/packaging/linux/ai.storyteller.wordcraft.desktop
 +++ b/packaging/linux/ai.storyteller.wordcraft.desktop
-@@ -1,8 +1,12 @@
+@@ -1,8 +1,13 @@
++# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
 +# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
  [Desktop Entry]
  Type=Application
@@ -22,7 +23,7 @@ diff --git a/packaging/linux/ai.storyteller.wordcraft.desktop b/packaging/linux/
  Exec=wordcraft %F
  TryExec=wordcraft
  Icon=ai.storyteller.wordcraft
-@@ -11,4 +15,5 @@
+@@ -11,4 +16,5 @@
  StartupWMClass=ai.storyteller.wordcraft
  Categories=Office;WordProcessor;
  Keywords=word;processor;document;docx;writer;text;letter;report;
@@ -32,13 +33,14 @@ diff --git a/packaging/linux/ai.storyteller.wordcraft.desktop b/packaging/linux/
 diff --git a/packaging/linux/ai.storyteller.wordcraft.metainfo.xml.in b/packaging/linux/ai.storyteller.wordcraft.metainfo.xml.in
 --- a/packaging/linux/ai.storyteller.wordcraft.metainfo.xml.in
 +++ b/packaging/linux/ai.storyteller.wordcraft.metainfo.xml.in
-@@ -1,4 +1,5 @@
+@@ -1,4 +1,6 @@
  <?xml version="1.0" encoding="UTF-8"?>
++<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
 +<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
  <!-- AppStream metadata (software centres, Flathub). Template: package.sh and the Flatpak
       manifest substitute @VERSION@ and @DATE@ from Cargo.toml and the build date. -->
  <component type="desktop-application">
-@@ -7,6 +8,7 @@
+@@ -7,6 +9,7 @@
    <project_license>MIT OR Apache-2.0</project_license>
    <name>WordCraft</name>
    <summary>Write and design documents; open and save Word files</summary>
@@ -46,7 +48,7 @@ diff --git a/packaging/linux/ai.storyteller.wordcraft.metainfo.xml.in b/packagin
    <developer id="ai.storyteller">
      <name>Learning Machines LLC</name>
    </developer>
-@@ -14,6 +16,11 @@
+@@ -14,6 +17,11 @@
      <p>
        WordCraft is a fast, open-source word processor with a familiar ribbon: styles, tables, track changes, references, mail merge, and .docx, PDF, ODT, RTF, HTML and Markdown files. It can be driven by AI agents over MCP.
      </p>
@@ -58,7 +60,7 @@ diff --git a/packaging/linux/ai.storyteller.wordcraft.metainfo.xml.in b/packagin
    </description>
    <launchable type="desktop-id">ai.storyteller.wordcraft.desktop</launchable>
    <icon type="stock">ai.storyteller.wordcraft</icon>
-@@ -28,13 +35,18 @@
+@@ -28,13 +36,18 @@
    </categories>
    <keywords>
      <keyword>word processor</keyword>
