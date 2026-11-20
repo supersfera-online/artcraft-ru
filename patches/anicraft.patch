@@ -1,0 +1,124 @@
+# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
+#
+# Russian Linux packaging (.desktop / AppStream / MIME) for storytold/anicraft
+# Upstream: https://github.com/storytold/anicraft
+# Base (origin merge-base): 3ccb59e02b1a03457fffdd946a1c15604ad22e2f
+# Snapshot: 2026-11-20 11:25 PST
+# This patch is a draft localization contribution by SuperSfera LLC.
+#
+diff --git a/packaging/linux/ai.storyteller.anicraft.desktop b/packaging/linux/ai.storyteller.anicraft.desktop
+--- a/packaging/linux/ai.storyteller.anicraft.desktop
++++ b/packaging/linux/ai.storyteller.anicraft.desktop
+@@ -1,8 +1,12 @@
++# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
+ [Desktop Entry]
+ Type=Application
+ Name=AniCraft
++Name[ru]=AniCraft
+ GenericName=Animation Studio
++GenericName[ru]=Анимационная студия
+ Comment=Draw and animate 2D vector art on a timeline
++Comment[ru]=Рисование и анимация 2D-векторной графики на шкале времени
+ Exec=anicraft %f
+ TryExec=anicraft
+ Icon=ai.storyteller.anicraft
+@@ -13,4 +17,5 @@
+ StartupWMClass=ai.storyteller.anicraft
+ Categories=Graphics;2DGraphics;VectorGraphics;
+ Keywords=animation;animator;timeline;keyframe;tween;vector;drawing;cartoon;motion;
++Keywords[ru]=анимация;аниматор;шкала времени;таймлайн;ключевой кадр;твин;вектор;рисование;мультфильм;движение;
+ MimeType=application/x-anicraft;application/x-fla;application/x-xfl;
+
+diff --git a/packaging/linux/ai.storyteller.anicraft.metainfo.xml.in b/packaging/linux/ai.storyteller.anicraft.metainfo.xml.in
+--- a/packaging/linux/ai.storyteller.anicraft.metainfo.xml.in
++++ b/packaging/linux/ai.storyteller.anicraft.metainfo.xml.in
+@@ -1,4 +1,5 @@
+ <?xml version="1.0" encoding="UTF-8"?>
++<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
+ <!-- AppStream metadata (software centres, Flathub). Template: package.sh and the Flatpak
+      manifest substitute @VERSION@ and @DATE@ from Cargo.toml and the build date. -->
+ <component type="desktop-application">
+@@ -7,6 +8,7 @@
+   <project_license>MIT OR Apache-2.0</project_license>
+   <name>AniCraft</name>
+   <summary>Draw and animate 2D vector art on a timeline</summary>
++  <summary xml:lang="ru">Рисование и анимация 2D-векторной графики на шкале времени</summary>
+   <developer id="ai.storyteller">
+     <name>ArtCraft Team</name>
+   </developer>
+@@ -16,12 +18,23 @@
+       layered timeline with keyframes, classic, shape and motion tweens, and export frames, GIFs,
+       sprite sheets, SVG, Lottie and video.
+     </p>
++    <p xml:lang="ru">
++      AniCraft — открытая нативная студия 2D-анимации. Рисуйте векторными инструментами,
++      анимируйте на многослойной шкале времени с ключевыми кадрами, классическими твинами,
++      твинами формы и движения и экспортируйте кадры, GIF, листы спрайтов, SVG, Lottie и
++      видео.
++    </p>
+     <ul>
+       <li>Pen, pencil, shapes, paint bucket, text, width and subselection tools for editable vector art</li>
++      <li xml:lang="ru">Перо, карандаш, фигуры, заливка, текст, инструменты ширины и частичного выделения для редактируемой векторной графики</li>
+       <li>Timeline with layers, folders, masks, onion skin, easing and a motion editor</li>
++      <li xml:lang="ru">Шкала времени со слоями, папками, масками, калькой, сглаживанием движения и редактором движения</li>
+       <li>Symbols, a library and nested timelines</li>
++      <li xml:lang="ru">Символы, библиотека и вложенные шкалы времени</li>
+       <li>Opens FLA and XFL documents as untitled copies</li>
++      <li xml:lang="ru">Открывает документы FLA и XFL как безымянные копии</li>
+       <li>Every action is a command, scriptable from a CLI, a JSON control channel and an MCP server</li>
++      <li xml:lang="ru">Каждое действие — это команда, которую можно вызывать из CLI, через управляющий канал JSON и сервер MCP</li>
+     </ul>
+   </description>
+   <launchable type="desktop-id">ai.storyteller.anicraft.desktop</launchable>
+@@ -37,14 +50,20 @@
+   </categories>
+   <keywords>
+     <keyword>animation</keyword>
++    <keyword xml:lang="ru">анимация</keyword>
+     <keyword>timeline</keyword>
++    <keyword xml:lang="ru">шкала времени</keyword>
+     <keyword>keyframe</keyword>
++    <keyword xml:lang="ru">ключевой кадр</keyword>
+     <keyword>tween</keyword>
++    <keyword xml:lang="ru">твин</keyword>
+     <keyword>vector</keyword>
++    <keyword xml:lang="ru">вектор</keyword>
+   </keywords>
+   <screenshots>
+     <screenshot type="default">
+       <caption>The sample animation on the stage, with tweens on the timeline and the easing curve in Properties</caption>
++      <caption xml:lang="ru">Пример анимации на сцене: твины на шкале времени и кривая сглаживания на панели «Свойства»</caption>
+       <image>https://raw.githubusercontent.com/storytold/AniCraft/main/docs/images/shot-1-stage.png</image>
+     </screenshot>
+   </screenshots>
+
+diff --git a/packaging/linux/ai.storyteller.anicraft.mime.xml b/packaging/linux/ai.storyteller.anicraft.mime.xml
+--- a/packaging/linux/ai.storyteller.anicraft.mime.xml
++++ b/packaging/linux/ai.storyteller.anicraft.mime.xml
+@@ -1,10 +1,12 @@
+ <?xml version="1.0" encoding="UTF-8"?>
++<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
+ <!-- shared-mime-info definitions for AniCraft's own format and the formats it opens as an
+      untitled import (ADR 0009), which the system database doesn't have.
+      Installed to /usr/share/mime/packages/ (update-mime-database runs on install). -->
+ <mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+   <mime-type type="application/x-anicraft">
+     <comment>AniCraft document</comment>
++    <comment xml:lang="ru">Документ AniCraft</comment>
+     <!-- A JSON file (crates/engine/src/format.rs), so text tools can still open it. -->
+     <sub-class-of type="application/json"/>
+     <icon name="ai.storyteller.anicraft"/>
+@@ -12,11 +14,13 @@
+   </mime-type>
+   <mime-type type="application/x-fla">
+     <comment>FLA document</comment>
++    <comment xml:lang="ru">Документ FLA</comment>
+     <generic-icon name="x-office-document"/>
+     <glob pattern="*.fla"/>
+   </mime-type>
+   <mime-type type="application/x-xfl">
+     <comment>XFL document</comment>
++    <comment xml:lang="ru">Документ XFL</comment>
+     <generic-icon name="x-office-document"/>
+     <glob pattern="*.xfl"/>
+   </mime-type>

@@ -1,0 +1,98 @@
+# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
+#
+# Russian Linux packaging (.desktop / AppStream / MIME) for storytold/cadcraft
+# Upstream: https://github.com/storytold/cadcraft
+# Base (origin merge-base): 1d92bb275c756fcb1f068fea1ec478d50c3cbb14
+# Snapshot: 2026-11-20 11:25 PST
+# This patch is a draft localization contribution by SuperSfera LLC.
+#
+diff --git a/packaging/linux/ai.storyteller.cadcraft.desktop b/packaging/linux/ai.storyteller.cadcraft.desktop
+--- a/packaging/linux/ai.storyteller.cadcraft.desktop
++++ b/packaging/linux/ai.storyteller.cadcraft.desktop
+@@ -1,8 +1,12 @@
++# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
+ [Desktop Entry]
+ Type=Application
+ Name=CADCraft
++Name[ru]=CADCraft
+ GenericName=Computer-Aided Design
++GenericName[ru]=Система автоматизированного проектирования
+ Comment=Draft, dimension and plot 2D drawings; open DXF and DWG files
++Comment[ru]=Черчение, простановка размеров и печать 2D-чертежей; открытие файлов DXF и DWG
+ Exec=cadcraft %F
+ TryExec=cadcraft
+ Icon=ai.storyteller.cadcraft
+@@ -12,3 +16,4 @@
+ Categories=Graphics;Engineering;VectorGraphics;
+ MimeType=image/vnd.dxf;image/vnd.dwg;application/x-dxf;application/acad;
+ Keywords=cad;drafting;dxf;dwg;drawing;engineering;architecture;mechanical;
++Keywords[ru]=cad;сапр;черчение;чертёж;dxf;dwg;инженерия;архитектура;машиностроение;
+
+diff --git a/packaging/linux/ai.storyteller.cadcraft.metainfo.xml.in b/packaging/linux/ai.storyteller.cadcraft.metainfo.xml.in
+--- a/packaging/linux/ai.storyteller.cadcraft.metainfo.xml.in
++++ b/packaging/linux/ai.storyteller.cadcraft.metainfo.xml.in
+@@ -1,4 +1,5 @@
+ <?xml version="1.0" encoding="UTF-8"?>
++<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
+ <!-- AppStream metadata (software centres, Flathub). Template: package.sh and the Flatpak
+      manifest substitute @VERSION@ and @DATE@ from Cargo.toml and the build date. -->
+ <component type="desktop-application">
+@@ -7,6 +8,7 @@
+   <project_license>MIT OR Apache-2.0</project_license>
+   <name>CADCraft</name>
+   <summary>Draft, dimension and plot 2D drawings</summary>
++  <summary xml:lang="ru">Черчение, простановка размеров и печать 2D-чертежей</summary>
+   <developer id="ai.storyteller">
+     <name>Learning Machines LLC</name>
+   </developer>
+@@ -16,6 +18,12 @@
+       command line, object snaps, layers, dimensions, hatches and blocks. It opens and saves DXF
+       and DWG drawings, exports SVG and PNG, and can be driven by AI agents over MCP.
+     </p>
++    <p xml:lang="ru">
++      CADCraft — открытое приложение для автоматизированного проектирования и черчения с
++      привычной командной строкой, объектной привязкой, слоями, размерами, штриховкой и
++      блоками. Открывает и сохраняет чертежи DXF и DWG, экспортирует в SVG и PNG, им могут
++      управлять ИИ-агенты по протоколу MCP.
++    </p>
+   </description>
+   <launchable type="desktop-id">ai.storyteller.cadcraft.desktop</launchable>
+   <icon type="stock">ai.storyteller.cadcraft</icon>
+@@ -30,13 +38,18 @@
+   </categories>
+   <keywords>
+     <keyword>CAD</keyword>
++    <keyword xml:lang="ru">САПР</keyword>
+     <keyword>drafting</keyword>
++    <keyword xml:lang="ru">черчение</keyword>
+     <keyword>DXF</keyword>
++    <keyword xml:lang="ru">DXF</keyword>
+     <keyword>DWG</keyword>
++    <keyword xml:lang="ru">DWG</keyword>
+   </keywords>
+   <screenshots>
+     <screenshot type="default">
+       <caption>A mechanical part drawing with dimensions, hatching and layers</caption>
++      <caption xml:lang="ru">Чертёж механической детали с размерами, штриховкой и слоями</caption>
+       <image>https://raw.githubusercontent.com/storytold/cadcraft/main/docs/images/ui-bracket.png</image>
+     </screenshot>
+   </screenshots>
+
+diff --git a/packaging/linux/ai.storyteller.cadcraft.mime.xml b/packaging/linux/ai.storyteller.cadcraft.mime.xml
+--- a/packaging/linux/ai.storyteller.cadcraft.mime.xml
++++ b/packaging/linux/ai.storyteller.cadcraft.mime.xml
+@@ -1,11 +1,14 @@
+ <?xml version="1.0" encoding="UTF-8"?>
++<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
+ <mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+   <mime-type type="image/vnd.dxf">
+     <comment>DXF drawing</comment>
++    <comment xml:lang="ru">Чертёж DXF</comment>
+     <glob pattern="*.dxf"/>
+   </mime-type>
+   <mime-type type="image/vnd.dwg">
+     <comment>DWG drawing</comment>
++    <comment xml:lang="ru">Чертёж DWG</comment>
+     <magic priority="50"><match type="string" value="AC10" offset="0"/></magic>
+     <glob pattern="*.dwg"/>
+   </mime-type>

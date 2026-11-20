@@ -1,0 +1,83 @@
+# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
+#
+# Russian Linux packaging (.desktop / AppStream / MIME) for storytold/craft-anything
+# Upstream: https://github.com/storytold/craft-anything
+# Base (origin merge-base): 827be601e781daea91ce2013fa0f64d658abd028
+# Snapshot: 2026-11-20 11:25 PST
+# This patch is a draft localization contribution by SuperSfera LLC.
+#
+diff --git a/packaging/linux/ai.storyteller.craft-anything.desktop b/packaging/linux/ai.storyteller.craft-anything.desktop
+--- a/packaging/linux/ai.storyteller.craft-anything.desktop
++++ b/packaging/linux/ai.storyteller.craft-anything.desktop
+@@ -1,8 +1,12 @@
++# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
+ [Desktop Entry]
+ Type=Application
+ Name=Craft Anything
++Name[ru]=Craft Anything
+ GenericName=Software Explorer
++GenericName[ru]=Исследование программ
+ Comment=Find out how any software works, then craft your own
++Comment[ru]=Узнайте, как устроена любая программа, а затем создайте свою
+ Exec=craft-anything %F
+ TryExec=craft-anything
+ Icon=ai.storyteller.craft-anything
+@@ -11,3 +15,4 @@
+ StartupWMClass=ai.storyteller.craft-anything
+ Categories=Development;Debugger;
+ Keywords=reverse engineering;disassembler;binary;analysis;executable;decompiler;inspect;
++Keywords[ru]=обратная разработка;реверс-инжиниринг;дизассемблер;двоичный файл;анализ;исполняемый файл;декомпилятор;исследование;
+
+diff --git a/packaging/linux/ai.storyteller.craft-anything.metainfo.xml.in b/packaging/linux/ai.storyteller.craft-anything.metainfo.xml.in
+--- a/packaging/linux/ai.storyteller.craft-anything.metainfo.xml.in
++++ b/packaging/linux/ai.storyteller.craft-anything.metainfo.xml.in
+@@ -1,4 +1,5 @@
+ <?xml version="1.0" encoding="UTF-8"?>
++<!-- Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0 -->
+ <!-- AppStream metadata (software centres, Flathub). Template: package.sh and the Flatpak
+      manifest substitute @VERSION@ and @DATE@ from Cargo.toml and the build date. -->
+ <component type="desktop-application">
+@@ -7,6 +8,7 @@
+   <project_license>MIT OR Apache-2.0</project_license>
+   <name>Craft Anything</name>
+   <summary>Find out how any software works, then craft your own</summary>
++  <summary xml:lang="ru">Узнайте, как устроена любая программа, а затем создайте свою</summary>
+   <developer id="ai.storyteller">
+     <name>Learning Machines LLC</name>
+   </developer>
+@@ -16,12 +18,23 @@
+       then helps them rebuild it. Open a program, an app, a file or a website and get a plain
+       explanation of what it is, what it does and how it is put together.
+     </p>
++    <p xml:lang="ru">
++      Craft Anything показывает любому, как устроена программа, подкрепляя ответы
++      доказательствами, а затем помогает её воссоздать. Откройте программу, приложение,
++      файл или сайт и получите понятное объяснение: что это, что оно делает и как
++      устроено.
++    </p>
+     <ul>
+       <li>Reads executables, libraries, archives, Android packages, WebAssembly and web bundles</li>
++      <li xml:lang="ru">Читает исполняемые файлы, библиотеки, архивы, пакеты Android, WebAssembly и веб-бандлы</li>
+       <li>A built-in disassembler with functions, call graphs and pseudo-C</li>
++      <li xml:lang="ru">Встроенный дизассемблер с функциями, графами вызовов и псевдо-C</li>
+       <li>Every answer carries its evidence, confidence and what is still unknown</li>
++      <li xml:lang="ru">Каждый ответ содержит доказательства, степень уверенности и то, что пока неизвестно</li>
+       <li>Beginner and Experienced modes</li>
++      <li xml:lang="ru">Режимы «Новичок» и «Опытный»</li>
+       <li>Every action is a tool, scriptable from a CLI and an MCP server</li>
++      <li xml:lang="ru">Каждое действие — это инструмент, который можно вызывать из CLI и через сервер MCP</li>
+     </ul>
+   </description>
+   <launchable type="desktop-id">ai.storyteller.craft-anything.desktop</launchable>
+@@ -37,8 +50,11 @@
+   </categories>
+   <keywords>
+     <keyword>reverse engineering</keyword>
++    <keyword xml:lang="ru">обратная разработка</keyword>
+     <keyword>disassembler</keyword>
++    <keyword xml:lang="ru">дизассемблер</keyword>
+     <keyword>binary analysis</keyword>
++    <keyword xml:lang="ru">анализ двоичных файлов</keyword>
+   </keywords>
+   <branding>
+     <color type="primary" scheme_preference="light">#efc39f</color>
