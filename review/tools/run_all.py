@@ -214,7 +214,7 @@ def main(argv=None) -> int:
     out.append(f"- Когда: {now:%Y-%m-%d %H:%M} {now.tzname()} (America/Los_Angeles); запуск: `run_all.sh {' '.join(argv if argv is not None else sys.argv[1:])}`")
     out.append(f"- Папки: {', '.join(os.path.relpath(r, L10N) for r in roots)}; режим: {'только изменённые' if a.only_changed else 'все'}")
     out.append(f"- Целей проверено: {len(results)} (ещё {sum(len(r['aliases']) for r in results)} — копии тех же файлов в других клонах); **ошибок всего: {total_err}** — " + ("НЕ ПРОЙДЕНО" if total_err else "ошибок нет"))
-    out.append("- Достоверность: **[проверено: подсчёт скриптами review/tools по файлам в рабочей копии в момент запуска]**")
+    out.append("- Достоверность: **[проверено: подсчёт скриптами review/tools по файлам на box в момент запуска]**")
     out.append("")
     out.append("## Изменения с прошлого снимка")
     out.append("")
@@ -243,6 +243,62 @@ def main(argv=None) -> int:
         note = f" — ru есть в craft-i18n: `locales/{a.locale}/{prog}.tsv`" if prog in craft_ru else ""
         out.append(f"- `{x}`{note}")
     out.append("")
+    # шапка и имена исполнителей — сводка по TSV
+    import collections as _c
+    auth_counts = _c.Counter()
+    bot_rows = []
+    for r in results:
+        tsv = r.get("tsv")
+        if not tsv or not os.path.isfile(tsv):
+            continue
+        with open(tsv, encoding="utf-8") as fh:
+            next(fh, None)
+            for line in fh:
+                cols = line.rstrip("\n").split("\t")
+                if len(cols) < 9:
+                    continue
+                sev, chk, prog, file, ln, key, en, ru, msg = (cols + [""] * 9)[:9]
+                if chk.startswith("authorship-header") or chk == "assistant-name":
+                    auth_counts[chk] += 1
+                    if chk == "assistant-name":
+                        bot_rows.append((file, ln, key, msg))
+    out.append("## Шапка авторства и имена исполнителей")
+    out.append("")
+    out.append("Правило: `RULES-AUTHORSHIP.md`. Проверки — предупреждения (на код возврата не влияют), кроме «шапка ломает формат» (ошибка).")
+    out.append("")
+    out.append("| Проверка | Сколько |")
+    out.append("|---|---:|")
+    titles = {"authorship-header": "нет шапки", "authorship-header-placement": "шапка не на месте",
+              "authorship-header-comments": "изменён авторский комментарий",
+              "authorship-header-unneeded": "шапка в файле без нашего перевода",
+              "authorship-header-unsupported": "формат не поддерживает комментарии (JSON)",
+              "authorship-header-breaks": "шапка ломает формат",
+              "authorship-attribution": "нет формулировки SuperSfera в строке ru ATTRIBUTION.md",
+              "assistant-name": "имя исполнителя"}
+    for k, title in titles.items():
+        out.append(f"| {title} (`{k}`) | {auth_counts[k]} |")
+    out.append("")
+    if bot_rows:
+        hist_mark = "только в истории коммитов"
+        tree_rows = [r for r in bot_rows if hist_mark not in r[3]]
+        hist_rows = [r for r in bot_rows if hist_mark in r[3]]
+
+        def emit_bots(title, rows):
+            out.append(title)
+            out.append("")
+            for file, ln, key, msg in rows[:80]:
+                out.append(f"- `{lc.md_escape(file)}`" + (f":{ln}" if ln not in ("0", "") else "")
+                           + (f" `{lc.md_escape(key)}`" if key else "") + f" — {lc.md_escape(msg)}")
+            if len(rows) > 80:
+                out.append(f"- … ещё {len(rows) - 80}, полный список в TSV целей")
+            out.append("")
+
+        if tree_rows:
+            emit_bots(f"Находки имён исполнителей — в текущем дереве ({len(tree_rows)}):", tree_rows)
+        if hist_rows:
+            emit_bots(f"Находки имён исполнителей — только в истории коммитов, в дереве уже убрано ({len(hist_rows)}). "
+                      "Координатор переписывает историю при сборке:", hist_rows)
+
     out.append("## Штатные проверки репозиториев")
     out.append("")
     if native_results:
