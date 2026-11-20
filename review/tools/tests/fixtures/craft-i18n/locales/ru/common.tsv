@@ -1,0 +1,19 @@
+# Russian translation © 2026 SuperSfera LLC, MIT OR Apache-2.0
+# Russian (ru) fixture.
+# Clean room: fixture.
+@id	language.name	Русский
+	Save	Сохранить
+	Open…	Открыть
+	Layer {name}	Слой
+	Hello	
+	Export PDF	Export PDF
+	Move down	Переместить вdown
+@plural	{n} layer|{n} layers	{n} слой|{n} слоя
+	Save	Сохранить снова
+@bogus	X	Y
+	Bad\q	Плохо
+	Visit https://example.org	Зайдите на https://adobe.com
+	<b>Bold</b> text	<b>Жирный текст
+	Shadow	Тень
+	Saving...	Сохранение...
+	Shadow Color	Цвет затемнения
